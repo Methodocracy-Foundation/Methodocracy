@@ -1,4 +1,4 @@
 2/4/14
 
 -Created GitHub repository
--Created README.txt and ChangeLog.txt
+-Created README.txt, ChangeLog.txt, /Docs, Treatment.txt, ToDo.txt
