@@ -1,0 +1,74 @@
+Note: I did something odd and lost a whole bunch of progress on this post. I'll put the changes back in later and back up the text this time.
+
+###Idea: A Website to Democratize the Application of the Scientific Method
+
+##--------------------------------
+
+##Introduction
+
+Can be imagined by [this picture](http://www.relativelyinteresting.com/wp-content/uploads/2012/07/evidence-based-change-after-peer-review-protestor.jpg), but add replication as well as peer review. Remember that this picture is an oversimplification.
+
+##--------------------------------
+
+##Features
+
+* **Hierarchy of entries** where each entry disproves parent entry. Is this really the best? (Difficult question)
+
+* **Entries on scale of merit**, where controlled/manipulated experiments are on top, natural-tests/observational-studies below them, compiled research towards middle, editorials towards bottom, commentary/ideas even lower, etc. Exact ordering of scale is a large design challenge that needs to be addressed over time. One big point of the website is to eradicate opinions where it counts; opinions should be the exact bottom of the merit scale. Questions (and weaknesses in theory using if, then, and else conditional statements, etc) are on scale.
+
+* **Peer entries ordered** by number of times reproduced, peer review, and child tests within (and expanding) the domain of the hypothesis' predictions. Could peer entry ordering algorithm simply be (or just include) the lack of solid disprovals in all children? Note: this bullet needs design work!
+
+* **Virtually all actions in website require credentials.** Credentials are original and unique to website, created for website, but could mirror real-world credentials if they're actually the best. Credentials are earned through a built-in education system.
+
+* **Website attempts to require quantitative data**, all things must stem from measurable data. Website encourages breaking down data into even more fundamental parts. Should everything be required to be able to be expressed/manipulated by math?
+
+
+* **Able to log historical disprovals.** Able to log past experiments and the experiments they've disproved. For example, Copernicus. This gives the website compatibility with academia, because "the past" could be low, like 1 day, minute, second, etc.
+
+* **Everything falls under the website's scope.** Everything is questioned, even in a self-referential sense. In the change-oriented sections of the website, the things proven are: definition of problem, if it's really a problem, possible solutions, best predictions of said solutions, ethical concerns, best or hybrid of possible solutions, when each part of hybrid applies to different situations, how things currently are, the difference between the current system(s) and the ideal system(s), enumerations of required steps to transition from current system(s) to ideal system(s), best postmortems, and how to best explain/educate all of these. *Can you think of any other important steps to be proven?*
+
+* **All website code is transparent**, unless it is determined that a section needs to be secure or secret for psychological reasons. However, 100% transparency is preferable, skeptical nature of website should keep everything secure. Should there be security fallbacks? One idea is distributing database info to third parties for record keeping. *This website has global Orwell dangers! (1984, Animal Farm)*
+
+* **Entire organization of website put under it's own method.**
+
+* **Fast data generation**. Even though carefully constructed data holds higher merit, website will try to encourage any data input where it helps.
+
+##--------------------------------
+
+##Questions
+
+* Should entries be broken up into the parts of the scientific method? The categories could be observations, hypothesis, predictions, test/experiment, analysis, etc. Each category would be linked together [as peers? or something else entirely out of hierarchy (seems best)?] so that possibly the best of each category could be chosen by the normal disproval method.
+
+* How much should website promote anonymity? Logins would allow for dialogue, like clarification of a vague or miscommunicated idea. Should # of usernames a person has be unlimited like Reddit (most people will only have 1 username)? Remember to consider the counterarguments and their validity.
+
+* Should website force all entries to be copies of real-world work? Or is this redundant/repetitive/unnecessary and entries should be the original work? Should links to the original work be an option? Should website host copies of the real-world work tied to an entry? Or would this make operation costs too high? Would a distributed database be feasible for this? Speaking of distributed databases, would a bitcoin-like system work for all of the data on the website (seems like a stretch)? Should the website allow an entry to be a draft (this seems like a great idea)?
+
+* How can bug-tracking software organization (new,assigned,resolved,closed,feedback,acknowledged,confirmed,etc) inspire organization within the website?
+
+* Should website incorporate social networking elements? These would only serve to support the main functionality, and not be a distraction. If this is implemented, low merit entries could possibly be eliminated and be in the domain of social networking as forums, reddit-style discussion, chat rooms, facebook style feeds?, etc. Github may also serve as an inspiration.
+
+* Interfacing with wikipedia/wikimedia?
+
+* How can foreseeable quantum computing tech be used for the website's servers (and clients for that matter)?
+
+* Interesting topic: How do we prevent AI from using website's data against us? With quantum computers now being sold, optimization problems are exponentially easier to solve. This means that AI is becoming exponentially more powerful in terms of computing power. It's a matter of time before someone creates AI that creatively learns, and/or interfaces with physical objects that can cause harm, and/or self replicates, etc.
+
+##--------------------------------
+
+##To-do list
+
+* In-depth research of scientific method.
+
+* Research incompatibilities of html, css, and javascript on a wide range of devices.
+
+* Design functionality of indexing, search, predictive search? (user analytics like facebook and google? relevancy to current location in website, etc), related education, exploration, in-house news distribution (and real-world news interfacing for that matter), etc. Should indexing use reddit-type url's and permalinks, with possible improvements and expansions to the system?
+
+* Prototype on GitHub
+
+* Research how bitcoin works and get security ideas from it. Again, security may not be too necessary, it is to be determined.
+
+* Ensure website uses GNU General Public License.
+
+* Create non-profit company to run main branch of the open-sourced code. Can non-profits run crowdfunding without limitation?
+
+* Keep possible domain names secret.
