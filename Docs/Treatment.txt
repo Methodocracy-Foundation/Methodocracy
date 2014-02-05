@@ -1,4 +1,4 @@
-Note: I did something odd and lost a whole bunch of progress on this post. I'll put the changes back in later and back up the text this time.
+This treatment is no longer relevant. It communicated the initial idea, but much progress has been made past this point. A design document needs to be made.
 
 ###Idea: A Website to Democratize the Application of the Scientific Method
 
@@ -8,30 +8,35 @@ Note: I did something odd and lost a whole bunch of progress on this post. I'll 
 
 Can be imagined by [this picture](http://www.relativelyinteresting.com/wp-content/uploads/2012/07/evidence-based-change-after-peer-review-protestor.jpg), but add replication as well as peer review. Remember that this picture is an oversimplification.
 
+There can be many purposes of this structure, we don't want to limit its uses. I have my biases for what this structure can be used for, the main ones being:
+* Evidence-based change
+* Centralization of academic processes
+* Centralization of the body of all(<- ?) human knowledge
+* Are there any other purposes we can think of?
+
 ##--------------------------------
 
 ##Features
 
-* **Hierarchy of entries** where each entry disproves parent entry. Is this really the best? (Difficult question)
+* **Hierarchy of entries** where each entry disproves parent entry. The design is a little more complicated than this, but this is the general idea. The design is kind of like each node is a theory supported by a test, and child nodes are tests that end up either supporting or negating the parent theory. A negated theory needs to be eventually split up into 2 theories that accurately account for the situational differences of the conflicting child tests. The actual design is the core of the website's design and after thourough disection with 2 people it has become apparent that there is possibly no better way.
 
 * **Entries on scale of merit**, where controlled/manipulated experiments are on top, natural-tests/observational-studies below them, compiled research towards middle, editorials towards bottom, commentary/ideas even lower, etc. Exact ordering of scale is a large design challenge that needs to be addressed over time. One big point of the website is to eradicate opinions where it counts; opinions should be the exact bottom of the merit scale. Questions (and weaknesses in theory using if, then, and else conditional statements, etc) are on scale.
 
-* **Peer entries ordered** by number of times reproduced, peer review, and child tests within (and expanding) the domain of the hypothesis' predictions. Could peer entry ordering algorithm simply be (or just include) the lack of solid disprovals in all children? Note: this bullet needs design work!
+* **Peer entries ordered** by number of times reproduced, peer review, and child tests within (and expanding) the domain of the hypothesis' predictions. Could peer entry ordering algorithm simply be (or just include) the lack of solid disprovals in all children? Note: this bullet needs design work! Should another type of ording show the weakest entries first? Perhaps there could be different kinds of ordering displayed as "tabs" for the list, which one should be the default? Since the primary interaction of the website will probably be education/research, the strongest peer ordering should be the default, right?
 
 * **Virtually all actions in website require credentials.** Credentials are original and unique to website, created for website, but could mirror real-world credentials if they're actually the best. Credentials are earned through a built-in education system.
 
 * **Website attempts to require quantitative data**, all things must stem from measurable data. Website encourages breaking down data into even more fundamental parts. Should everything be required to be able to be expressed/manipulated by math?
 
-
 * **Able to log historical disprovals.** Able to log past experiments and the experiments they've disproved. For example, Copernicus. This gives the website compatibility with academia, because "the past" could be low, like 1 day, minute, second, etc.
 
 * **Everything falls under the website's scope.** Everything is questioned, even in a self-referential sense. In the change-oriented sections of the website, the things proven are: definition of problem, if it's really a problem, possible solutions, best predictions of said solutions, ethical concerns, best or hybrid of possible solutions, when each part of hybrid applies to different situations, how things currently are, the difference between the current system(s) and the ideal system(s), enumerations of required steps to transition from current system(s) to ideal system(s), best postmortems, and how to best explain/educate all of these. *Can you think of any other important steps to be proven?*
 
-* **All website code is transparent**, unless it is determined that a section needs to be secure or secret for psychological reasons. However, 100% transparency is preferable, skeptical nature of website should keep everything secure. Should there be security fallbacks? One idea is distributing database info to third parties for record keeping. *This website has global Orwell dangers! (1984, Animal Farm)*
+* **All website code is transparent**, unless it is determined that a section needs to be secure or secret for psychological reasons. However, 100% transparency is preferable, skeptical nature of website should keep everything secure. It seems as though %100 transparency is impossible. For example, the log-in system needs to be private so that security vunerabilities cannot be easily found. Should there be security fallbacks? One idea is distributing database info to third parties for record keeping. After some review it has become apparent that security is still relevant. *This website has global Orwell dangers! (1984, Animal Farm)*
 
 * **Entire organization of website put under it's own method.**
 
-* **Fast data generation**. Even though carefully constructed data holds higher merit, website will try to encourage any data input where it helps.
+* **Fast data generation**. Even though carefully constructed data holds higher merit, website will try to encourage any data input where it helps. It will try to psychologically promote a conversation-like flow, where higher merit entries are introduced as neccessary, but once they are introduced, they rise to the top of the default ordering algorithm for visibility.
 
 ##--------------------------------
 
