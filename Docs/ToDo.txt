@@ -1,5 +1,7 @@
 ##To-do list
 
+* Zach: Reinput changes to treatment
+
 * In-depth research of scientific method.
 
 * Research incompatibilities of html, css, and javascript on a wide range of devices.
