@@ -1,0 +1,17 @@
+##To-do list
+
+* In-depth research of scientific method.
+
+* Research incompatibilities of html, css, and javascript on a wide range of devices.
+
+* Design functionality of indexing, search, predictive search? (user analytics like facebook and google? relevancy to current location in website, etc), related education, exploration, in-house news distribution (and real-world news interfacing for that matter), etc. Should indexing use reddit-type url's and permalinks, with possible improvements and expansions to the system?
+
+* Prototype on GitHub
+
+* Research how bitcoin works and get security ideas from it. Again, security may not be too necessary, it is to be determined.
+
+* Ensure website uses GNU General Public License.
+
+* Create non-profit company to run main branch of the open-sourced code. Can non-profits run crowdfunding without limitation?
+
+* Keep possible domain names secret.

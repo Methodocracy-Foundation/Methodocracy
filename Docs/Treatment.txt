@@ -52,23 +52,3 @@ Can be imagined by [this picture](http://www.relativelyinteresting.com/wp-conten
 * How can foreseeable quantum computing tech be used for the website's servers (and clients for that matter)?
 
 * Interesting topic: How do we prevent AI from using website's data against us? With quantum computers now being sold, optimization problems are exponentially easier to solve. This means that AI is becoming exponentially more powerful in terms of computing power. It's a matter of time before someone creates AI that creatively learns, and/or interfaces with physical objects that can cause harm, and/or self replicates, etc.
-
-##--------------------------------
-
-##To-do list
-
-* In-depth research of scientific method.
-
-* Research incompatibilities of html, css, and javascript on a wide range of devices.
-
-* Design functionality of indexing, search, predictive search? (user analytics like facebook and google? relevancy to current location in website, etc), related education, exploration, in-house news distribution (and real-world news interfacing for that matter), etc. Should indexing use reddit-type url's and permalinks, with possible improvements and expansions to the system?
-
-* Prototype on GitHub
-
-* Research how bitcoin works and get security ideas from it. Again, security may not be too necessary, it is to be determined.
-
-* Ensure website uses GNU General Public License.
-
-* Create non-profit company to run main branch of the open-sourced code. Can non-profits run crowdfunding without limitation?
-
-* Keep possible domain names secret.
