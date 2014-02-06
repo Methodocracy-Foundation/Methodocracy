@@ -1,0 +1,172 @@
+<!--
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++Copyright 2014 Methodocracy.org                                           +++
+   This file is part of Methodocracy.org.
+
+    Methodocracy.org is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Methodocracy.org is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
++++ along with Methodocracy.org.  If not, see <http://www.gnu.org/licenses/>.+++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+File: 		documentation.html
+Purpose:	Documentation page with auto generation of TOC
+Author: 	github.com/Alofoxx -> source: http://css-tricks.com/automatic-table-of-contents/
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:400italic">
+	<!-- The above font is under an open license. www.google.com/fonts/specimen/Ubuntu-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<style type="text/css">
+		body {
+		  background: #eee;
+		  padding: 20px;
+		}
+
+		h1 {
+		  font-family: 'Ubuntu' , sans-serif;
+		}
+
+		h2 {
+		  font-family: 'Ubuntu' , sans-serif;
+		}
+
+		h3 {
+		  font-family: 'Ubuntu' , sans-serif;
+		}
+
+		nav ul li {
+		  font-family: 'Ubuntu' , sans-serif;
+		}
+
+		article {
+		  max-width: 50em;
+		  background: white;
+		  padding: 2em;
+		  margin: 1em auto;
+		}
+
+		.table-of-contents {
+		  float: right;
+		  width: 40%;
+		  background: #eee;
+		  font-size: 0.8em;
+		  padding: 1em 2em;
+		  margin: 0 0 0.5em 0.5em;
+		}
+		.table-of-contents ul {
+		  padding: 0;
+		}
+		.table-of-contents li {
+		  margin: 0 0 0.25em 0;
+		}
+		.table-of-contents a {
+		  text-decoration: none;
+		}
+		.table-of-contents a:hover,
+		.table-of-contents a:active {
+		  text-decoration: underline;
+		}
+
+		h3:target {
+		  animation: highlight 1s ease;
+		}
+
+		@keyframes highlight {
+		  from { background: yellow; }
+		  to { background: white; }
+		}
+	</style>
+	<title>Methodocracy.org Documentation</title>
+</head>
+<body>
+<article>
+  <h1>Methodocracy.org Documentation</h1>
+  
+  <p>This html file is here to provide a place to document all information that pertains to this project. This file has an auto generating TOC that shows to the right of this text. To use it all you must do is title your section with a h3 tag with a unique id name. The TOC will be generated every refresh so it will capture all changes/edits to the h3 titles with id's.</p>  
+  
+  <div class="all-questions">
+  
+  <h3 id="one">What is "Methodocracy"?</h3>
+  
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+  
+  <h3 id="two">What is the purpose of this site?</h3>
+  
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+  
+  <h3 id="three">Who started this project?</h3>
+  
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+  
+  <h3 id="four">Who can work on this project?</h3>
+  
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+  
+  <h3 id="five">Who can use this project, and how?</h3>
+  
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+  
+  <h3 id="six">Many mongerals manifest mountains</h3>
+  
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+  
+  <h3 id="seven">How would you like a soda drink?</h3>
+  
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+  
+  <h3 id="eight">I would very much like a soda drink.</h3>
+  
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+  
+  <h3 id="nine">Thank you for accepting the soda drink.</h3>
+  
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p> 
+    
+  </div>
+  
+</article>
+<script>
+		var ToC =
+		  "<nav role='navigation' class='table-of-contents'>" +
+		    "<h2>On this page:</h2>" +
+		    "<ul>";
+
+		var newLine, el, title, link;
+
+		$("article h3").each(function() {
+
+		  el = $(this);
+		  title = el.text();
+		  link = "#" + el.attr("id");
+
+		  newLine =
+		    "<li>" +
+		      "<a href='" + link + "'>" +
+		        title +
+		      "</a>" +
+		    "</li>";
+
+		  ToC += newLine;
+
+		});
+
+		ToC +=
+		   "</ul>" +
+		  "</nav>";
+
+		$(".all-questions").prepend(ToC);
+	</script>
+</body>
+</html>
