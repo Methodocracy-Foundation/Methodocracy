@@ -20,3 +20,5 @@ This file is part of Methodocracy.org.
 * Research how bitcoin works and get security ideas from it. Again, security may not be too necessary, it is to be determined.
 
 * Create non-profit company to run main branch of the open-sourced code. Can non-profits run crowdfunding without limitation?
+
+please delete this line
