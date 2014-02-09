@@ -1,0 +1,38 @@
+Possible menu layout / sitemap
+
+****************************
+KEY INDEX for this file:
+"/** .... **/" Denotes physical location of nav menu
+"//..." Denotes actual link in menu (root menu option)
+"-..." Denotes topics or ideas for page's purpose
+">//" Denoted sub menu option for root menu option
+
+****************************
+/** Header menu - top of page **/
+//home
+- latest news posts
+- latest activity on site
+
+//about
+- about page for the site describing its purpose
+- links to any instructional material for the site
+- links to deign docs
+
+//subjects
+- drop down menu
+- if clicked on displays detailed page of all categories
+>//Chemistry
+>//Psychology
+>//Sociology
+>>//Government
+ect...
+
+
+/** Footer menu **/
+
+//contact info
+//project github
+//social networking links
+//license and copyright info
+//terms of use and privacy policy
+//link to newsletter
