@@ -23,7 +23,7 @@ There can be many purposes of this structure, we don't want to limit its uses. I
 * Evidence-based change
 * Centralization of academic processes
 * Centralization of the body of all(<- ?) human knowledge
-* Which recipie of apple pie is the best
+* Which recipe of apple pie is the best
 * Are there any other purposes we can think of?
 
 ##--------------------------------
