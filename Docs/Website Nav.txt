@@ -19,31 +19,43 @@ KEY INDEX for this file:
 ">//" Denoted sub menu option for root menu option
 
 ****************************
-/** Header menu - top of page **/
-//home
-- latest news posts
-- latest activity on site
 
-//about
-- about page for the site describing its purpose
-- links to any instructional material for the site
-- links to deign docs
+/** Header menu - top of page **/
+
+?
+//Sponsor
+-Our top sponsor's logo
+>//info & link
+-Displays 'Sponsored by' and company's name
+-if confirmation/link clicked, sends user to sponsor's chosen URL
+?
 
 //subjects
-- drop down menu
-- if clicked on displays detailed page of all categories
->//Chemistry
->//Psychology
->//Sociology
->>//Government
-ect...
+- Still figuring out
+- Examples: Chemistry, Psychology, Sociology, Government (sibset of sociology), ect
+
+//user account options
+- if logged out, displays a login button
+>//profile
+>//account settings
+>//logout
 
 
 /** Footer menu **/
 
-//contact info
-//project github
-//social networking links
+//'about/FAQ'
+- about page for the site describing its purpose
+- frequently asked questions
+- links to any instructional material for the site
+- links to design docs
+
 //license and copyright info
+
 //terms of use and privacy policy
-//link to newsletter
+
+//contact info
+
+//More
+>//project github
+>//link to newsletter
+>//social networking links
