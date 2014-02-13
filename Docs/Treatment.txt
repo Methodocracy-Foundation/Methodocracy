@@ -7,7 +7,7 @@ This file is part of Methodocracy.org.
 
     You should have received a copy of the GNU General Public License along with Methodocracy.org.  If not, see <http://www.gnu.org/licenses/>.
 	
-	Methodocracy™ is a trademark of Methodocracy.org ©2014, and all rights to that ™ are reserved. Any modified versions are required to be marked as changed, so that their problems will not be attributed erroneously to authors of previous versions. And the name Methodocracy™ should be clearly labeled as the source of your work as long as any part of this work remains intact in part or in whole.
+    Methodocracy TM is a trademark of Methodocracy.org (C)2014, and all rights to that TM are reserved. Any modified versions are required to be marked as changed, so that their problems will not be attributed erroneously to authors of previous versions. And the name Methodocracy TM should be clearly labeled as the source of your work as long as any part of this work remains intact in part or in whole.
 
 This treatment is no longer relevant. It communicated the initial idea, but much progress has been made past this point. A design document needs to be made.
 
@@ -23,6 +23,7 @@ There can be many purposes of this structure, we don't want to limit its uses. I
 * Evidence-based change
 * Centralization of academic processes
 * Centralization of the body of all(<- ?) human knowledge
+* Which recipie of apple pie is the best
 * Are there any other purposes we can think of?
 
 ##--------------------------------
