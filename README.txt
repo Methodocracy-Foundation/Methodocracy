@@ -6,7 +6,7 @@ Possible Purposes:
 -Evidence-based change
 -Centralization of academic processes
 -Centralization of the body of all(<-?) human knowledge
--Which recipie of apple pie is the best
+-Which recipe of apple pie is the best
 -Are there any other purposes we can think of?
 
 Copyright 2014 Zachary Hebert
