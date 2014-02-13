@@ -22,13 +22,11 @@ KEY INDEX for this file:
 
 /** Header menu - top of page **/
 
-?
 //Sponsor
 -Our top sponsor's logo
 >//info & link
 -Displays 'Sponsored by' and company's name
 -if confirmation/link clicked, sends user to sponsor's chosen URL
-?
 
 //subjects
 - Still figuring out
@@ -43,19 +41,24 @@ KEY INDEX for this file:
 
 /** Footer menu **/
 
-//'about/FAQ'
+//'?'
+>//About
 - about page for the site describing its purpose
-- frequently asked questions
-- links to any instructional material for the site
 - links to design docs
+>//FAQ
+- frequently asked questions
+>//Help
+- any instructional material for the site
 
-//license and copyright info
+//copyright
 
-//terms of use and privacy policy
-
-//contact info
+//GPL version
+>//Full GLP blurb
+-includes link to full license
 
 //More
+>//terms of use and privacy policy
+>//contact info
 >//project github
->//link to newsletter
 >//social networking links
+>//link to newsletter
