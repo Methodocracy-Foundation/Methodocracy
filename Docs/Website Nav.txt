@@ -53,7 +53,7 @@ KEY INDEX for this file:
 //copyright
 
 //GPL version
->//Full GLP blurb
+>//Full GPL blurb
 -includes link to full license
 
 //More
