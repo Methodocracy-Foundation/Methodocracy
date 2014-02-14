@@ -13,6 +13,7 @@ This file is part of Methodocracy.org.
 
 -Updated license -Zach
 -Added possible purpose -Zach
+-Updated Website Nav.txt -Zach
 
 2/6/14
 
