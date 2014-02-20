@@ -1,0 +1,5 @@
+There are branching models existing that adequately manage workflow. Through research on the topic, it has been decided that there is still more considerations to be made on certain situations in very large projects. This topic needs to be researched in the future. Here is some starting research on the topic (and Zach has written some notes and considerations in a notebook):
+http://www.youtube.com/watch?v=GYnOwPl8yCE
+keyword search "git flow"
+http://nvie.com/posts/a-successful-git-branching-model/
+http://www.youtube.com/watch?v=pqZeMQVJUQE
