@@ -9,7 +9,6 @@ class Hash {
 	}
 
 	public static function unique() {
-		return self::make(uniqid());		
+		return self::make(uniqid());
 	}
 }
-

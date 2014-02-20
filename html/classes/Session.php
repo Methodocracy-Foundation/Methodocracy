@@ -4,12 +4,12 @@ class Session {
 		return (isset($_SESSION[$name])) ? true : false;
 	}
 
-	public static function put($name, $value) {
-		return $_SESSION[$name] = $value;
-	}
-
 	public static function get($name) {
 		return $_SESSION[$name];
+	}
+	
+	public static function put($name, $value) {
+		return $_SESSION[$name] = $value;
 	}
 
 	public static function delete($name) {
@@ -18,12 +18,12 @@ class Session {
 		}
 	}
 
-	public static function flash($name, $string = '') {
+	public static function flash($name, $string = null) {
 		if(self::exists($name)) {
 			$session = self::get($name);
 			self::delete($name);
 			return $session;
-		} else {
+		} else if ($string) {
 			self::put($name, $string);
 		}
 	}
