@@ -1,104 +1,250 @@
 <!--
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Copyright 2014 Zachary Hebert
-This file is part of Methodocracy.org.
++++Copyright 2014 Methodocracy.org                                           +++
+   This file is part of Methodocracy.org.
 
-    Methodocracy.org is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+    Methodocracy.org is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-    Methodocracy.org is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+    Methodocracy.org is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-    You should have received a copy of the GNU General Public License along with Methodocracy.org.  If not, see <http://www.gnu.org/licenses/>.
-	
-    Methodocracy TM is a trademark of Methodocracy.org (C)2014, and all rights to that TM are reserved. Any modified versions are required to be marked as changed, so that their problems will not be attributed erroneously to authors of previous versions. And the name Methodocracy TM should be clearly labeled as the source of your work as long as any part of this work remains intact in part or in whole.
+    You should have received a copy of the GNU General Public License
++++ along with Methodocracy.org.  If not, see <http://www.gnu.org/licenses/>.+++
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-File: 		index.html
-Purpose:	Index page placeholder on public end while site is in alpha development.
-Author: 	github.com/Alofoxx
+File: 		documentation.html
+Purpose:	Documentation page with auto generation of TOC
+Author: 	github.com/Alofoxx -> source: http://css-tricks.com/automatic-table-of-contents/
 
 -->
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:400italic">
-<!-- The above font is under an open license. www.google.com/fonts/specimen/Ubuntu-->
-<title>Methodocracy.org</title>
-	<style>
-    #bg {
-				position: fixed; 
-				top: -50%; 
-				left: -50%; 
-				width: 200%; 
-				height: 200%;
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:400italic">
+	<!-- The above font is under an open license. www.google.com/fonts/specimen/Ubuntu-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<style type="text/css">
+		body {
+		  background: #eee;
+		  padding: 20px;
 		}
-	#bg img {
-				position: absolute; 
-				top: 0; 
-				left: 0; 
-				right: 0; 
-				bottom: 0; 
-				margin: auto; 
-				min-width: 50%;
-				min-height: 50%;
-				opacity: 0.6;
+    a:link {color:#FF0000;}      /* unvisited link */
+    a:visited {color:#00FF00;}  /* visited link */
+    a:hover {color:#FF00FF;}  /* mouse over link */
+    a:active {color:#0000FF;}  /* selected link */
+
+		h1 {
+		  font-family: 'Ubuntu' , sans-serif;
 		}
-	.wrapper {
-				height: 100%;
-				/* background: rgba(0, 0, 0, 0.5); */
-				/*overflow: scroll;*/
-			}
-	.module {
-				position: relative;
-				top: 80px;
-				text-align: center;
-			}
-	.heading {
-				line-height: 1;
-				color: black;
-				font-size: 512%;
-				font-family: 'Ubuntu' , sans-serif;
-			}
-			
-	.subheading {
-				color: black;
-				font-size: 160%;
-				font-family: 'Ubuntu' , sans-serif;
-			}
-	.lead {
-				color: black;
-				font-size: 100%;
-				font-family: 'Ubuntu' , sans-serif;
-			}
+
+		h2 {
+		  font-family: 'Ubuntu' , sans-serif;
+		}
+
+		h3 {
+		  font-family: 'Ubuntu' , sans-serif;
+		}
+
+		nav ul li {
+		  font-family: 'Ubuntu' , sans-serif;
+		}
+
+		article {
+		  max-width: 50em;
+		  background: white;
+		  padding: 2em;
+		  margin: 1em auto;
+		}
+
+		.table-of-contents {
+		  float: right;
+		  width: 40%;
+		  background: #eee;
+		  font-size: 0.8em;
+		  padding: 1em 2em;
+		  margin: 0 0 0.5em 0.5em;
+		}
+		.table-of-contents ul {
+		  padding: 0;
+		}
+		.table-of-contents li {
+		  margin: 0 0 0.25em 0;
+		}
+		.table-of-contents a {
+		  text-decoration: none;
+		}
+		.table-of-contents a:hover,
+		.table-of-contents a:active {
+		  text-decoration: underline;
+		}
+
+		h3:target {
+		  animation: highlight 1s ease;
+		}
+
+		@keyframes highlight {
+		  from { background: yellow; }
+		  to { background: white; }
+		}
+/* Menu */
+    #blackBar{
+      color:white;
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:30px;
+      background-color:black;
+    }
+
+    #buttons {
+      overflow: hidden;
+      height: 100%;
+    }
+
+    .button {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 2px;
+      background: #404040;
+      color: #eee;
+      text-align: center;
+      border-radius: 0.1em;
+      font-weight: 700;  
+    }
+    
+    .button:hover {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 2px;
+      background: #4f4f4f;
+      color: #eee;
+      text-align: center;
+      border-radius: 0.1em;
+      font-weight: 700;  
+    }
+
+    .outer1 {
+        position: relative;
+        float: left;
+        width: 20%;
+        height: 100%;
+    }
+
+    .outer2 {
+        position: relative;
+        float: left;
+        width: 60%;
+        height: 100%;
+    }
+        
 	</style>
+	<title>Methodocracy.org Documentation</title>
 </head>
 <body>
-<div id="bg">
-<!--  <img src="http://www.gcar2012.com/GCARSET/wp-content/themes/TechWeek/jdgallery/slides/5.jpg" alt=""> -->
-<!-- The above img is the bg placeholder for testing the scaling / positioning. Needs to be replaced with properly licensed img. Commented our for release version.-->
+<div id="blackBar">
+
+<div id="buttons">         
+    <div class="outer1">
+        <a href="index.php"><div id="one" class="button"> Home </div></a>
+    </div>
+    
+    <div class="outer2">
+        <a href="downloads.php"><div id="two" class="button">Subject -> Sub Topic</div></a>
+    </div>
+
+    <div class="outer1">
+        <a href="downloads.php"><div id="three" class="button">Login</div></a>
+    </div>
 </div>
-		<div class="wrapper">
-			<div class="module container">
-				
-				<!--<img class="logo" src="logo-placeholder.png" data-hd-src="logo-placeholder-2x.png" alt="[Methodocracy Logo]" />-->
-				<h1 class="heading">Methodocracy.org</h1>
-				<h2 class="subheading">Coming soon!</h2>
-				
-				<p class="lead">About: Methodocracy.org is the home for an <a href="https://github.com/ZacharyHebert/Methodocracy.org">open source project</a>.</p> 
-				<p class="lead">This project is <strong>a website to democratize the application of the scientific method.</strong></p>
-				<p class="lead">Possible Purposes:</p>
-				<p class="lead">-Evidence-based change</p>
-				<p class="lead">-Centralization of academic processes</p>
-				<p class="lead">-Centralization of the body of all(<-?) human knowledge</p>
-				<p class="lead">-Which recipe of apple pie is the best</p>
-				<p class="lead">-Are there any other purposes we can think of?</p>
-			    
-				
-				
-				<!-- <p><a href="https://twitter.com/username" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @username</a></p> -->
-				
-				<p><small>Copyright 2014 Zachary Hebert<br /></small></p><br /><hr>
-				
-			</div>
-		</div>
+</div>
+<article>
+  <h1>Methodocracy.org Documentation</h1>
+  
+  <p>This html file is here to provide a place to document all information that pertains to this project. This file has an auto generating TOC that shows to the right of this text. To use it all you must do is title your section with a h3 tag with a unique id name. The TOC will be generated every refresh so it will capture all changes/edits to the h3 titles with id's.</p>  
+  
+  <div class="all-questions">
+  
+  <h3 id="one">What is "Methodocracy"?</h3>
+  
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+  
+  <h3 id="two">What is the purpose of this site?</h3>
+  
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+  
+  <h3 id="three">Who started this project?</h3>
+  
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+  
+  <h3 id="four">Who can work on this project?</h3>
+  
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+  
+  <h3 id="five">Who can use this project, and how?</h3>
+  
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+  
+  <h3 id="six">Many mongerals manifest mountains</h3>
+  
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+  
+  <h3 id="seven">How would you like a soda drink?</h3>
+  
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+  
+  <h3 id="eight">I would very much like a soda drink.</h3>
+  
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+  
+  <h3 id="nine">Thank you for accepting the soda drink.</h3>
+  
+  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p> 
+    
+  </div>
+  
+</article>
+<script>
+		var ToC =
+		  "<nav role='navigation' class='table-of-contents'>" +
+		    "<h2>On this page:</h2>" +
+		    "<ul>";
+
+		var newLine, el, title, link;
+
+		$("article h3").each(function() {
+
+		  el = $(this);
+		  title = el.text();
+		  link = "#" + el.attr("id");
+
+		  newLine =
+		    "<li>" +
+		      "<a href='" + link + "'>" +
+		        title +
+		      "</a>" +
+		    "</li>";
+
+		  ToC += newLine;
+
+		});
+
+		ToC +=
+		   "</ul>" +
+		  "</nav>";
+
+		$(".all-questions").prepend(ToC);
+	</script>
 </body>
 </html>
