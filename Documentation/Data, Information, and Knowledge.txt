@@ -4,3 +4,4 @@ Data is the atomic set of values for variables, the lowest level of abstraction.
 
 Knowledge is the interpretation of how pieces of information connect with each other. It is an analysis that is built upon within a system. Two systems cannot share knowledge with each other, but they can share information. For example, the code used to run a program is information. In order for this program to copy itself into another program, it must share its code information. If this program analyses information to produce knowledge, then it must also share the source information with the new copy.
 
+The same applies to transferring knowledge between a program and an individual, or two individuals. Only information can be shared between the two entities, but the receiving entity still only internally builds knowledge based upon the information.
