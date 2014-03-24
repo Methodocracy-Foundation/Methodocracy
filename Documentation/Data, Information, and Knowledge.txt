@@ -1,2 +1,3 @@
 An exposition of the differences between data, information, and knowledge, and a metamodel of the three concepts. Used to show competency to Michael Scofield.
 
+Data is the atomic set of values for variables, the lowest level of abstraction. Information is a method in which data is organized and interpreted. Data is like the letters of the alphabet, and information is like the words and sentences.
