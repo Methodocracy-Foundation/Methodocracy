@@ -1,5 +1,5 @@
 Similar Projects May Be:
--Macro AI
+-AI knowledge base
 -Increased data generation and storage, and increased information sophistication and communication.
 -
 
