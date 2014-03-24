@@ -1,3 +1,8 @@
+Similar Projects May Be:
+-Macro AI
+-Increased data generation and storage, and increased information communication.
+-
+
 Sources:
 	Keyword: Information Theory
 	http://sdiwc.net/digital-library/towards-an-information-theory-based-methodology-for-the-quality-assessment-ofrnonline-comments
