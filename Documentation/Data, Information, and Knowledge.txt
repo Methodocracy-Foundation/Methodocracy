@@ -2,4 +2,5 @@ An exposition of the differences between data, information, and knowledge, and a
 
 Data is the atomic set of values for variables, the lowest level of abstraction. Data is usually stored in tabular, hierarchical, or mathematically graphical structures. Information is a method in which data is organized and interpreted. It is conceptualized as a message, or an answer to a question. Data is like the letters of the alphabet, and information is like the words and sentences. The amount of possible variance in data, or entropy, determines the uncertainty of how incoming information affects the state of a system.
 
-Knowledge is 
+Knowledge is the interpretation of how pieces of information connect with each other. It is an analysis that is built upon within a system. Two systems cannot share knowledge with each other, but they can share information. For example, the code used to run a program is information. In order for this program to copy itself into another program, it must share its code information. If this program analyses information to produce knowledge, then it must also share the source information with the new copy.
+
