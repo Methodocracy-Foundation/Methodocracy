@@ -1,5 +1,5 @@
 An exposition of the differences between data, information, and knowledge, and a metamodel of the three concepts. Used to show competency to Michael Scofield.
 
-Data is the atomic set of values for variables, the lowest level of abstraction. Data is usually stored in tabular, hierarchical, or mathematically graphical structures. Information is a method in which data is organized and interpreted. Data is like the letters of the alphabet, and information is like the words and sentences. The amount of possible variance in data, or entropy, determines the uncertainty of how incoming information affects the state of a system.
+Data is the atomic set of values for variables, the lowest level of abstraction. Data is usually stored in tabular, hierarchical, or mathematically graphical structures. Information is a method in which data is organized and interpreted. It is conceptualized as a message, or an answer to a question. Data is like the letters of the alphabet, and information is like the words and sentences. The amount of possible variance in data, or entropy, determines the uncertainty of how incoming information affects the state of a system.
 
 Knowledge is 
