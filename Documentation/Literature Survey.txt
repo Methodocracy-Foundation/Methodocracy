@@ -1,4 +1,6 @@
 Sources:
-http://sdiwc.net/digital-library/towards-an-information-theory-based-methodology-for-the-quality-assessment-ofrnonline-comments
-http://www.sciencedirect.com/science/article/pii/S0165011413002765 (can't access article, just extrapolated from abstract)
-http://link.springer.com/chapter/10.1007/978-3-319-02798-2_19
+	Keyword: Information Theory
+	http://sdiwc.net/digital-library/towards-an-information-theory-based-methodology-for-the-quality-assessment-ofrnonline-comments
+	http://www.sciencedirect.com/science/article/pii/S0165011413002765 (can't access article, just extrapolated from abstract)
+	http://link.springer.com/chapter/10.1007/978-3-319-02798-2_19
+	http://arxiv.org/abs/1402.4225
