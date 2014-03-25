@@ -16,7 +16,7 @@ Sources:
 		http://link.springer.com/chapter/10.1007/978-3-642-41674-3_164
 		http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3936301/
 		http://store.steampowered.com/tag/
-		
+		http://www.sersc.org/journals/IJSEIA/vol8_no2_2014/22.pdf
 	
 	Keyword: Knowledge Navigation
 	
