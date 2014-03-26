@@ -23,6 +23,7 @@ Sources:
 	Keyword: "knowledge navigation"
 		http://docsdrive.com/pdfs/ansinet/itj/0000/54971-54971.pdf
 		http://onlinelibrary.wiley.com/doi/10.1111/jcal.12045/abstract;jsessionid=F2437D940EB749B8B825E30BB0490BD6.f03t04?deniedAccessCustomisedMessage=&userIsAuthenticated=false
+		http://link.springer.com/chapter/10.1007/978-1-4471-6275-9_13
 		
 	
 	Keyword: meta-entities
