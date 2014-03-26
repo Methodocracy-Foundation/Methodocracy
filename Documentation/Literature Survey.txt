@@ -29,6 +29,7 @@ Sources:
 	
 	Keyword: knowledge base
 		http://link.springer.com/chapter/10.1007/978-94-007-7284-7_7
+		http://www.thinkmind.org/index.php?view=article&articleid=eknow_2014_4_30_60089
 		
 	
 	Topic: Games
