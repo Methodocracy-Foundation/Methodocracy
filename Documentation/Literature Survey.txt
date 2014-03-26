@@ -28,6 +28,7 @@ Sources:
 		none of note
 	
 	Keyword: knowledge base
+		http://link.springer.com/chapter/10.1007/978-94-007-7284-7_7
 		
 	
 	Topic: Games
