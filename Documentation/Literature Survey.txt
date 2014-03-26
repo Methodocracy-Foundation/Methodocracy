@@ -18,9 +18,9 @@ Sources:
 		2014:
 		http://link.springer.com/chapter/10.1007/978-3-642-41674-3_164
 		http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3936301/
-		http://store.steampowered.com/tag/
 		http://www.sersc.org/journals/IJSEIA/vol8_no2_2014/22.pdf
 		http://www.sciencedirect.com/science/article/pii/S0360131514000402
+		http://www.ijacta.com/index.php/ojs/article/view/10
 		
 	
 	Keyword: knowledge navigation
@@ -33,5 +33,6 @@ Sources:
 	
 	
 	Topic: Games
-		Keyword: 
+		http://store.steampowered.com/tag/
+		
 	
