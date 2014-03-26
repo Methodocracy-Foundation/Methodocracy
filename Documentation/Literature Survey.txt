@@ -4,6 +4,7 @@ Similar Projects May Be:
 -Wikipedia
 -Google
 -Scientific community centralization
+-freebase.com
 
 Sources:
 	Keyword: information theory
@@ -30,6 +31,7 @@ Sources:
 	Keyword: knowledge base
 		http://link.springer.com/chapter/10.1007/978-94-007-7284-7_7
 		http://www.thinkmind.org/index.php?view=article&articleid=eknow_2014_4_30_60089
+		http://www.ipeirotis.com/wp-content/uploads/2014/01/wsdm2014-cqual1.pdf
 		
 	
 	Topic: Games
