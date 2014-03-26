@@ -20,6 +20,7 @@ Sources:
 		http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3936301/
 		http://store.steampowered.com/tag/
 		http://www.sersc.org/journals/IJSEIA/vol8_no2_2014/22.pdf
+		http://www.sciencedirect.com/science/article/pii/S0360131514000402
 		
 	
 	Keyword: knowledge navigation
