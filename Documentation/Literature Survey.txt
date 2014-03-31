@@ -28,12 +28,13 @@ Sources:
 	Keyword: meta-entities
 		none of note
 	
-	Keyword: knowledge base
+	Keyword: "knowledge base"
+	note: most results on this keyword are medical related.
 		http://link.springer.com/chapter/10.1007/978-94-007-7284-7_7
 		http://www.thinkmind.org/index.php?view=article&articleid=eknow_2014_4_30_60089
 		http://www.ipeirotis.com/wp-content/uploads/2014/01/wsdm2014-cqual1.pdf
 		http://www.google.com/patents/US8639644
-		
+		http://www.google.com/patents/US8639678
 	
 	Topic: Games
 		http://store.steampowered.com/tag/
