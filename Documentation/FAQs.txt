@@ -1,6 +1,7 @@
 How do you intend to accomplish your mission?
 How will it work?
 How will you execute this ?
+what is the project
 What's wrong with the scientific method as it exists today?
 What are some examples of problems that can be worked on using Methodocracy?
 Which improvements are you making that make this a better way to solve problems than current ways?
@@ -43,3 +44,6 @@ Is it not a process of thought that cannot be externalized?
 Does "the best method for problem solving" apply to all of my problems?
 How can I participate in the process?
 How can I access the archives?
+Where do you plan on starting from, to develop the best method for problem solving?
+I'd ask your end goal, but its stated, so then i am going to ask how you plan on distubuting this information. Mobile apps, computer website?
+What problems exactly?
