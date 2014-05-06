@@ -1,1 +1,12 @@
+Copyright 2014 Zachary Hebert
+This file is part of Methodocracy.org.
+
+    Methodocracy.org is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+    Methodocracy.org is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along with Methodocracy.org.  If not, see <http://www.gnu.org/licenses/>.
+	
+    Methodocracy TM is a trademark of Methodocracy.org (C)2014, and all rights to that TM are reserved. Any modified versions are required to be marked as changed, so that their problems will not be attributed erroneously to authors of previous versions. And the name Methodocracy TM should be clearly labeled as the source of your work as long as any part of this work remains intact in part or in whole.
+
 My team is setting up a <i>scientific</i> <i>charity</i>, which is going to run the development of a <i>website</i> and a <i>knowledge base</i>. These <i>free</i> products are going to facilitate the <b>ACT</b> of problem-solving, for users to apply in any subject they wish. Arguments in this knowledge base attempt to either <i>disprove</i> or <i>support</i> other arguments, and certain kinds of arguments hold more merit than others. Other websites like Wikipedia simply present information on already known topics, whereas we focus on figuring out better ways of organizing society. People who have something to say about a problem in the world, but are not in the professional debate about the issue, will be able to have a more effective voice. Together, we can be a force for <i>effective</i> change.
