@@ -10,33 +10,28 @@ This is part of the Methodocracy Documentation.
 	
 	Methodocracy TM is a trademark of Methodocracy.org (C)2014, and all rights to that TM are reserved. Any modified versions are required to be marked as changed, so that their problems will not be attributed erroneously to authors of previous versions. And the name Methodocracy TM should be clearly labeled as the source of your work as long as any part of this work remains intact in part or in whole.
 
+-How does it work? What defines merit? How is methodocracy going to enforce the usage of the scientific method in its discussions?
+-What is the scientific method?
+-What problems are you trying to solve? What do you want to stop, or make better? What are some examples of problems that can be worked on using Methodocracy? How can online discussions help solve the world's problems?
+-What's wrong with the scientific method as it exists today? Which improvements are you making that make this a better way to solve problems than current ways?
+-Is there a best method for problem solving, especially a process that can be applied to all areas?
+-Who will this charity be helping?
+-Are opinions eradicated in this system?
+-What if I decide the ideology I want is that "Girls have to hang out with their boobs out unles they're gross, also the goverment has to give up free pizza daily"?
+-How are you going to fund it?
+-How can my company get involved? What donated services would make your charity run more smoothly/efficiently/effectively?
+
 How do you intend to accomplish your mission?
-How will it work?
 How will you execute this ?
 what is the project
-What's wrong with the scientific method as it exists today?
-What are some examples of problems that can be worked on using Methodocracy?
-Which improvements are you making that make this a better way to solve problems than current ways?
-What are the problems being solved?
-How can my company get involved?
-What donated services would make your charity run more smoothly/efficiently/effectively?
-Who will this charity be helping?
-What do you want to stop, or make better?
-Anonymity? How much? What are you going to do?
-What problem are you trying to solve?
-Is there a best method for problem solving, especially a process that can be applied to all areas?
-How are you going to fund it?
 Will this system be automated?
 What is the argument?
 Who makes the first entries?
-What defines merit?
-What if I decide the ideology I want is that "Girls have to hang out with their boobs out unles they're gross, also the goverment has to give up free pizza daily"?
 How can you accomplish this without complete world domination?
-Are opinions eradicated in this system?
 will it be a website? app?
 To digitalize the scientific method? what it is about?
-How is methodocracy going to enforce the usage of the scientific method in its discussions?
-How can online discussions help solve the world's problems?
+Anonymity? How much? What are you going to do?
+
 What should it be used for?
 What IS the method?
 Can I see an example of how it works?
@@ -90,4 +85,4 @@ is there a way i can contact you if any more come to mind?
 How do we start getting our ideas together?
 Where do you start? Where do you go from the home page?
 How will you deal with spam and trolls?
-What is the scientific method?
+
