@@ -71,4 +71,4 @@ There can be many purposes of this structure, we don't want to limit its uses. I
 
 * Interesting topic: How do we prevent AI from using website's data against us? With quantum computers now being sold, optimization problems are exponentially easier to solve. This means that AI is becoming exponentially more powerful in terms of computing power. It's a matter of time before someone creates AI that creatively learns, and/or interfaces with physical objects that can cause harm, and/or self replicates, etc.
 
-please delete this line
+Note: change on 5/8/14: use "argument" instead of "entry"
