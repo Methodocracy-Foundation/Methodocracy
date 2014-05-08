@@ -10,10 +10,10 @@ This is part of the Methodocracy Documentation.
 	
 	Methodocracy TM is a trademark of Methodocracy.org (C)2014, and all rights to that TM are reserved. Any modified versions are required to be marked as changed, so that their problems will not be attributed erroneously to authors of previous versions. And the name Methodocracy TM should be clearly labeled as the source of your work as long as any part of this work remains intact in part or in whole.
 
-My team is setting up a <i>scientific</i> <i>charity</i> to run the development of a <i>website</i> and a <i>knowledge base</i>. These <i>free</i> products facilitate the <b>ACT</b> of problem-solving, for users to apply in any subject they wish. People who have something to say about a problem in the world, but are not in the professional debate about the issue, will be able to have a more effective voice. Together, we can be a force for <i>effective</i> change.
+We are setting up a <i>scientific</i> <i>charity</i> to run the development of a <i>website</i> and a <i>knowledge base</i>. These <i>free</i> products facilitate the <b>ACT</b> of problem-solving, for users to apply in any subject they wish. People who have something to say about a problem in the world, but are not in the professional debate about the issue, will be able to have a more effective voice. Together, we can be a force for <i>effective</i> change.
 
 ========
-My team is setting up a scientific charity to run the development of a website and a knowledge base. These free products facilitate the act of problem-solving, for users to apply in any subject they wish. People who have something to say about a problem in the world, but are not in the professional debate about the issue, will be able to have a more effective voice. Together, we can be a force for effective change.
+We are setting up a scientific charity to run the development of a website and a knowledge base. These free products facilitate the act of problem-solving, for users to apply in any subject they wish. People who have something to say about a problem in the world, but are not in the professional debate about the issue, will be able to have a more effective voice. Together, we can be a force for effective change.
 ========
 
 If you have their attention, start here, then flow:
