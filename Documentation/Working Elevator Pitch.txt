@@ -12,10 +12,9 @@ This is part of the Methodocracy Documentation.
 
 My team is setting up a <i>scientific</i> <i>charity</i> to run the development of a <i>website</i> and a <i>knowledge base</i>. These <i>free</i> products facilitate the <b>ACT</b> of problem-solving, for users to apply in any subject they wish. People who have something to say about a problem in the world, but are not in the professional debate about the issue, will be able to have a more effective voice. Together, we can be a force for <i>effective</i> change.
 
-Arguments in this knowledge base attempt to either <i>disprove</i> or <i>support</i> other arguments, and certain kinds of arguments hold more merit than others. Other websites like Wikipedia simply present information on already known topics, whereas we focus on figuring out better ways of organizing society.
-
 ========
 My team is setting up a scientific charity to run the development of a website and a knowledge base. These free products facilitate the act of problem-solving, for users to apply in any subject they wish. People who have something to say about a problem in the world, but are not in the professional debate about the issue, will be able to have a more effective voice. Together, we can be a force for effective change.
 ========
 
-Arguments in this knowledge base attempt to either disprove or support other arguments, and certain kinds of arguments hold more merit than others. Other websites like Wikipedia simply present information on already known topics, whereas we focus on figuring out better ways of organizing society.
+If you have their attention, start here, then flow:
+Arguments in this knowledge base attempt to either disprove or support other arguments, and certain kinds of arguments hold more merit than others.
