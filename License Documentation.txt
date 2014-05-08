@@ -9,7 +9,16 @@ This is part of the Methodocracy Documentation.
     Free Documentation License".
 	
 	Methodocracy TM is a trademark of Methodocracy.org (C)2014, and all rights to that TM are reserved. Any modified versions are required to be marked as changed, so that their problems will not be attributed erroneously to authors of previous versions. And the name Methodocracy TM should be clearly labeled as the source of your work as long as any part of this work remains intact in part or in whole.
-
-To continually improve the best methods for problem-solving, starting by digitizing the scientific method into a knowledge base accessed and developed by users through a website. To apply this process to more subjects in which it is not being applied. To ensure that everyone can participate in the method's debate free of charge, access the version history of the knowledge base, improve the method's design using the method itself, and contribute to the open-sourced development of the code.
-
-To facilitate citizen science, because the cooperative potential of uncredentialed thinkers is underused, and the subjects in which the scientific method is not being applied in could benefit from the scientific method.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+Copy the above into each documentation file. For full licence, see GNU Free Documentation License.txt
