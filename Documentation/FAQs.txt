@@ -10,79 +10,13 @@ This is part of the Methodocracy Documentation.
 	
 	Methodocracy TM is a trademark of Methodocracy.org (C)2014, and all rights to that TM are reserved. Any modified versions are required to be marked as changed, so that their problems will not be attributed erroneously to authors of previous versions. And the name Methodocracy TM should be clearly labeled as the source of your work as long as any part of this work remains intact in part or in whole.
 
--How does it work? What defines merit? How is methodocracy going to enforce the usage of the scientific method in its discussions?
+-How does it work? What defines merit? How is methodocracy going to enforce the usage of the scientific method in its discussions? How reliable is the info? How do we start getting our ideas together?
 -What is the scientific method?
--What problems are you trying to solve? What do you want to stop, or make better? What are some examples of problems that can be worked on using Methodocracy? How can online discussions help solve the world's problems?
+-What problems are you trying to solve? What do you want to stop, or make better? What are some examples of problems that can be worked on using Methodocracy? How can online discussions help solve the world's problems? Why are you doing this? So what is it you hope to achieve? Who will this charity be helping?
 -What's wrong with the scientific method as it exists today? Which improvements are you making that make this a better way to solve problems than current ways?
--Is there a best method for problem solving, especially a process that can be applied to all areas?
--Who will this charity be helping?
+-Is there a best method for problem solving, especially a process that can be applied to all areas? Does "the best method for problem solving" apply to all of my problems?
 -Are opinions eradicated in this system?
--What if I decide the ideology I want is that "Girls have to hang out with their boobs out unles they're gross, also the goverment has to give up free pizza daily"?
--How are you going to fund it?
--How can my company get involved? What donated services would make your charity run more smoothly/efficiently/effectively?
-
-How do you intend to accomplish your mission?
-How will you execute this ?
-what is the project
-Will this system be automated?
-What is the argument?
-Who makes the first entries?
-How can you accomplish this without complete world domination?
-will it be a website? app?
-To digitalize the scientific method? what it is about?
-Anonymity? How much? What are you going to do?
-
-What should it be used for?
-What IS the method?
-Can I see an example of how it works?
-And when you say problem solving. Do you mean any kind of problem I can think of?
-For example: what is the best course of action to take when dealing with a unknown?
-Is this going to be like a wiki ?
-How would the scientific method be implemented into a digital form?
-In what ways will the scientific method help solve problems?
-Is the outcome indeed correct?
-What is the scientific method?
-How will this benefit the world?
-Is it gonna be some sort of algorithm?
-what catigories you would have?
-So will they be similar to forums?
-Do you think the scientific method can be accessed through the internet?
-Is it not a process of thought that cannot be externalized? 
-Does "the best method for problem solving" apply to all of my problems?
-How can I participate in the process?
-How can I access the archives?
-Where do you plan on starting from, to develop the best method for problem solving?
-I'd ask your end goal, but its stated, so then i am going to ask how you plan on distubuting this information. Mobile apps, computer website?
-What problems exactly?
-is this a wiki for activism? 
-Is this an actual program which has goals?
-What are your general ideas behind this? 
-I just genuinely don't know what your objective is behind this.
-Is your head in the right place?
-What is your vision?
-What is your computer program?
-How long have you been running it?
-The non-profit is a website database?
-What does the company do?
-How can users participate?
-Who's behind this?
-Why are you doing this?
-What are your motivations?
-What can I gain from interacting with your company?
-what is the pratical applications of this?
-in simple terms is this basically a smarter search engine, but more like a dictionary?
-but if someone was like hey whats that websire about what would you say? simplified, descride what it is
-	-It's a knowledge base.
-well what type of information does this site have?
-How reliable is the info?
-whats the websitr url?
-Who is everyone?
-How can you impove on a method design using the very method design?
-Do you know that it's ironically not user friendly?
-So what is it you hope to achieve?
-creating a database about what kind of knowledge?
-is there a way i can contact you if any more come to mind?
-How do we start getting our ideas together?
-Where do you start? Where do you go from the home page?
-How will you deal with spam and trolls?
-
+-What if I decide the ideology I want is that "Girls have to hang out with their boobs out unles they're gross, also the goverment has to give up free pizza daily"? How will you deal with spam and trolls?
+-How can you improve on a method design using the very method design?
+-How are you going to fund it? Is your head in the right place? What are your motivations? What does the company do?
+-How can I participate in the process? How can I access the archives? How can my company get involved? What donated services would make your charity run more smoothly/efficiently/effectively? What can I gain from interacting with your company? How do I contact you?
