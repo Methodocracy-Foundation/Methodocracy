@@ -18,5 +18,6 @@ This is part of the Methodocracy Documentation.
 -Are opinions eradicated in this system?
 -What if I decide the ideology I want is that "Girls have to hang out with their boobs out unles they're gross, also the goverment has to give up free pizza daily"? How will you deal with spam and trolls?
 -How can you improve on a method design using the very method design?
+-What are the dangers?
 -How are you going to fund it? Is your head in the right place? What are your motivations? What does the company do?
--How can I participate in the process? How can I access the archives? How can my company get involved? What donated services would make your charity run more smoothly/efficiently/effectively? What can I gain from interacting with your company? How do I contact you?
+-Who can work on this project? How can I participate in the process? How can I access the archives? How can my company get involved? What donated services would make your charity run more smoothly/efficiently/effectively? What can I gain from interacting with your company? How do I contact you?
