@@ -13,7 +13,7 @@ This is part of the Methodocracy Documentation.
 We are setting up a <i>scientific</i> <i>charity</i> to run the development of a <i>website</i> and a <i>knowledge base</i>. These <i>free</i> products facilitate the <b>ACT</b> of problem-solving, for users to apply in any subject they wish. People who have something to say about a problem in the world, but are not in the professional debate about the issue, will be able to have a more effective voice. Together, we can be a force for <i>effective</i> change.
 
 ========
-We are setting up a scientific charity to run the development of a website and a knowledge base. These free products facilitate the act of problem-solving, for users to apply in any subject they wish. People who have something to say about a problem in the world, but are not in the professional debate about the issue, will be able to have a more effective voice. Together, we can be a force for effective change.
+We are setting up a scientific nonprofit organization to run the development of a website and a knowledge base. These free products facilitate the act of problem-solving, for users to apply in any subject they wish. People who have something to say about a problem in the world, but who may not be in the professional debate about the issue, will be able to have a more effective voice. Together, we can be a force for effective change.
 ========
 
 If you have their attention, start here, then flow:
