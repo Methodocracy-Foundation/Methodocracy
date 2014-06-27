@@ -1,6 +1,6 @@
 Methodocracy.org
 
-We are setting up a scientific and educational nonprofit organization to run the development of a website and a knowledge base. These free products facilitate the act of problem-solving, for users to apply in any subject they wish. People who have something to say about a problem in the world, but who may not be involved in the professional debate about the issue, will have a more effective voice. Together, we can be a force for effective change.
+We are setting up a scientific and educational nonprofit organization to run the development of a website and a knowledge base. These free products facilitate the act of problem-solving, for users to apply in any topic they wish. People who have something to say about a problem in the world, but who may not be involved in the professional debate about the issue, will have a more effective voice. Together, we can be a force for effective change.
 
 Mission Statement:
 
