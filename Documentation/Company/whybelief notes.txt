@@ -1,3 +1,15 @@
+Copyright 2014 Zachary Hebert
+This is part of the Methodocracy Documentation.
+
+    Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.3
+    or any later version published by the Free Software Foundation;
+    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+    A copy of the license is included in the section entitled "GNU
+    Free Documentation License".
+	
+	Methodocracy TM is a trademark of Methodocracy.org (C)2014, and all rights to that TM are reserved. Any modified versions are required to be marked as changed, so that their problems will not be attributed erroneously to authors of previous versions. And the name Methodocracy TM should be clearly labeled as the source of your work as long as any part of this work remains intact in part or in whole.
+
 Beliefs can go in value statement
 vision statement could be how you want methodocracy to improve democracy, solve many stagnant problems, increase chances of survival and quality of life for the most amount of individuals for the longest duration, organize society more, make everything run more efficiently, prevent existential risks, make a place where all thinkers and problem-solvers go, central and more organized scientific publication
 take care to prevent all dangers in core values
