@@ -78,6 +78,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Arguments.h" />
     <ClInclude Include="core.h" />
     <ClInclude Include="winlib.h" />
   </ItemGroup>
