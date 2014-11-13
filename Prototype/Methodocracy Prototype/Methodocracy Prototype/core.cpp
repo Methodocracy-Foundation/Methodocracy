@@ -10,11 +10,7 @@ bool coreLoop(){
 	while (loopQuit == 'n'){
 		//Start of the loop itteration.					Start of the loop itteration.					Start of the loop itteration.
 
-		//Testing gets and sets on argument class
-		argument a4525;
-		a4525.getTextBody();
-		a4525.setTextBody("Hi there@!");
-		a4525.getTextBody();
+
 
 		/*End of the loop itteration.					End of the loop itteration.						End of the loop itteration.
 		Put normal functions above this comment. Everything below this comment is exit handling.*/
