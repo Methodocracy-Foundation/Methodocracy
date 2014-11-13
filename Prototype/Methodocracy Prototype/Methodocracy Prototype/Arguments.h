@@ -11,15 +11,18 @@ using namespace std;
 class argument{
 	string textBody;
 public:
+	//Constructors and deconstructors
+	argument();
+	~argument();
 	//Gets
-	void getTextBody();
+	string getTextBody();
 	//Sets
 	bool setTextBody(string);
 };
 
 //Class: argument, get text body
-void argument::getTextBody(){
-	cout << textBody << endl;
+string argument::getTextBody(){
+	return textBody;
 }
 
 //Class: argument, set text body with a string
@@ -31,16 +34,14 @@ bool argument::setTextBody(string text){
 
 
 
-//Opinion argument class
-class opinion : public argument{};
-
-
-
 //Controlled experiment argument class
 class ctrlExp : public argument{
-	enum{ noCorrelation, negativeCorrelation, positiveCorrelation };
+	// 0 = noCorrelation, 1 = negativeCorrelation, 2 = positiveCorrelation
 	int correlation;
 public:
+	//Constructors and deconstructors
+	ctrlExp();
+	~ctrlExp();
 	//Gets
 	int getCorr();
 	//Sets
@@ -58,5 +59,15 @@ bool ctrlExp::setCorr(int num){
 
 	return 0;
 }
+
+
+
+//Opinion argument class
+class opinion : public argument{
+public:
+	//Constructors and deconstructors
+	opinion();
+	~opinion();
+};
 
 #endif
