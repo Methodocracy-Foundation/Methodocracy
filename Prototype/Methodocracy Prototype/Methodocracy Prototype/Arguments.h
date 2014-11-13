@@ -5,20 +5,25 @@
 
 using namespace std;
 
-
-
 //Argument class
 class argument{
+protected:
 	string textBody;
 public:
 	//Constructors and deconstructors
-	argument();
-	~argument();
+	argument(){};
+	argument(string);
+	~argument(){};
 	//Gets
 	string getTextBody();
 	//Sets
 	bool setTextBody(string);
 };
+
+//Class: argument, constructor with string for text body
+argument::argument(string text){
+	textBody = text;
+}
 
 //Class: argument, get text body
 string argument::getTextBody(){
@@ -37,16 +42,22 @@ bool argument::setTextBody(string text){
 //Controlled experiment argument class
 class ctrlExp : public argument{
 	// 0 = noCorrelation, 1 = negativeCorrelation, 2 = positiveCorrelation
-	int correlation;
+	int correlation = 0;
 public:
 	//Constructors and deconstructors
-	ctrlExp();
-	~ctrlExp();
+	ctrlExp(){};
+	ctrlExp(string);
+	~ctrlExp(){};
 	//Gets
 	int getCorr();
 	//Sets
 	bool setCorr(int);
 };
+
+//Class: controlled experiment argument, constructor with string for text body
+ctrlExp::ctrlExp(string text){
+	textBody = text;
+}
 
 //Class: controlled experiment argument, get correlation
 int ctrlExp::getCorr(){
@@ -66,8 +77,14 @@ bool ctrlExp::setCorr(int num){
 class opinion : public argument{
 public:
 	//Constructors and deconstructors
-	opinion();
-	~opinion();
+	opinion(){};
+	opinion(string);
+	~opinion(){};
 };
+
+//Class: opinion argument, constructor with string for text body
+opinion::opinion(string text){
+	textBody = text;
+}
 
 #endif
