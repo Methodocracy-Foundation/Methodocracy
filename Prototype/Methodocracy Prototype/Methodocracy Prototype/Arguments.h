@@ -5,24 +5,54 @@
 
 using namespace std;
 
+//Todo: change ctrlExp(string) to (string, string) and same for opinion
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+///
+//
+//
+//
+//
+///
+//
+
 //Argument class
 class argument{
 protected:
+	string textTitle;
 	string textBody;
 public:
 	//Constructors and deconstructors
 	argument(){};
-	argument(string);
+	argument(string,string);
 	~argument(){};
 	//Gets
+	string getTextTitle();
 	string getTextBody();
 	//Sets
+	bool setTextTitle(string);
 	bool setTextBody(string);
 };
 
-//Class: argument, constructor with string for text body
-argument::argument(string text){
-	textBody = text;
+//Class: argument, constructor with string for text body and text title
+argument::argument(string title,string body){
+	textTitle = title;
+	textBody = body;
+}
+
+//Class: argument, get text title
+string argument::getTextTitle(){
+	return textTitle;
 }
 
 //Class: argument, get text body
@@ -30,9 +60,16 @@ string argument::getTextBody(){
 	return textBody;
 }
 
+//Class: argument, set text title with a string
+bool argument::setTextTitle(string title){
+	textTitle = title;
+
+	return 0;
+}
+
 //Class: argument, set text body with a string
-bool argument::setTextBody(string text){
-	textBody = text;
+bool argument::setTextBody(string body){
+	textBody = body;
 
 	return 0;
 }
