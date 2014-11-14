@@ -5,26 +5,7 @@
 
 using namespace std;
 
-//Todo: change ctrlExp(string) to (string, string) and same for opinion
-//
-//
-//
-//
-//
-//
 
-
-
-
-
-
-///
-//
-//
-//
-//
-///
-//
 
 //Argument class
 class argument{
@@ -83,7 +64,7 @@ class ctrlExp : public argument{
 public:
 	//Constructors and deconstructors
 	ctrlExp(){};
-	ctrlExp(string);
+	ctrlExp(string,string);
 	~ctrlExp(){};
 	//Gets
 	int getCorr();
@@ -92,8 +73,9 @@ public:
 };
 
 //Class: controlled experiment argument, constructor with string for text body
-ctrlExp::ctrlExp(string text){
-	textBody = text;
+ctrlExp::ctrlExp(string title, string body){
+	textTitle = title;
+	textBody = body;
 }
 
 //Class: controlled experiment argument, get correlation
@@ -115,13 +97,14 @@ class opinion : public argument{
 public:
 	//Constructors and deconstructors
 	opinion(){};
-	opinion(string);
+	opinion(string,string);
 	~opinion(){};
 };
 
 //Class: opinion argument, constructor with string for text body
-opinion::opinion(string text){
-	textBody = text;
+opinion::opinion(string title, string body){
+	textTitle = title;
+	textBody = body;
 }
 
 #endif
