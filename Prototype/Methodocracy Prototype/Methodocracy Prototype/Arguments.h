@@ -8,15 +8,15 @@ using namespace std;
 
 
 //Argument class
-class argument{
+class Argument{
 protected:
 	string textTitle;
 	string textBody;
 public:
 	//Constructors and deconstructors
-	argument(){};
-	argument(string,string);
-	~argument(){};
+	Argument(){};
+	Argument(string,string);
+	~Argument(){};
 	//Gets
 	string getTextTitle();
 	string getTextBody();
@@ -26,30 +26,30 @@ public:
 };
 
 //Class: argument, constructor with string for text body and text title
-argument::argument(string title,string body){
+Argument::Argument(string title,string body){
 	textTitle = title;
 	textBody = body;
 }
 
 //Class: argument, get text title
-string argument::getTextTitle(){
+string Argument::getTextTitle(){
 	return textTitle;
 }
 
 //Class: argument, get text body
-string argument::getTextBody(){
+string Argument::getTextBody(){
 	return textBody;
 }
 
 //Class: argument, set text title with a string
-bool argument::setTextTitle(string title){
+bool Argument::setTextTitle(string title){
 	textTitle = title;
 
 	return 0;
 }
 
 //Class: argument, set text body with a string
-bool argument::setTextBody(string body){
+bool Argument::setTextBody(string body){
 	textBody = body;
 
 	return 0;
@@ -58,14 +58,14 @@ bool argument::setTextBody(string body){
 
 
 //Controlled experiment argument class
-class ctrlExp : public argument{
+class CtrlExp : public Argument{
 	// 0 = noCorrelation, 1 = negativeCorrelation, 2 = positiveCorrelation
 	int correlation = 0;
 public:
 	//Constructors and deconstructors
-	ctrlExp(){};
-	ctrlExp(string,string);
-	~ctrlExp(){};
+	CtrlExp(){};
+	CtrlExp(string,string);
+	~CtrlExp(){};
 	//Gets
 	int getCorr();
 	//Sets
@@ -73,18 +73,18 @@ public:
 };
 
 //Class: controlled experiment argument, constructor with string for text body
-ctrlExp::ctrlExp(string title, string body){
+CtrlExp::CtrlExp(string title, string body){
 	textTitle = title;
 	textBody = body;
 }
 
 //Class: controlled experiment argument, get correlation
-int ctrlExp::getCorr(){
+int CtrlExp::getCorr(){
 	return correlation;
 }
 
 //Class: controlled experiment argument, set correlation
-bool ctrlExp::setCorr(int num){
+bool CtrlExp::setCorr(int num){
 	correlation = num;
 
 	return 0;
@@ -93,16 +93,16 @@ bool ctrlExp::setCorr(int num){
 
 
 //Opinion argument class
-class opinion : public argument{
+class Opinion : public Argument{
 public:
 	//Constructors and deconstructors
-	opinion(){};
-	opinion(string,string);
-	~opinion(){};
+	Opinion(){};
+	Opinion(string,string);
+	~Opinion(){};
 };
 
 //Class: opinion argument, constructor with string for text body
-opinion::opinion(string title, string body){
+Opinion::Opinion(string title, string body){
 	textTitle = title;
 	textBody = body;
 }
