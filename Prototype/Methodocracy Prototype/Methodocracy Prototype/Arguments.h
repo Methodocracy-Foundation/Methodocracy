@@ -7,6 +7,15 @@ using namespace std;
 
 
 
+//Database class
+class Database{
+	
+public:
+
+};
+
+
+
 //Argument class
 class Argument{
 protected:
