@@ -31,12 +31,19 @@ unsigned long long int NewIdCounter::newId(){
 
 //Database class
 class Database{
-	
+	long int *masterTable[9999999];
 public:
 	//Constructors and deconstructors
 	Database();
-	~Database();
-};
+	~Database(){};
+} database;
+
+//Class: database, constructor initiliaze table
+Database::Database(){
+	for (int i = 0; i <= 9999999; i++){
+		masterTable[i] = 0;
+	}
+}
 
 
 

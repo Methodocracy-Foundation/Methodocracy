@@ -10,19 +10,7 @@ bool coreLoop(){
 	while (loopQuit == 'n'){
 		//Start of the loop itteration.					Start of the loop itteration.					Start of the loop itteration.
 
-		cout << newIdCounter.id() << endl;
 		
-		Argument argument;
-
-		cout << newIdCounter.id() << endl;
-
-		CtrlExp ctrlExp;
-
-		cout << newIdCounter.id() << endl;
-
-		Opinion opinion;
-
-		cout << newIdCounter.id() << endl;
 
 		/*End of the loop itteration.					End of the loop itteration.						End of the loop itteration.
 		Put normal functions above this comment. Everything below this comment is exit handling.*/
