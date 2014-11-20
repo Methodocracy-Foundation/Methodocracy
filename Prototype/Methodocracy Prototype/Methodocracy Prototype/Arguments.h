@@ -28,6 +28,7 @@ unsigned long long int NewIdCounter::newId(){
 }
 
 
+
 //Database class
 class Database{
 	
@@ -102,7 +103,7 @@ class CtrlExp : public Argument{
 	int correlation = 0;
 public:
 	//Constructors and deconstructors
-	CtrlExp();
+	CtrlExp(){};
 	CtrlExp(string,string);
 	~CtrlExp(){};
 	//Gets
@@ -110,11 +111,6 @@ public:
 	//Sets
 	bool setCorr(int);
 };
-
-//Class: controlled experiment argument, constructor
-CtrlExp::CtrlExp(){
-	id = newIdCounter.newId();
-}
 
 //Class: controlled experiment argument, constructor with string for text body
 CtrlExp::CtrlExp(string title, string body){
@@ -141,15 +137,10 @@ bool CtrlExp::setCorr(int num){
 class Opinion : public Argument{
 public:
 	//Constructors and deconstructors
-	Opinion();
+	Opinion(){};
 	Opinion(string,string);
 	~Opinion(){};
 };
-
-//Class: opinion argument, constructor
-Opinion::Opinion(){
-	id = newIdCounter.newId();
-}
 
 //Class: opinion argument, constructor with string for text body
 Opinion::Opinion(string title, string body){
