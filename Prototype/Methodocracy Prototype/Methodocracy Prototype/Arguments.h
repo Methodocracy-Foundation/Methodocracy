@@ -47,6 +47,24 @@ Database::Database(){
 
 
 
+//Database row
+class DatabaseRow{
+	long int *table[4];
+public:
+	//Constructors and deconstructors
+	DatabaseRow();
+	~DatabaseRow(){};
+};
+
+//Class: database row, constructor and initialize row
+DatabaseRow::DatabaseRow(){
+	for (int i = 0; i <= 4; i++){
+		table[i] = 0;
+	}
+}
+
+
+
 //Argument class
 class Argument{
 protected:
