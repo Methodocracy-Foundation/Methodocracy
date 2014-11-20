@@ -16,9 +16,6 @@ public:
 	~NewIdCounter(){};
 	//Gets
 	unsigned long long int newId();
-	// ! get without ++ for testing !
-	unsigned long long int id(){ return counter; };
-	// ! end testing				!
 } newIdCounter;
 
 //Class: new id counter, get new id and increase counter
@@ -31,7 +28,7 @@ unsigned long long int NewIdCounter::newId(){
 
 //Database class
 class Database{
-	long int *masterTable[9999999];
+	long int masterTable[999999][4];
 public:
 	//Constructors and deconstructors
 	Database();
@@ -40,47 +37,11 @@ public:
 
 //Class: database, constructor initiliaze table
 Database::Database(){
-	for (int i = 0; i <= 9999999; i++){
-		masterTable[i] = 0;
+	for (int i = 0; i < 999999; i++){
+		for (int j = 0; j < 4; j++){
+			masterTable[i][j] = 0;
+		}
 	}
-}
-
-
-
-//Database row
-class DatabaseRow{
-	long int *table[4];
-public:
-	//Constructors and deconstructors
-	DatabaseRow();
-	~DatabaseRow(){};
-};
-
-//Class: database row, constructor and initialize row
-DatabaseRow::DatabaseRow(){
-	for (int i = 0; i <= 4; i++){
-		table[i] = 0;
-	}
-}
-
-
-
-//Database save
-class DatabaseSave{
-
-public:
-	//Constructors and deconstructors
-	DatabaseSave(){};
-	~DatabaseSave(){};
-	//Save an argument into the daatabase
-	void save(long int);
-} databaseSave;
-
-//Class: database save, save an argument into the database
-void DatabaseSave::save(long int ref){
-
-	//This is the real grunt work
-
 }
 
 
