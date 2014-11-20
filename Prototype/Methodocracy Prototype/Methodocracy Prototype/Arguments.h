@@ -33,6 +33,8 @@ public:
 	//Constructors and deconstructors
 	Database();
 	~Database(){};
+	//Find vertical position where id or first 0 is
+	long int searchId(long int);
 } database;
 
 //Class: database, constructor initiliaze table
@@ -40,6 +42,15 @@ Database::Database(){
 	for (int i = 0; i < 999999; i++){
 		for (int j = 0; j < 4; j++){
 			masterTable[i][j] = 0;
+		}
+	}
+}
+
+//Class: database, find vertical position where id or first 0 is
+long int Database::searchId(long int id){
+	for (int i = 0; i < 999999; i++){
+		if (masterTable[i][0] == id){
+			return i;
 		}
 	}
 }
