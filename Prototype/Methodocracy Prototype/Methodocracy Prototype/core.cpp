@@ -10,7 +10,10 @@ bool coreLoop(){
 	while (loopQuit == 'n'){
 		//Start of the loop itteration.					Start of the loop itteration.					Start of the loop itteration.
 
-		
+		CtrlExp newEntry("Zach's Title", "I think you stink and I rule. I should be king.");
+		newEntry.setCorr(2);
+
+		databaseSave.save(&newEntry);
 
 		/*End of the loop itteration.					End of the loop itteration.						End of the loop itteration.
 		Put normal functions above this comment. Everything below this comment is exit handling.*/

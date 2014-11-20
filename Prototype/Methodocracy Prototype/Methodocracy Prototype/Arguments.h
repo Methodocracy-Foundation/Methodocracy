@@ -65,6 +65,26 @@ DatabaseRow::DatabaseRow(){
 
 
 
+//Database save
+class DatabaseSave{
+
+public:
+	//Constructors and deconstructors
+	DatabaseSave(){};
+	~DatabaseSave(){};
+	//Save an argument into the daatabase
+	void save(long int);
+} databaseSave;
+
+//Class: database save, save an argument into the database
+void DatabaseSave::save(long int ref){
+
+	//This is the real grunt work
+
+}
+
+
+
 //Argument class
 class Argument{
 protected:
