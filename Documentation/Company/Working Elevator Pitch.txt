@@ -10,7 +10,7 @@ This is part of the Methodocracy Documentation.
 	
 	Methodocracy TM is a trademark of Methodocracy.org (C)2014, and all rights to that TM are reserved. Any modified versions are required to be marked as changed, so that their problems will not be attributed erroneously to authors of previous versions. And the name Methodocracy TM should be clearly labeled as the source of your work as long as any part of this work remains intact in part or in whole.
 
-I'm setting up a nonprofit to run the development of a website, similar to how Wikimedia runs Wikipedia. This free website facilitates the act of problem-solving, where evidence-based arguments hold more weight than arguments like opinions.
+We're setting up a nonprofit to run the development of a website, similar to how Wikimedia runs Wikipedia. This free website facilitates the act of problem-solving, where evidence-based arguments hold more weight than arguments like opinions.
 
 
 
