@@ -10,4 +10,4 @@ This is part of the Methodocracy Documentation.
 	
 	Methodocracy TM is a trademark of Methodocracy.org (C)2014, and all rights to that TM are reserved. Any modified versions are required to be marked as changed, so that their problems will not be attributed erroneously to authors of previous versions. And the name Methodocracy TM should be clearly labeled as the source of your work as long as any part of this work remains intact in part or in whole.
 
-To facilitate citizen science, because the cooperative potential of all thinkers is underutilized. To continually improve the best methods for problem-solving, starting by digitizing the scientific method into a knowledge base accessed and developed by users through a website. To apply this process to topics that currently are not scrutinized using the scientific method.
+To facilitate citizen science, because the cooperative potential of all thinkers is underutilized. To continually improve the best methods for problem-solving, starting by digitizing the scientific method into a website. To apply this process to topics that currently are not scrutinized using the scientific method.
