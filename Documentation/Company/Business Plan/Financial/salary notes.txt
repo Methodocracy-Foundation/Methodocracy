@@ -1,0 +1,14 @@
+Average nonprofit salary: $49,000 simply hired
+Average normal salary: $37,000 simply hired
+
+Average Web Developer salary: $70,000 simply hired
+Average nonprofit CEO salary: $94,000 simply hired
+
+Average Web Developer salary: $53,675 payscale
+Average nonprofit CEO salary: $101,019 payscale
+
+Average Web Developer salary: $87,000 indeed
+Average nonprofit CEO salary: $61,000 indeed
+
+Decision Web Developer: $70,000
+Decision CEO: $60,000
