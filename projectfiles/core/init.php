@@ -3,9 +3,9 @@ session_start();
 
 $GLOBALS['config'] = array(
 	'mysql' => array(
-		'host' => '127.0.0.1',
-		'username' => 'root',
-		'password' => '',
+		'host' => 'methodocracyDB.db.11904691.hostedresource.com',
+		'username' => 'methodocracyDB',
+		'password' => 'Dfh#2dh@jdja4382DHf',
 		'db' => 'methodocracyDB'
 	),
 	'remember' => array(
