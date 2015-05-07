@@ -189,7 +189,7 @@ if(Session::exists('home')) {
 <?php
 if($user->isLoggedIn()) {
 	?>
-	
+	<article>
 	<p>Hello <a href="profile.php?user=<?php echo escape($user->data()->username); ?>"><?php echo escape($user->data()->username); ?></a>!</p>
 	
 	<ul>
@@ -203,6 +203,7 @@ if($user->isLoggedIn()) {
 	if($user->hasPermission('admin')) {
 	?>
 		<p>You're also an administrator!</p>
+	</article>
 	<?php
 	}
 
