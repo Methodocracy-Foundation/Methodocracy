@@ -1,3 +1,8 @@
+<?php
+require 'core/init.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
 <!--
 	Copyright 2014-2015 Zachary Hebert, Patrick Gillespie
 	This file is part of Methodocracy.org.
@@ -160,9 +165,6 @@
     }
         
 	</style>
-<?php
-require 'core/init.php';
-?>
 </head>
 <body>
 <div id="blackBar">
@@ -204,3 +206,4 @@ require 'core/init.php';
 </form>
 </article>
 </body>
+</html>
