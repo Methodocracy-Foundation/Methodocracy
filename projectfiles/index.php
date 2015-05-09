@@ -1,3 +1,8 @@
+<?php
+require 'core/init.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
 <!--
 	Copyright 2014-2015 Zachary Hebert, Patrick Gillespie
 	This file is part of Methodocracy.org.
@@ -160,9 +165,7 @@
     }
         
 	</style>
-<?php
-require 'core/init.php';
-?>
+
 </head>
 <body>
 <div id="blackBar">
@@ -213,3 +216,4 @@ if($user->isLoggedIn()) {
 	echo '<article>You need to <a href="login.php">log in</a> or <a href="register.php">register</a>!</article>';
 }?>
 </body>
+</html>
