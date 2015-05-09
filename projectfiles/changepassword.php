@@ -1,3 +1,8 @@
+<?php
+require 'core/init.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
 <!--
 	Copyright 2014-2015 Zachary Hebert, Patrick Gillespie
 	This file is part of Methodocracy.org.
@@ -10,10 +15,7 @@
 	
     Methodocracy TM is a trademark of Methodocracy.org (C)2014-2015, and all rights to that TM are reserved. Any modified versions are required to be marked as changed, so that their problems will not be attributed erroneously to authors of previous versions. And the name Methodocracy TM should be clearly labeled as the source of your work as long as any part of this work remains intact in part or in whole.
 -->
-
 <?php
-require 'core/init.php';
-
 $user = new User();
 
 if(!$user->isLoggedIn()) {
@@ -64,7 +66,8 @@ if(Input::exists()) {
 	}
 }
 ?>
-
+<body>
+<article>
 <form action="" method="post">
 	<div class="field">
 		<label for="password_current">Current password:</label>
@@ -84,3 +87,6 @@ if(Input::exists()) {
 	<input type="submit" value="Change">
 	<input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
 </form>
+</article>
+</body>
+</html>

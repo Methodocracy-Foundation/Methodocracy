@@ -1,3 +1,6 @@
+<?php
+require 'core/init.php';
+?>
 <!--
 	Copyright 2014-2015 Zachary Hebert, Patrick Gillespie
 	This file is part of Methodocracy.org.
@@ -10,9 +13,7 @@
 	
     Methodocracy TM is a trademark of Methodocracy.org (C)2014-2015, and all rights to that TM are reserved. Any modified versions are required to be marked as changed, so that their problems will not be attributed erroneously to authors of previous versions. And the name Methodocracy TM should be clearly labeled as the source of your work as long as any part of this work remains intact in part or in whole.
 -->
-
 <?php
-require 'core/init.php';
 
 $user = new User();
 $user->logout();
