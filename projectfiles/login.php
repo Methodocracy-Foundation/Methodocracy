@@ -1,3 +1,8 @@
+<?php
+require 'core/init.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
 <!--
 	Copyright 2014-2015 Zachary Hebert, Patrick Gillespie
 	This file is part of Methodocracy.org.
@@ -161,9 +166,7 @@
     }
         
 	</style>
-	<?php
-	require 'core/init.php';
-	?>
+
 </head>
 <body>
 <div id="blackBar">
@@ -224,3 +227,5 @@ if(Input::exists()) {
 	<input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
 </form>
 </article>
+</body>
+</html>
