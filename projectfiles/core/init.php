@@ -23,3 +23,5 @@ $GLOBALS['config'] = array(
  });
  
  require_once 'functions/sanitize.php';
+ 
+ $newArgument = new NewArgument;

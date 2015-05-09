@@ -180,36 +180,27 @@ require 'core/init.php';
     </div>
 </div>
 </div>
-<?php
-$user = new User();
+<article>
+<form action="" method="post">
+	<div class="field">
+		<label for="title">Title:</label>
+		<textarea name="title" id="title" rows="1" cols="90"></textarea>
+	</div>
 
-if(Session::exists('home')) {
-	echo '<p>', Session::flash('home'), '</p>';
-}
+	<div class="field">
+		<label for="type">Type of Argument:</label>
+		<select name="type" id="type">
+			<option value="opinion">Opinion</option>
+			<option value="question">Question</option>
+		</select>
+	</div>
 
-if($user->isLoggedIn()) {
-	?>
-	<article>
-	<p>Hello <a href="profile.php?user=<?php echo escape($user->data()->username); ?>"><?php echo escape($user->data()->username); ?></a>!</p>
-	
-	<ul>
-		<li><a href="logout.php">Log out</a></li>
-		<li><a href="changepassword.php">Change password</a></li>
-		<li><a href="update.php">Update details</a></li>
-	</ul>
+	<div class="field">
+		<label for="body">Body:</label>
+		<textarea name="body" id="body" rows="30" cols="90"></textarea>
+	</div>
 
-	<?php
-
-	if($user->hasPermission('admin')) {
-	?>
-		<p>You're also an administrator!</p>
-	<?php
-	}
-	?>	
-		<a onclick:<?php $newArgument->argument_id = 0; ?> href="newargument.php">New Argument</a>
-	</article>
-	<?php
-} else {
-	echo '<article>You need to <a href="login.php">log in</a> or <a href="register.php">register</a>!</article>';
-}?>
+	<input type="submit" value="Submit">
+</form>
+</article>
 </body>
