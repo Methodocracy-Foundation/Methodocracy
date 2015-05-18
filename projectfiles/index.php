@@ -1,4 +1,6 @@
 <?php
+session_start();
+$_SESSION['argSelector'] = 0;
 require 'core/init.php';
 ?>
 <!DOCTYPE html>
@@ -209,7 +211,7 @@ if($user->isLoggedIn()) {
 	<?php
 	}
 	?>	
-		<a onclick:<?php $newArgument->argument_id = 0; ?> href="newargument.php">New Argument</a>
+		<a onclick="<?php $_SESSION['argSelector'] = 0; ?>" href="newargument.php">New Argument</a>
 	</article>
 	<?php
 } else {
