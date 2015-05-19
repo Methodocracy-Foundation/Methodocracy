@@ -186,7 +186,35 @@ require 'core/init.php';
 </div>
 <article>
 <?php
-echo $argSelector
+
+if(Input::exists())	{
+
+	$validate = new Validate();
+	$validation = $validate->check($_POST, array(
+		'title' => array(
+			'required' => true,
+			'min' => 2,
+			'max' => 40),
+		'body' => array(
+			'required' => true)
+	));
+
+	if($validation->passed()) {
+		$db = DB::getInstance();
+		$db->insert('arguments', array(
+			'type' => Input::get('type'),
+			'title' => Input::get('title'),
+			'body' => Input::get('body')
+		));
+		Redirect::to('index.php');
+		
+	} else {
+		foreach($validate->errors() as $error) {
+			echo $error, '<br>';
+		}
+	}
+}
+
 ?>
 <form action="" method="post">
 	<div class="field">
@@ -197,8 +225,8 @@ echo $argSelector
 	<div class="field">
 		<label for="type">Type of Argument:</label>
 		<select name="type" id="type">
-			<option value="opinion">Opinion</option>
-			<option value="question">Question</option>
+			<option value="2">Opinion</option>
+			<option value="3">Question</option>
 		</select>
 	</div>
 
