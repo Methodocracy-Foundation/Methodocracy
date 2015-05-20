@@ -1,6 +1,6 @@
 <?php
 session_start();
-$_SESSION['argSelector'] = 0;
+$argSelector = $_SESSION['argSelector'];
 require 'core/init.php';
 ?>
 <!DOCTYPE html>
@@ -167,7 +167,6 @@ require 'core/init.php';
     }
         
 	</style>
-
 </head>
 <body>
 <div id="blackBar">
@@ -185,56 +184,10 @@ require 'core/init.php';
     </div>
 </div>
 </div>
+<article>
 <?php
-$user = new User();
-
-if(Session::exists('home')) {
-	echo '<p>', Session::flash('home'), '</p>';
-}
-
-if($user->isLoggedIn()) {
-	?>
-	<article>
-	<p>Hello <a href="profile.php?user=<?php echo escape($user->data()->username); ?>"><?php echo escape($user->data()->username); ?></a>!</p>
-	
-	<ul>
-		<li><a href="logout.php">Log out</a></li>
-		<li><a href="changepassword.php">Change password</a></li>
-		<li><a href="update.php">Update details</a></li>
-	</ul>
-
-	<?php
-
-	if($user->hasPermission('admin')) {
-	?>
-		<p>You're also an administrator!</p>
-	<?php
-	}
-	?>	
-		<a onclick="<?php $_SESSION['argSelector'] = 0; ?>" href="newargument.php">New Argument</a><br><br>
-		
-		<?php
-		$db = DB::getInstance();
-		$list = 1;
-		$content = array();
-		$db->get('arguments', array(
-						'argument_id', '=', $list));
-		while(improved_var_export($db->results(), true)!='array ()'){
-		$content = explode("'", improved_var_export($db->results(), true));
-		echo '<a onclick="';
-		echo $_SESSION["argSelector"] = $list;
-		echo '" href="viewargument.php">';
-		echo $content[7];
-		echo '</a><br>';
-		$list++;
-		$db->get('arguments', array(
-						'argument_id', '=', $list));
-		}
-		?>
-	</article>
-	<?php
-} else {
-	echo '<article>You need to <a href="login.php">log in</a> or <a href="register.php">register</a>!</article>';
-}?>
+echo $argSelector;
+?>
+</article>
 </body>
 </html>

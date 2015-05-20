@@ -10,31 +10,33 @@
 	
     Methodocracy TM is a trademark of Methodocracy.org (C)2014-2015, and all rights to that TM are reserved. Any modified versions are required to be marked as changed, so that their problems will not be attributed erroneously to authors of previous versions. And the name Methodocracy TM should be clearly labeled as the source of your work as long as any part of this work remains intact in part or in whole.
 -->
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
-<html>
-<head>
-	<title>Thank you!</title>
-<!-- define some style elements-->
-<style>
-h1
-{
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 16px;
-    font-weight : bold;
-}
-label,a,body
-{
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px; 
+
+<?php
+
+//$delimiters has to be array
+//$string has to be array
+
+function multiexplode ($delimiters,$string) {
+   
+    $ready = str_replace($delimiters, $delimiters[0], $string);
+    $launch = explode($delimiters[0], $ready);
+    return  $launch;
 }
 
-</style>	
-</head>
+/*
+$text = "here is a sample: this text, and this will be exploded. this also | this one too :)";
+$exploded = multiexplode(array(",",".","|",":"),$text);
 
-<body>
-<h1>Thank you!</h1>
-<p>Thank you for submitting the form. We will contact you soon!</p>
-<br />
-<p><a href="http://methodocracy.org">Click here to go back</a></p>
-</body>
-</html>
+print_r($exploded);
+
+//And output will be like this:
+// Array
+// (
+//    [0] => here is a sample
+//    [1] =>  this text
+//    [2] =>  and this will be exploded
+//    [3] =>  this also
+//    [4] =>  this one too
+//    [5] => )
+// )
+*/
