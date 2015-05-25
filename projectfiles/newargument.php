@@ -185,6 +185,11 @@ require 'core/init.php';
 </div>
 <article>
 <?php
+$db = DB::getInstance();
+$db->get('arguments', array(
+						'argument_id', '=', $_GET['id']));
+$content = array();
+$content = explode("'", improved_var_export($db->results(), true));
 if(Input::exists())	{
 
 	$validate = new Validate();
@@ -204,6 +209,32 @@ if(Input::exists())	{
 			'title' => Input::get('title'),
 			'body' => Input::get('body')
 		));
+		
+		if(isset($_GET['type'])&&($_GET['type']==0)){
+			$db->insert('arguments', array(
+				'type' => 0,
+				'title' => 'Disproval',
+				'body' => 'Disproval'));
+		}else{
+			$db->insert('arguments', array(
+				'type' => 1,
+				'title' => 'Support',
+				'body' => 'Support'));
+		}
+		$list = 1;
+		$db->get('arguments', array(
+						'argument_id', '=', $list));
+		while(improved_var_export($db->results(), true)!='array ()'){
+		$list++;
+		$db->get('arguments', array(
+						'argument_id', '=', $list));
+		}
+		$db->insert('connections', array(
+						'argument_from' => $list-2,
+						'argument_to' => $list-1));
+		$db->insert('connections', array(
+						'argument_from' => $list-1,
+						'argument_to' => $_GET['id']));
 		Redirect::to('index.php');
 		
 	} else {
@@ -212,7 +243,14 @@ if(Input::exists())	{
 		}
 	}
 }
-
+if(isset($_GET['type'])){
+?><h1>Attempting to <?php
+if($_GET['type']==0){ 
+	echo 'disprove';
+}else{ 
+	echo 'support';
+}?> <?php echo $content[7]; ?></h1><?php
+}
 ?>
 <form action="" method="post">
 	<div class="field">

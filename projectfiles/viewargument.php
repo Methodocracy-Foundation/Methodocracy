@@ -195,6 +195,14 @@ $argTypeNames = array('','','Opinion','Question');
 <h1><?php echo $content[7]; ?></h1>
 <h4><?php echo $argTypeNames[$content[3]]; ?></h4>
 <p><?php echo $content[11]; ?></p>
+
+<div style="float:left">
+	<a href="newargument.php?id=<?php echo $content[15]; ?>&type=0">Disprove this argument</a>
+</div>
+<div style="float:right">
+	<a href="newargument.php?id=<?php echo $content[15]; ?>&type=1">Support this argument</a>
+</div>
+
 </article>
 </body>
 </html>
