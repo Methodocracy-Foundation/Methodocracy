@@ -1,6 +1,5 @@
 <?php
 session_start();
-$argSelector = $_SESSION['argSelector'];
 require 'core/init.php';
 ?>
 <!DOCTYPE html>
@@ -185,9 +184,6 @@ require 'core/init.php';
 </div>
 </div>
 <article>
-<?php
-echo $argSelector;
-?>
 </article>
 </body>
 </html>

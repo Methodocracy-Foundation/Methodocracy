@@ -1,6 +1,5 @@
 <?php
 session_start();
-$_SESSION['argSelector'] = 0;
 require 'core/init.php';
 ?>
 <!DOCTYPE html>
@@ -211,7 +210,7 @@ if($user->isLoggedIn()) {
 	<?php
 	}
 	?>	
-		<a onclick="<?php $_SESSION['argSelector'] = 0; ?>" href="newargument.php">New Argument</a><br><br>
+		<a href="newargument.php?id=0">New Argument</a><br><br>
 		
 		<?php
 		$db = DB::getInstance();
@@ -221,11 +220,9 @@ if($user->isLoggedIn()) {
 						'argument_id', '=', $list));
 		while(improved_var_export($db->results(), true)!='array ()'){
 		$content = explode("'", improved_var_export($db->results(), true));
-		echo '<a onclick="';
-		echo $_SESSION["argSelector"] = $list;
-		echo '" href="viewargument.php">';
-		echo $content[7];
-		echo '</a><br>';
+		?>
+		<a href="viewargument.php?id=<?php echo $content[15]; ?>"><?php echo $content[7]; ?></a><br>
+		<?php
 		$list++;
 		$db->get('arguments', array(
 						'argument_id', '=', $list));

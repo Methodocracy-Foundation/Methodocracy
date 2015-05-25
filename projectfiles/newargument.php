@@ -1,6 +1,5 @@
 <?php
 session_start();
-$argSelector = $_SESSION['argSelector'];
 require 'core/init.php';
 ?>
 <!DOCTYPE html>
@@ -186,7 +185,6 @@ require 'core/init.php';
 </div>
 <article>
 <?php
-
 if(Input::exists())	{
 
 	$validate = new Validate();
