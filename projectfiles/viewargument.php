@@ -184,6 +184,17 @@ require 'core/init.php';
 </div>
 </div>
 <article>
+<?php
+$db = DB::getInstance();
+$db->get('arguments', array(
+						'argument_id', '=', $_GET['id']));
+$content = array();
+$content = explode("'", improved_var_export($db->results(), true));
+$argTypeNames = array('','','Opinion','Question');
+?>
+<h1><?php echo $content[7]; ?></h1>
+<h4><?php echo $argTypeNames[$content[3]]; ?></h4>
+<p><?php echo $content[11]; ?></p>
 </article>
 </body>
 </html>
