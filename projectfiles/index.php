@@ -220,12 +220,18 @@ if($user->isLoggedIn()) {
 						'argument_id', '=', $list));
 		while(improved_var_export($db->results(), true)!='array ()'){
 		$content = explode("'", improved_var_export($db->results(), true));
+		if($content[3] < 2){
+		$list++;
+		$db->get('arguments', array(
+						'argument_id', '=', $list));
+		} else {
 		?>
 		<a href="viewargument.php?id=<?php echo $content[15]; ?>"><?php echo $content[7]; ?></a><br>
 		<?php
 		$list++;
 		$db->get('arguments', array(
 						'argument_id', '=', $list));
+		}
 		}
 		?>
 	</article>
