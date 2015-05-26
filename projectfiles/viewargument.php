@@ -197,10 +197,103 @@ $argTypeNames = array('','','Opinion','Question');
 <p><?php echo $content[11]; ?></p>
 
 <div style="float:left">
-	<a href="newargument.php?id=<?php echo $content[15]; ?>&type=0">Disprove this argument</a>
+	<a href="newargument.php?id=<?php echo $content[15]; ?>&type=0">Disprove this argument</a><br><br>
+	
+	<a href="connectionlist.php?id=<?php echo $content[15]; ?>&query=1">Arguments disproven by this one (<?php
+		$total = 0;
+		$list = 1;
+		$db = DB::getInstance();
+		$db->get('connections', array(
+						'connection_id', '=', $list));
+		$content2 = array();
+		$content3 = array();
+		while(improved_var_export($db->results(), true)!='array ()'){
+		$content2 = explode("'", improved_var_export($db->results(), true));
+		$db->get('arguments', array(
+						'argument_id', '=', $content2[7]));
+		$content3 = explode("'", improved_var_export($db->results(), true));
+		if ($content2[3]==$content[15]&&$content3[3]==0){
+			$total += 1;
+		}
+		$list++;
+		$db->get('connections', array(
+						'connection_id', '=', $list));
+		}
+		echo $total;
+	?>)</a><br>
+	
+	<a href="connectionlist.php?id=<?php echo $content[15]; ?>&query=3">Arguments that have disproved this one (<?php
+		$total = 0;
+		$list = 1;
+		$db = DB::getInstance();
+		$db->get('connections', array(
+						'connection_id', '=', $list));
+		$content2 = array();
+		$content3 = array();
+		while(improved_var_export($db->results(), true)!='array ()'){
+		$content2 = explode("'", improved_var_export($db->results(), true));
+		$db->get('arguments', array(
+						'argument_id', '=', $content2[3]));
+		$content3 = explode("'", improved_var_export($db->results(), true));
+		if ($content2[7]==$content[15]&&$content3[3]==0){
+			$total += 1;
+		}
+		$list++;
+		$db->get('connections', array(
+						'connection_id', '=', $list));
+		}
+		echo $total;
+	?>)</a>
+	
 </div>
 <div style="float:right">
-	<a href="newargument.php?id=<?php echo $content[15]; ?>&type=1">Support this argument</a>
+	<a href="newargument.php?id=<?php echo $content[15]; ?>&type=1">Support this argument</a><br><br>
+	
+	<a href="connectionlist.php?id=<?php echo $content[15]; ?>&query=2">Arguments supported by this one (<?php
+		$total = 0;
+		$list = 1;
+		$db = DB::getInstance();
+		$db->get('connections', array(
+						'connection_id', '=', $list));
+		$content2 = array();
+		$content3 = array();
+		while(improved_var_export($db->results(), true)!='array ()'){
+		$content2 = explode("'", improved_var_export($db->results(), true));
+		$db->get('arguments', array(
+						'argument_id', '=', $content2[7]));
+		$content3 = explode("'", improved_var_export($db->results(), true));
+		if ($content2[3]==$content[15]&&$content3[3]==1){
+			$total += 1;
+		}
+		$list++;
+		$db->get('connections', array(
+						'connection_id', '=', $list));
+		}
+		echo $total;
+	?>)</a><br>
+	
+	<a href="connectionlist.php?id=<?php echo $content[15]; ?>&query=4">Arguments that have supported this one (<?php
+		$total = 0;
+		$list = 1;
+		$db = DB::getInstance();
+		$db->get('connections', array(
+						'connection_id', '=', $list));
+		$content2 = array();
+		$content3 = array();
+		while(improved_var_export($db->results(), true)!='array ()'){
+		$content2 = explode("'", improved_var_export($db->results(), true));
+		$db->get('arguments', array(
+						'argument_id', '=', $content2[3]));
+		$content3 = explode("'", improved_var_export($db->results(), true));
+		if ($content2[7]==$content[15]&&$content3[3]==1){
+			$total += 1;
+		}
+		$list++;
+		$db->get('connections', array(
+						'connection_id', '=', $list));
+		}
+		echo $total;
+	?>)</a>
 </div>
 
 </article>
