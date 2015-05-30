@@ -25,8 +25,17 @@ class Redirect {
 					break;
 				}
 			} else {
-				header('Location: ' . $location);
-				exit();
+				if (!headers_sent()) {
+					header('Location: ' . $location);
+					exit();
+				} else {
+					echo '<script type="text/javascript">';
+					echo 'window.location.href="'.$location.'";';
+					echo '</script>';
+					echo '<noscript>';
+					echo '<meta http-equiv="refresh" content="0;url='.$location.'" />';
+					echo '</noscript>'; exit();
+				}
 			}
 		}
 	}
