@@ -184,6 +184,267 @@ require 'core/init.php';
 </div>
 </div>
 <article>
+<?php
+if($_GET['query']==1){
+	$db = DB::getInstance();
+	$list = 1;
+	$list2 = 1;
+	$list3 = 1;
+	$content = array();
+	$content2 = array();
+	$content3 = array();
+	$content4 = array();
+	//Cycle through all arguments
+	$db->get('arguments', array(
+					'argument_id', '=', $list));
+	while(improved_var_export($db->results(), true)!='array ()'){
+		$content = explode("'", improved_var_export($db->results(), true));
+		//Except disprovals and supports
+		if($content[3] < 2){
+			$list++;
+			$db->get('arguments', array(
+							'argument_id', '=', $list));
+		} else {
+			//Cycle through all connections
+			$db->get('connections', array(
+							'connection_id', '=', $list2));
+			while(improved_var_export($db->results(), true)!='array ()'){
+				$content2 = explode("'", improved_var_export($db->results(), true));
+				//If connection points to called argument
+				If($content2[7]==$content[15]){
+					$db->get('arguments', array(
+								'argument_id', '=', $content2[3]));
+					$content3 = explode("'", improved_var_export($db->results(), true));
+					//If middle argument is a disproval
+					if($content3[3]==0){
+						//Cycle through connections again to find other half of connection
+						$db->get('connections', array(
+								'connection_id', '=', $list3));
+						while(improved_var_export($db->results(), true)!='array ()'){
+							$content4 = explode("'", improved_var_export($db->results(), true));
+							//If cycling lands on correct connection and the other side of the connection matches the calling argument's id
+							if($content4[7]==$content2[3]&&$content4[3]==$_GET['id']){
+							//Print
+								?>
+								<a href="viewargument.php?id=<?php echo $content[15]; ?>"><?php echo $content[7]; ?></a><br>
+								<?php
+							}
+							
+							$list3++;
+							$db->get('connections', array(
+								'connection_id', '=', $list3));
+						}
+						$list3 = 1;
+					}
+				}
+				$list2++;
+				$db->get('connections', array(
+								'connection_id', '=', $list2));
+			}
+			$list2 = 1;
+			
+			$list++;
+			$db->get('arguments', array(
+							'argument_id', '=', $list));
+		}
+	}
+}
+
+if($_GET['query']==2){
+	$db = DB::getInstance();
+	$list = 1;
+	$list2 = 1;
+	$list3 = 1;
+	$content = array();
+	$content2 = array();
+	$content3 = array();
+	$content4 = array();
+	//Cycle through all arguments
+	$db->get('arguments', array(
+					'argument_id', '=', $list));
+	while(improved_var_export($db->results(), true)!='array ()'){
+		$content = explode("'", improved_var_export($db->results(), true));
+		//Except disprovals and supports
+		if($content[3] < 2){
+			$list++;
+			$db->get('arguments', array(
+							'argument_id', '=', $list));
+		} else {
+			//Cycle through all connections
+			$db->get('connections', array(
+							'connection_id', '=', $list2));
+			while(improved_var_export($db->results(), true)!='array ()'){
+				$content2 = explode("'", improved_var_export($db->results(), true));
+				//If connection points to called argument
+				If($content2[7]==$content[15]){
+					$db->get('arguments', array(
+								'argument_id', '=', $content2[3]));
+					$content3 = explode("'", improved_var_export($db->results(), true));
+					//If middle argument is a support
+					if($content3[3]==1){
+						//Cycle through connections again to find other half of connection
+						$db->get('connections', array(
+								'connection_id', '=', $list3));
+						while(improved_var_export($db->results(), true)!='array ()'){
+							$content4 = explode("'", improved_var_export($db->results(), true));
+							//If cycling lands on correct connection and the other side of the connection matches the calling argument's id
+							if($content4[7]==$content2[3]&&$content4[3]==$_GET['id']){
+							//Print
+								?>
+								<a href="viewargument.php?id=<?php echo $content[15]; ?>"><?php echo $content[7]; ?></a><br>
+								<?php
+							}
+							
+							$list3++;
+							$db->get('connections', array(
+								'connection_id', '=', $list3));
+						}
+						$list3 = 1;
+					}
+				}
+				$list2++;
+				$db->get('connections', array(
+								'connection_id', '=', $list2));
+			}
+			$list2 = 1;
+			
+			$list++;
+			$db->get('arguments', array(
+							'argument_id', '=', $list));
+		}
+	}
+}
+
+if($_GET['query']==3){
+	$db = DB::getInstance();
+	$list = 1;
+	$list2 = 1;
+	$list3 = 1;
+	$content = array();
+	$content2 = array();
+	$content3 = array();
+	$content4 = array();
+	//Cycle through all arguments
+	$db->get('arguments', array(
+					'argument_id', '=', $list));
+	while(improved_var_export($db->results(), true)!='array ()'){
+		$content = explode("'", improved_var_export($db->results(), true));
+		//Except disprovals and supports
+		if($content[3] < 2){
+			$list++;
+			$db->get('arguments', array(
+							'argument_id', '=', $list));
+		} else {
+			//Cycle through all connections
+			$db->get('connections', array(
+							'connection_id', '=', $list2));
+			while(improved_var_export($db->results(), true)!='array ()'){
+				$content2 = explode("'", improved_var_export($db->results(), true));
+				//If connection is from called argument
+				If($content2[3]==$content[15]){
+					$db->get('arguments', array(
+								'argument_id', '=', $content2[7]));
+					$content3 = explode("'", improved_var_export($db->results(), true));
+					//If middle argument is a disproval
+					if($content3[3]==0){
+						//Cycle through connections again to find other half of connection
+						$db->get('connections', array(
+								'connection_id', '=', $list3));
+						while(improved_var_export($db->results(), true)!='array ()'){
+							$content4 = explode("'", improved_var_export($db->results(), true));
+							//If cycling lands on correct connection and the other side of the connection matches the calling argument's id
+							if($content4[3]==$content2[7]&&$content4[7]==$_GET['id']){
+							//Print
+								?>
+								<a href="viewargument.php?id=<?php echo $content[15]; ?>"><?php echo $content[7]; ?></a><br>
+								<?php
+							}
+							
+							$list3++;
+							$db->get('connections', array(
+								'connection_id', '=', $list3));
+						}
+						$list3 = 1;
+					}
+				}
+				$list2++;
+				$db->get('connections', array(
+								'connection_id', '=', $list2));
+			}
+			$list2 = 1;
+			
+			$list++;
+			$db->get('arguments', array(
+							'argument_id', '=', $list));
+		}
+	}
+}
+
+if($_GET['query']==4){
+	$db = DB::getInstance();
+	$list = 1;
+	$list2 = 1;
+	$list3 = 1;
+	$content = array();
+	$content2 = array();
+	$content3 = array();
+	$content4 = array();
+	//Cycle through all arguments
+	$db->get('arguments', array(
+					'argument_id', '=', $list));
+	while(improved_var_export($db->results(), true)!='array ()'){
+		$content = explode("'", improved_var_export($db->results(), true));
+		//Except disprovals and supports
+		if($content[3] < 2){
+			$list++;
+			$db->get('arguments', array(
+							'argument_id', '=', $list));
+		} else {
+			//Cycle through all connections
+			$db->get('connections', array(
+							'connection_id', '=', $list2));
+			while(improved_var_export($db->results(), true)!='array ()'){
+				$content2 = explode("'", improved_var_export($db->results(), true));
+				//If connection is from called argument
+				If($content2[3]==$content[15]){
+					$db->get('arguments', array(
+								'argument_id', '=', $content2[7]));
+					$content3 = explode("'", improved_var_export($db->results(), true));
+					//If middle argument is a support
+					if($content3[3]==1){
+						//Cycle through connections again to find other half of connection
+						$db->get('connections', array(
+								'connection_id', '=', $list3));
+						while(improved_var_export($db->results(), true)!='array ()'){
+							$content4 = explode("'", improved_var_export($db->results(), true));
+							//If cycling lands on correct connection and the other side of the connection matches the calling argument's id
+							if($content4[3]==$content2[7]&&$content4[7]==$_GET['id']){
+							//Print
+								?>
+								<a href="viewargument.php?id=<?php echo $content[15]; ?>"><?php echo $content[7]; ?></a><br>
+								<?php
+							}
+							
+							$list3++;
+							$db->get('connections', array(
+								'connection_id', '=', $list3));
+						}
+						$list3 = 1;
+					}
+				}
+				$list2++;
+				$db->get('connections', array(
+								'connection_id', '=', $list2));
+			}
+			$list2 = 1;
+			
+			$list++;
+			$db->get('arguments', array(
+							'argument_id', '=', $list));
+		}
+	}
+}
+?>
 </article>
 </body>
 </html>
