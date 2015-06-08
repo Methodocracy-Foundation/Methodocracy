@@ -214,11 +214,17 @@ if($user->isLoggedIn()) {
 		
 		<?php
 		$db = DB::getInstance();
-		$list = 1;
+		$loop = true;
+		if(isset($_GET['page'])){
+		$page = $_GET['page'];
+		} else {
+		$page = 1;
+		}
+		$list = (($page-1)*50)+1;
 		$content = array();
 		$db->get('arguments', array(
 						'argument_id', '=', $list));
-		while(improved_var_export($db->results(), true)!='array ()'){
+		while(improved_var_export($db->results(), true)!='array ()'&&$loop){
 		$content = explode("'", improved_var_export($db->results(), true));
 		if($content[3] < 2){
 		$list++;
@@ -232,8 +238,28 @@ if($user->isLoggedIn()) {
 		$db->get('arguments', array(
 						'argument_id', '=', $list));
 		}
+		if ($list == (($page*50)+1)){
+			$loop = false;
+		}
 		}
 		?>
+		<p style="text-align: center;">Page <?php echo $page ?><p>
+		
+		<div style="float:left;">
+			<?php 
+			if($page!=1){ echo
+				'<a href="index.php?page='; echo $page-1; echo'">Previous Page</a>';
+			}
+			?>
+		</div>
+		
+		<div style="float:right;">
+			<?php
+			if($list%51==0){ echo
+				'<a href="index.php?page='; echo $page+1; echo '">Next Page</a>';
+			}
+			?>
+		</div>
 	</article>
 	<?php
 } else {
