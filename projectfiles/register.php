@@ -207,7 +207,12 @@ if(Input::exists()) {
 			'name' => array(
 				'required' => false,
 				'min' => 2,
-				'max' => 50)
+				'max' => 50),
+			'email' => array(
+				'required' => true),
+			'email_again' => array(
+				'required' => true,
+				'matches' => 'email')
 		));
 
 		if($validation->passed()) {
@@ -222,11 +227,12 @@ if(Input::exists()) {
 					'salt'		=> $salt,
 					'name' 		=> Input::get('name'),
 					'joined'	=> date('Y-m-d H:i:s'),
-					'group'		=> 1
+					'group'		=> 1,
+					'email'		=> Input::get('email')
 				));
 
-				Session::flash('home', 'You have been registered and can now log in!');
-				Redirect::to('index.php');
+				Session::flash('home', 'Your account has been made, please verify it by clicking the activation link that has been send to your email.');
+				Redirect::to('accountcreated.php');
 
 			} catch(Exception $e) {
 				die($e->getMessage());
@@ -258,6 +264,16 @@ if(Input::exists()) {
 		<input type="password" name="password_again" id="password_again">
 	</div>
 
+	<div class="field">
+		<label for="email">Enter your email address.</label>
+		<input type="text" name="email" id="email" value="<?php echo escape(Input::get('email')); ?>">
+	</div>
+	
+	<div class="field">
+		<label for="email_again">Enter your email address again.</label>
+		<input type="text" name="email_again" id="email_again" value="<?php echo escape(Input::get('email')); ?>">
+	</div>
+	
 	<div class="field">
 		<label for="name">Your name</label>
 		<input type="text" name="name" id="name" value="<?php echo escape(Input::get('name')); ?>">
