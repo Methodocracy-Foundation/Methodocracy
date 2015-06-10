@@ -186,140 +186,26 @@ require 'core/init.php';
 </div>
 <article>
 <?php
-
-
-if(Input::exists()) {
-
-	if(Token::check(Input::get('token'))) {
-		$validate = new Validate();
-		$validation = $validate->check($_POST, array(
-			'username' => array(
-				'required' => true,
-				'min' => 2,
-				'max' => 20,
-				'unique' => 'users'),
-			'password' => array(
-				'required' => true,
-				'min' => 6),
-			'password_again' => array(
-				'required' => true,
-				'matches' => 'password'),
-			'email' => array(
-				'required' => true,
-				'min' => 5,
-				'max' => 50,
-				'unique' => 'users'),
-			'email_again' => array(
-				'required' => true,
-				'matches' => 'email',
-				'min' => 5,
-				'max' => 50),
-			'name' => array(
-				'required' => false,
-				'min' => 2,
-				'max' => 50)
-		));
-
-		if($validation->passed()) {
-			$email = Input::get('email');
-			if(!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", $email)){
-				echo 'Invalid email.';
-			} else {
-				$user = new User();
-
-				$salt = Hash::salt(32);
-				
-				$hash = md5( rand(0,1000) );
-
-				try {
-					$user->create(array(
-						'username' 	=> Input::get('username'),
-						'password' 	=> Hash::make(Input::get('password'), $salt),
-						'salt'		=> $salt,
-						'name' 		=> Input::get('name'),
-						'joined'	=> date('Y-m-d H:i:s'),
-						'group'		=> 1,
-						'email'		=> Input::get('email'),
-						'hash'		=> $hash
-					));
-
-					$username = Input::get('username');
-					$password = Input::get('password');
-					$to = $email;
-					$subject = 'Signup Verification';
-					$message = '
-					 
-					Methodocracy.org
-					 
-					Thanks for signing up!
-					Your account has been created, you can login with the following credentials after you have activated your account by pressing the url below.
-					 
-					------------------------
-					Username: '.$username.'
-					Password: '.$password.'
-					------------------------
-					 
-					Please click this link to activate your account:
-					http://www.methodocracy.org/verify.php?email='.$email.'&hash='.$hash.'
-	 
-					';
-					
-					$headers = 'From: noreply@methodocracy.org' . '\r\n';
-					mail($to, $subject, $message, $headers);
-					
-					Session::flash('home', 'Your account has been created, please verify it by clicking the activation link that has been sent to your email.');
-					Redirect::to('accountcreated.php');
-
-				} catch(Exception $e) {
-					die($e->getMessage());
-				}
-			}
-		} else {
-			foreach($validate->errors() as $error) {
-				echo $error, '<br>';
-			}
-		}
+if(isset($_GET['email']) && !empty($_GET['email']) AND isset($_GET['hash']) && !empty($_GET['hash'])){
+    // Verify data
+	//Warning: the next 2 lines are subject to MySQL injection
+	$email = $_GET['email'];
+	$hash = $_GET['hash'];
+	
+	$db = DB::getInstance();
+	$db->query("SELECT email, hash, verified FROM users WHERE email='".$email."' AND hash='".$hash."' AND verified='0'");
+	$match = $db->count();
+	
+	if ( $match > 0 ) {
+		$db->query("UPDATE users SET verified='1' WHERE email='".$email."' AND hash='".$hash."' AND verified='0'");
+		echo 'Your account has been activated, you can now login.';
+	} else {
+		echo 'The url is either invalid or you already have activated your account.';
 	}
+}else{
+    // Invalid approach
+	echo 'Invalid approach, please use the link that has been send to your email.';
 }
 ?>
-
-<form action="" method="post">
-	
-	<p>* = field is required</p>
-	
-	<div class="field">
-		<label for="username">Choose a username*</label>
-		<input type="text" name="username" id="username" value="<?php echo escape(Input::get('username')); ?>">
-	</div>
-
-	<div class="field">
-		<label for="password">Choose a password*</label>
-		<input type="password" name="password" id="password">
-	</div>
-
-	<div class="field">
-		<label for="password_again">Enter your password again*</label>
-		<input type="password" name="password_again" id="password_again">
-	</div>
-
-	<div class="field">
-		<label for="email">Enter your email address.*</label>
-		<input type="text" name="email" id="email" value="<?php echo escape(Input::get('email')); ?>">
-	</div>
-	
-	<div class="field">
-		<label for="email_again">Enter your email address again.*</label>
-		<input type="text" name="email_again" id="email_again" value="<?php echo escape(Input::get('email')); ?>">
-	</div>
-	
-	<div class="field">
-		<label for="name">Your name</label>
-		<input type="text" name="name" id="name" value="<?php echo escape(Input::get('name')); ?>">
-	</div>
-
-	<input type="submit" value="Register">
-	<input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
-</form>
-</article>
 </body>
 </html>

@@ -195,8 +195,16 @@ if(Input::exists()) {
 		$user = new User();
 
 		$remember = (Input::get('remember') === 'on') ? true : false;
+		$db = DB::getInstance();
+		$db->get('users', array
+					('username', '=', Input::get('username')));
+		$content = array();
+		$content = explode("'", improved_var_export($db->results(), true));
+		if ($content[35]==1){
 		$login = $user->login(Input::get('username'), Input::get('password'), $remember);
-
+		} else {
+			echo "Your account hasn't been verfied yet, please check your email for your verification link.";
+		}
 		if($login) {
 			Redirect::to('index.php');
 		} else {
