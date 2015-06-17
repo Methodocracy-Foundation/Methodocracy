@@ -20,7 +20,7 @@ require 'core/init.php';
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:400italic">
 	<!-- The above font is under an open license. www.google.com/fonts/specimen/Ubuntu-->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="mainStyle.css">
+	<link rel="stylesheet" type="text/css" href="mainstyle.css">
 </head>
 <body>
 <div id="blackBar">
@@ -59,7 +59,7 @@ if(isset($_GET['email']) && !empty($_GET['email']) AND isset($_GET['hash']) && !
 	}
 }else{
     // Invalid approach
-	echo 'Invalid approach, please use the link that has been send to your email.';
+	echo 'Invalid approach, please use the link that has been sent to your email.';
 }
 ?>
 </body>
