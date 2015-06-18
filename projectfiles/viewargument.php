@@ -48,7 +48,15 @@ $content = explode("'", improved_var_export($db->results(), true));
 $argTypeNames = array('','','Opinion','Question');
 ?>
 <h1><?php echo $content[7]; ?></h1>
-<h4><?php echo $argTypeNames[$content[3]]; ?></h4>
+<p><?php
+$contentUser = array();
+$db->get('users', array(
+			'id', '=', $content[15]));
+$contentUser = explode("'", improved_var_export($db->results(), true));
+echo 'Submitted by: ';
+echo $contentUser[3];
+?></p>
+<h4><?php echo 'Type: '; echo $argTypeNames[$content[3]]; ?></h4>
 <p><?php echo $content[11]; ?></p>
 
 <div style="float:left">

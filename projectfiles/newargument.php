@@ -40,6 +40,7 @@ require 'core/init.php';
 </div>
 <article>
 <?php
+$user = new User;
 $db = DB::getInstance();
 $db->get('arguments', array(
 						'argument_id', '=', $_GET['id']));
@@ -63,7 +64,8 @@ if(Input::exists())	{
 		$db->insert('arguments', array(
 			'type' => Input::get('type'),
 			'title' => Input::get('title'),
-			'body' => Input::get('body')
+			'body' => Input::get('body'),
+			'user_id' => $user->_currentUser
 		));
 		
 		if (isset($_GET['type'])){
