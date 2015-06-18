@@ -51,7 +51,7 @@ $argTypeNames = array('','','Opinion','Question');
 <p><?php
 $contentUser = array();
 $db->get('users', array(
-			'id', '=', $content[15]));
+			'id', '=', $content[19]));
 $contentUser = explode("'", improved_var_export($db->results(), true));
 echo 'Submitted by: ';
 echo $contentUser[3];
