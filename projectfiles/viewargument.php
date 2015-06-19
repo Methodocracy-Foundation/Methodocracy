@@ -45,10 +45,15 @@ $db->get('arguments', array(
 						'argument_id', '=', $_GET['id']));
 $content = array();
 $content = explode("'", improved_var_export($db->results(), true));
+//Only process the code on this page if argument is not hidden
+if ($content[23] == 0){
 $argTypeNames = array('','','Opinion','Question');
 ?>
+
+<!--Display title-->
 <h1><?php echo $content[7]; ?></h1>
 <p><?php
+//Display author
 $contentUser = array();
 $db->get('users', array(
 			'id', '=', $content[19]));
@@ -56,7 +61,9 @@ $contentUser = explode("'", improved_var_export($db->results(), true));
 echo 'Submitted by: ';
 echo $contentUser[3];
 ?></p>
+<!--Display argument type-->
 <h4><?php echo 'Type: '; echo $argTypeNames[$content[3]]; ?></h4>
+<!--Display body-->
 <p><?php echo $content[11]; ?></p>
 
 <div style="float:left">
@@ -75,7 +82,8 @@ echo $contentUser[3];
 		$db->get('arguments', array(
 						'argument_id', '=', $content2[7]));
 		$content3 = explode("'", improved_var_export($db->results(), true));
-		if ($content2[3]==$content[15]&&$content3[3]==0){
+		if ($content3[23] == 1){
+		} else if ($content2[3]==$content[15]&&$content3[3]==0){
 			$total += 1;
 		}
 		$list++;
@@ -98,7 +106,8 @@ echo $contentUser[3];
 		$db->get('arguments', array(
 						'argument_id', '=', $content2[3]));
 		$content3 = explode("'", improved_var_export($db->results(), true));
-		if ($content2[7]==$content[15]&&$content3[3]==0){
+		if ($content3[23] == 1){
+		} else if ($content2[7]==$content[15]&&$content3[3]==0){
 			$total += 1;
 		}
 		$list++;
@@ -125,7 +134,8 @@ echo $contentUser[3];
 		$db->get('arguments', array(
 						'argument_id', '=', $content2[7]));
 		$content3 = explode("'", improved_var_export($db->results(), true));
-		if ($content2[3]==$content[15]&&$content3[3]==1){
+		if ($content3[23] == 1){
+		} else if ($content2[3]==$content[15]&&$content3[3]==1){
 			$total += 1;
 		}
 		$list++;
@@ -148,7 +158,8 @@ echo $contentUser[3];
 		$db->get('arguments', array(
 						'argument_id', '=', $content2[3]));
 		$content3 = explode("'", improved_var_export($db->results(), true));
-		if ($content2[7]==$content[15]&&$content3[3]==1){
+		if ($content3[23] == 1){
+		} else if ($content2[7]==$content[15]&&$content3[3]==1){
 			$total += 1;
 		}
 		$list++;
@@ -191,6 +202,7 @@ echo $contentUser[3];
 	<?php
 	} else {
 		echo "You've already submitted a report for this argument.";
+	}
 	}
 	?>
 </div>

@@ -77,31 +77,37 @@ if($user->isLoggedIn()) {
 		$db = DB::getInstance();
 		$loop = true;
 		if(isset($_GET['page'])){
-		$page = $_GET['page'];
+			$page = $_GET['page'];
 		} else {
-		$page = 1;
+			$page = 1;
 		}
 		$list = (($page-1)*50)+1;
 		$content = array();
 		$db->get('arguments', array(
 						'argument_id', '=', $list));
 		while(improved_var_export($db->results(), true)!='array ()'&&$loop){
-		$content = explode("'", improved_var_export($db->results(), true));
-		if($content[3] < 2){
-		$list++;
-		$db->get('arguments', array(
+			$content = explode("'", improved_var_export($db->results(), true));
+			//Exclude Disprovals and Supports
+			if($content[3] < 2){
+				$list++;
+				$db->get('arguments', array(
 						'argument_id', '=', $list));
-		} else {
-		?>
-		<a href="viewargument.php?id=<?php echo $content[15]; ?>"><?php echo $content[7]; ?></a><br>
-		<?php
-		$list++;
-		$db->get('arguments', array(
+			//Exclude hidden arguments
+			} else if($content[23] == 1){
+				$list++;
+				$db->get('arguments', array(
 						'argument_id', '=', $list));
-		}
-		if ($list == (($page*50)+1)){
-			$loop = false;
-		}
+			} else {
+			?>
+			<a href="viewargument.php?id=<?php echo $content[15]; ?>"><?php echo $content[7]; ?></a><br>
+			<?php
+			$list++;
+			$db->get('arguments', array(
+						'argument_id', '=', $list));
+			}
+			if ($list == (($page*50)+1)){
+				$loop = false;
+			}
 		}
 		?>
 		<p style="text-align: center;">Page <?php echo $page ?><p>
