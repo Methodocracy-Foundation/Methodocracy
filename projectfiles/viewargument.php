@@ -158,7 +158,16 @@ echo $contentUser[3];
 		echo $total;
 	?>)</a>
 </div>
-
+<div style="float:right">
+	<p>Report this argument:</p>
+	<ul>
+		<li>Is the argument spam?</li>
+		<li>Does the argument contain hate?</li>
+		<li>Does the argument advertise unnecessarily?</li>
+		<li>Does the argument contain unnecessarily obscene content?</li>
+	</ul>
+	<a href="report.php?id=<?php echo $content[15]; ?>">Report</a>
+</div>
 </article>
 </body>
 </html>
