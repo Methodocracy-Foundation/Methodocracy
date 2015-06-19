@@ -55,9 +55,16 @@ if($user->isLoggedIn()) {
 		<li><a href="changepassword.php">Change password</a></li>
 		<li><a href="update.php">Update details</a></li>
 	</ul>
-
+	
 	<?php
-
+	if($user->hasPermission('moderator')) {
+	?>
+		<p>You're a moderator!</p>
+	<?php
+	}
+	?>	
+	
+	<?php
 	if($user->hasPermission('admin')) {
 	?>
 		<p>You're also an administrator!</p>

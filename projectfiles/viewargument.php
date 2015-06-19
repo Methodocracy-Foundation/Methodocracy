@@ -159,6 +159,27 @@ echo $contentUser[3];
 	?>)</a>
 </div>
 <div style="float:right">
+	<?php
+	$user = new User;
+	$db = DB::getInstance();
+	$list = 1;
+	$contentReport = array();
+	$loop = true;
+	$reported = false;
+	$db->get('reports', array(
+					'report_id', '=', $list));
+	$contentReport = explode("'", improved_var_export($db->results(), true));
+	while(improved_var_export($db->results(), true)!='array ()' && $loop){
+		if($contentReport[7] == $_GET['id'] && $contentReport[11] == $user->_currentUser){
+			$loop = false;
+			$reported = true;
+		}
+		$list++;
+		$db->get('reports', array(
+					'report_id', '=', $list));
+	}
+	if(!$reported){
+	?>
 	<p>Report this argument:</p>
 	<ul>
 		<li>Is the argument spam?</li>
@@ -167,6 +188,11 @@ echo $contentUser[3];
 		<li>Does the argument contain unnecessarily obscene content?</li>
 	</ul>
 	<a href="report.php?id=<?php echo $content[15]; ?>">Report</a>
+	<?php
+	} else {
+		echo "You've already submitted a report for this argument.";
+	}
+	?>
 </div>
 </article>
 </body>
