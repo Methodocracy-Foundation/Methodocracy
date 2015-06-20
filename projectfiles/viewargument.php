@@ -169,6 +169,14 @@ echo $contentUser[3];
 		echo $total;
 	?>)</a>
 </div>
+<div style="float:left">
+	<?php
+	$user = new User;
+	if ($user->hasPermission('moderator')){
+		echo "Moderator's Note: numbers in parenthesis do not reflect hidden arguments";
+	}
+	?>
+</div>
 <div style="float:right">
 	<?php
 	$user = new User;
