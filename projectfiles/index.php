@@ -81,7 +81,7 @@ if($user->isLoggedIn()) {
 		} else {
 			$page = 1;
 		}
-		$list = (($page-1)*50)+1;
+		$list = (($page-1)*100)+1;
 		$content = array();
 		$db->get('arguments', array(
 						'argument_id', '=', $list));
@@ -105,7 +105,7 @@ if($user->isLoggedIn()) {
 			$db->get('arguments', array(
 						'argument_id', '=', $list));
 			}
-			if ($list == (($page*50)+1)){
+			if ($list == (($page*100)+1)){
 				$loop = false;
 			}
 		}
@@ -122,7 +122,7 @@ if($user->isLoggedIn()) {
 		
 		<div style="float:right;">
 			<?php
-			if($list%51==0){ echo
+			if($list%101==0){ echo
 				'<a href="index.php?page='; echo $page+1; echo '">Next Page</a>';
 			}
 			?>
