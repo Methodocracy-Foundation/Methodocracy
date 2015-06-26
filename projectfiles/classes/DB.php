@@ -133,6 +133,10 @@ class DB {
 		return false;
 	}
 
+	public function lastInsert($name) {
+		return $this->_pdo->lastInsertId($name);
+	}
+	
 	public function results() {
 		// Return result object
 		return $this->_results;

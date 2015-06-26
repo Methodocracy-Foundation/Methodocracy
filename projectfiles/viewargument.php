@@ -169,14 +169,6 @@ echo $contentUser[3];
 		echo $total;
 	?>)</a>
 </div>
-<div style="float:left">
-	<?php
-	$user = new User;
-	if ($user->hasPermission('moderator')){
-		echo "Moderator's Note: numbers in parenthesis do not reflect hidden arguments";
-	}
-	?>
-</div>
 <div style="float:right">
 	<?php
 	$user = new User;
@@ -207,6 +199,7 @@ echo $contentUser[3];
 		<li>Does the argument contain unnecessarily obscene content?</li>
 	</ul>
 	<a href="report.php?id=<?php echo $content[15]; ?>">Report</a>
+	<p>Warning: You will be temporarily banned from the report feature if you spam reports without reason.</p>
 	<?php
 	} else {
 		echo "You've already submitted a report for this argument.";

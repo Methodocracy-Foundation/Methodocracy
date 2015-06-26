@@ -95,7 +95,8 @@ if(Input::exists())	{
 							'argument_from' => $list-1,
 							'argument_to' => $_GET['id']));
 		}
-		Redirect::to('index.php');
+		$redirect = $db->lastInsert('arguments');
+		Redirect::to('viewargument.php?id='.$redirect);
 		
 	} else {
 		foreach($validate->errors() as $error) {
