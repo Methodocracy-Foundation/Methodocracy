@@ -330,7 +330,6 @@ Author: 	github.com/Alofoxx -> source: http://css-tricks.com/automatic-table-of-
 	</br>
 	
   </div>
-  <p style="text-align:center"><small>Copyright 2014-2015 Zachary Hebert, Patrick Gillespie<br /></small>
 </article>
 <script>
 		var ToC =
@@ -363,5 +362,23 @@ Author: 	github.com/Alofoxx -> source: http://css-tricks.com/automatic-table-of-
 
 		$(".all-questions").prepend(ToC);
 	</script>
+<!--Fixed footer. Wrote CSS in-line because writing it in external file did not work-->
+<div style="color:white;
+		    position:fixed;
+		    bottom:0;
+		    left:0;
+		    width:100%;
+		    height:30px;
+		    background-color:black;">
+	<div style="overflow: hidden;
+				height: 100%;">         
+		<div class="outer1">
+			<a href="about.html"><div id="about" class="button">About</div></a>
+		</div>
+		<p style="margin: 0;">
+			<small>Copyright 2014-2015 Zachary Hebert, Patrick Gillespie</small>
+		</p>
+    </div>
+</div>
 </body>
 </html>
