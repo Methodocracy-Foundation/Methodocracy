@@ -30,7 +30,7 @@ require 'core/init.php';
     </div>
     
     <div class="outer2">
-        <a href="about.html"><div id="two" class="button">About</div></a>
+        <a href="topics.php"><div id="two" class="button">Topics</div></a>
     </div>
 
     <div class="outer1">
@@ -208,5 +208,43 @@ echo $contentUser[3];
 	?>
 </div>
 </article>
+<div style="color:white;
+		    position:fixed;
+		    bottom:0;
+		    left:0;
+		    width:100%;
+		    height:30px;
+		    background-color:black;">
+	<div style="overflow: hidden;
+				height: 100%;">         
+		<div class="outer1">
+			<a href="about.html"><div id="about" class="button">About</div></a>
+		</div>
+		<p style="float:left;margin:0px 5px;">
+			<small>Copyright 2014-2015 Zachary Hebert, Patrick Gillespie</small>
+		</p>
+		<!--Social media links-->
+		<div style="float: right; height: 30px; width: 30px;">
+			<a style="margin: 1px;" href="https://plus.google.com/111375535355048158412/posts?hl=en" target="_blank">
+				<img src="includes/social media images/GooglePlus-Icon.jpg" alt="Facebook" height="28" width="28">
+			</a>
+		</div>
+		<div style="float: right; height: 30px; width: 30px;">
+			<a style="margin: 1px;" href="https://www.youtube.com/channel/UCm-O9bhsUDBhQGQimns0Ymg" target="_blank">
+				<img src="includes/social media images/YouTube-Icon.jpg" alt="Facebook" height="28" width="28">
+			</a>
+		</div>
+		<div style="float: right; height: 30px; width: 30px;">
+			<a style="margin: 1px;" href="https://twitter.com/Methodocracy_F" target="_blank">
+				<img src="includes/social media images/Twitter-Icon.jpg" alt="Facebook" height="28" width="28">
+			</a>
+		</div>
+		<div style="float: right; height: 30px; width: 30px;">
+			<a style="margin: 1px;" href="https://www.facebook.com/methodocracy" target="_blank">
+				<img src="includes/social media images/Facebook-Icon.jpg" alt="Facebook" height="28" width="28">
+			</a>
+		</div>
+    </div>
+</div>
 </body>
 </html>
