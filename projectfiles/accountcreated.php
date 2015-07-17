@@ -24,20 +24,19 @@ require 'core/init.php';
 </head>
 <body>
 <div id="blackBar">
+	<div id="buttons">         
+		<div class="outer1">
+			<a href="index.php"><div id="one" class="button"> Home </div></a>
+		</div>
+		
+		<div class="outer2">
+			<a href="topics.php"><div id="two" class="button">Topics</div></a>
+		</div>
 
-<div id="buttons">         
-    <div class="outer1">
-        <a href="index.php"><div id="one" class="button"> Home </div></a>
-    </div>
-    
-    <div class="outer2">
-        <a href="topics.php"><div id="two" class="button">Topics</div></a>
-    </div>
-
-    <div class="outer1">
-        <a href="login.php"><div id="three" class="button">Login</div></a>
-    </div>
-</div>
+		<div class="outer1">
+			<a href="login.php"><div id="three" class="button">Login</div></a>
+		</div>
+	</div>
 </div>
 <article>
 <?php
@@ -46,6 +45,7 @@ if(Session::exists('home')) {
 }
 ?>
 </article>
+<!--Fixed (type of footer, not overcoming of a problem) footer. Wrote CSS in-line because writing it in external file did not work-->
 <div style="color:white;
 		    position:fixed;
 		    bottom:0;

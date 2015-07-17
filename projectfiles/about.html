@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+++Copyright 2014-2015 Zachary Hebert, Patrick Gillespie                     +++
-   This file is part of Methodocracy.org.
+	Copyright 2014-2015 Zachary Hebert, Patrick Gillespie
+	This file is part of Methodocracy.org.
 
     Methodocracy.org is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -19,7 +18,6 @@
     along with Methodocracy.org.  If not, see <http://www.gnu.org/licenses/>.
 
 	Methodocracy TM is a trademark of Methodocracy.org (C)2014-2015, and all rights to that TM are reserved. Any modified versions are required to be marked as changed, so that their problems will not be attributed erroneously to authors of previous versions. And the name Methodocracy TM should be clearly labeled as the source of your work as long as any part of this work remains intact in part or in whole.
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 File: 		documentation.html
 Purpose:	Documentation page with auto generation of TOC
@@ -35,20 +33,19 @@ Author: 	github.com/Alofoxx -> source: http://css-tricks.com/automatic-table-of-
 </head>
 <body>
 <div id="blackBar">
+	<div id="buttons">         
+		<div class="outer1">
+			<a href="index.php"><div id="one" class="button"> Home </div></a>
+		</div>
+		
+		<div class="outer2">
+			<a href="topics.php"><div id="two" class="button">Topics</div></a>
+		</div>
 
-<div id="buttons">         
-    <div class="outer1">
-        <a href="index.php"><div id="one" class="button"> Home </div></a>
-    </div>
-    
-    <div class="outer2">
-        <a href="topics.php"><div id="two" class="button">Topics</div></a>
-    </div>
-
-    <div class="outer1">
-        <a href="login.php"><div id="three" class="button">Login</div></a>
-    </div>
-</div>
+		<div class="outer1">
+			<a href="login.php"><div id="three" class="button">Login</div></a>
+		</div>
+	</div>
 </div>
 <article>
  <h1 class="heading">Methodocracy</h1>
@@ -362,7 +359,7 @@ Author: 	github.com/Alofoxx -> source: http://css-tricks.com/automatic-table-of-
 
 		$(".all-questions").prepend(ToC);
 	</script>
-<!--Fixed footer. Wrote CSS in-line because writing it in external file did not work-->
+<!--Fixed (type of footer, not overcoming of a problem) footer. Wrote CSS in-line because writing it in external file did not work-->
 <div style="color:white;
 		    position:fixed;
 		    bottom:0;

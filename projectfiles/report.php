@@ -19,36 +19,37 @@ require 'core/init.php';
 <head>
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:400italic">
 	<!-- The above font is under an open license. www.google.com/fonts/specimen/Ubuntu-->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="mainstyle.css">
 </head>
 <body>
 <div id="blackBar">
+	<div id="buttons">         
+		<div class="outer1">
+			<a href="index.php"><div id="one" class="button"> Home </div></a>
+		</div>
+		
+		<div class="outer2">
+			<a href="topics.php"><div id="two" class="button">Topics</div></a>
+		</div>
 
-<div id="buttons">         
-    <div class="outer1">
-        <a href="index.php"><div id="one" class="button"> Home </div></a>
-    </div>
-    
-    <div class="outer2">
-        <a href="topics.php"><div id="two" class="button">Topics</div></a>
-    </div>
-
-    <div class="outer1">
-        <a href="login.php"><div id="three" class="button">Login</div></a>
-    </div>
-</div>
+		<div class="outer1">
+			<a href="login.php"><div id="three" class="button">Login</div></a>
+		</div>
+	</div>
 </div>
 <article>
 <?php
-	$user = new User;
-	$db = DB::getInstance();
+$user = new User;
+$db = DB::getInstance();
+if(isset($_GET['id']) && !empty($_GET['id']) && $user->_currentUser > 0){
 	$db->insert('reports', array(
 				'argument_id' => $_GET['id'],
 				'reporter_id' => $user->_currentUser));
 	echo 'You have submitted a report. Thank you.';
+}
 ?>
 </article>
+<!--Fixed (type of footer, not overcoming of a problem) footer. Wrote CSS in-line because writing it in external file did not work-->
 <div style="color:white;
 		    position:fixed;
 		    bottom:0;

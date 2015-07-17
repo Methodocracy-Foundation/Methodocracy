@@ -132,7 +132,8 @@ class DB {
 
 		return false;
 	}
-
+	
+	//return last inserted row
 	public function lastInsert($name) {
 		return $this->_pdo->lastInsertId($name);
 	}

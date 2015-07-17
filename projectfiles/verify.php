@@ -19,25 +19,23 @@ require 'core/init.php';
 <head>
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:400italic">
 	<!-- The above font is under an open license. www.google.com/fonts/specimen/Ubuntu-->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="mainstyle.css">
 </head>
 <body>
 <div id="blackBar">
+	<div id="buttons">         
+		<div class="outer1">
+			<a href="index.php"><div id="one" class="button"> Home </div></a>
+		</div>
 
-<div id="buttons">         
-    <div class="outer1">
-        <a href="index.php"><div id="one" class="button"> Home </div></a>
-    </div>
-    
-    <div class="outer2">
-        <a href="topics.php"><div id="two" class="button">Topics</div></a>
-    </div>
+		<div class="outer2">
+			<a href="topics.php"><div id="two" class="button">Topics</div></a>
+		</div>
 
-    <div class="outer1">
-        <a href="login.php"><div id="three" class="button">Login</div></a>
-    </div>
-</div>
+		<div class="outer1">
+			<a href="login.php"><div id="three" class="button">Login</div></a>
+		</div>
+	</div>
 </div>
 <article>
 <?php
@@ -48,10 +46,13 @@ if(isset($_GET['email']) && !empty($_GET['email']) AND isset($_GET['hash']) && !
 	$hash = $_GET['hash'];
 	
 	$db = DB::getInstance();
+	//See if row exists where email and hash are correct and the row is not verified already
 	$db->query("SELECT email, hash, verified FROM users WHERE email='".$email."' AND hash='".$hash."' AND verified='0'");
+	//Count returns how many rows fit the above query
 	$match = $db->count();
 	
 	if ( $match > 0 ) {
+		//Set verified to 1 only to where email and hash are correct and verified is 0
 		$db->query("UPDATE users SET verified='1' WHERE email='".$email."' AND hash='".$hash."' AND verified='0'");
 		echo 'Your account has been activated, you can now login.';
 	} else {
@@ -62,6 +63,8 @@ if(isset($_GET['email']) && !empty($_GET['email']) AND isset($_GET['hash']) && !
 	echo 'Invalid approach, please use the link that has been sent to your email.';
 }
 ?>
+</article>
+<!--Fixed (type of footer, not overcoming of a problem) footer. Wrote CSS in-line because writing it in external file did not work-->
 <div style="color:white;
 		    position:fixed;
 		    bottom:0;

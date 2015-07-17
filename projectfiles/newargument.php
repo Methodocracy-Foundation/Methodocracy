@@ -19,33 +19,29 @@ require 'core/init.php';
 <head>
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:400italic">
 	<!-- The above font is under an open license. www.google.com/fonts/specimen/Ubuntu-->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="mainstyle.css">
 </head>
 <body>
 <div id="blackBar">
-<div id="buttons">         
-    <div class="outer1">
-        <a href="index.php"><div id="one" class="button"> Home </div></a>
-    </div>
-    
-    <div class="outer2">
-        <a href="topics.php"><div id="two" class="button">Topics</div></a>
-    </div>
+	<div id="buttons">         
+		<div class="outer1">
+			<a href="index.php"><div id="one" class="button"> Home </div></a>
+		</div>
+		
+		<div class="outer2">
+			<a href="topics.php"><div id="two" class="button">Topics</div></a>
+		</div>
 
-    <div class="outer1">
-        <a href="login.php"><div id="three" class="button">Login</div></a>
-    </div>
-</div>
+		<div class="outer1">
+			<a href="login.php"><div id="three" class="button">Login</div></a>
+		</div>
+	</div>
 </div>
 <article>
 <?php
 $user = new User;
 $db = DB::getInstance();
-$db->get('arguments', array(
-						'argument_id', '=', $_GET['id']));
-$content = array();
-$content = explode("'", improved_var_export($db->results(), true));
+
 if(Input::exists())	{
 
 	$validate = new Validate();
@@ -60,7 +56,6 @@ if(Input::exists())	{
 	));
 
 	if($validation->passed()) {
-		$db = DB::getInstance();
 		$db->insert('arguments', array(
 			'type' => Input::get('type'),
 			'title' => Input::get('title'),
@@ -68,33 +63,32 @@ if(Input::exists())	{
 			'user_id' => $user->_currentUser
 		));
 		
+		//If this argument is disproving or supporting another argument...
 		if (isset($_GET['type'])){
-			if($_GET['type']==0){
+			if($_GET['type'] == 0){
 				$db->insert('arguments', array(
 					'type' => 0,
 					'title' => 'Disproval',
-					'body' => 'Disproval'));
+					'body' => 'Disproval',
+					'user_id' => $user->_currentUser));
 			}else{
 				$db->insert('arguments', array(
 					'type' => 1,
 					'title' => 'Support',
-					'body' => 'Support'));
+					'body' => 'Support',
+					'user_id' => $user->_currentUser));
 			}
-			$list = 1;
-			$db->get('arguments', array(
-							'argument_id', '=', $list));
-			while(improved_var_export($db->results(), true)!='array ()'){
-			$list++;
-			$db->get('arguments', array(
-							'argument_id', '=', $list));
-			}
+			
+			$lastRowId = $db->lastInsert('arguments');
+			
 			$db->insert('connections', array(
-							'argument_from' => $list-2,
-							'argument_to' => $list-1));
+							'argument_from' => $lastRowId-1,
+							'argument_to' => $lastRowId));
 			$db->insert('connections', array(
-							'argument_from' => $list-1,
+							'argument_from' => $lastRowId,
 							'argument_to' => $_GET['id']));
 		}
+		
 		$redirect = $db->lastInsert('arguments');
 		Redirect::to('viewargument.php?id='.$redirect);
 		
@@ -104,15 +98,25 @@ if(Input::exists())	{
 		}
 	}
 }
+
+$content = array();
+
+$db->get('arguments', array(
+	'argument_id', '=', $_GET['id']));
+$content = explode("'", improved_var_export($db->results(), true));
+
 if(isset($_GET['type'])){
-?><h1>Attempting to <?php
-if($_GET['type']==0){ 
-	echo 'disprove';
+?>
+<h1>Attempting to <?php
+if($_GET['type'] == 0){ 
+	echo 'disprove "';
 }else{ 
-	echo 'support';
-}?> <?php echo $content[7]; ?></h1><?php
+	echo 'support "';
+} echo $content[7]; ?>"</h1>
+<?php
 }
 ?>
+
 <form action="" method="post">
 	<div class="field">
 		<label for="title">Title:</label>
@@ -129,12 +133,13 @@ if($_GET['type']==0){
 
 	<div class="field">
 		<label for="body">Body:</label>
-		<textarea name="body" id="body" rows="30" cols="90"></textarea>
+		<textarea name="body" id="body" rows="25" cols="90"></textarea>
 	</div>
 
 	<input type="submit" value="Submit">
 </form>
 </article>
+<!--Fixed (type of footer, not overcoming of a problem) footer. Wrote CSS in-line because writing it in external file did not work-->
 <div style="color:white;
 		    position:fixed;
 		    bottom:0;

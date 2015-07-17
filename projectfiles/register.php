@@ -19,29 +19,26 @@ require 'core/init.php';
 <head>
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:400italic">
 	<!-- The above font is under an open license. www.google.com/fonts/specimen/Ubuntu-->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="mainstyle.css">
 </head>
 <body>
 <div id="blackBar">
+	<div id="buttons">         
+		<div class="outer1">
+			<a href="index.php"><div id="one" class="button"> Home </div></a>
+		</div>
+		
+		<div class="outer2">
+			<a href="topics.php"><div id="two" class="button">Topics</div></a>
+		</div>
 
-<div id="buttons">         
-    <div class="outer1">
-        <a href="index.php"><div id="one" class="button"> Home </div></a>
-    </div>
-    
-    <div class="outer2">
-        <a href="topics.php"><div id="two" class="button">Topics</div></a>
-    </div>
-
-    <div class="outer1">
-        <a href="login.php"><div id="three" class="button">Login</div></a>
-    </div>
-</div>
+		<div class="outer1">
+			<a href="login.php"><div id="three" class="button">Login</div></a>
+		</div>
+	</div>
 </div>
 <article>
 <?php
-
 
 if(Input::exists()) {
 
@@ -77,6 +74,7 @@ if(Input::exists()) {
 
 		if($validation->passed()) {
 			$email = Input::get('email');
+			//inserted email check here instead of in Validate.php class
 			if(!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", $email)){
 				echo 'Invalid email.';
 			} else {
@@ -176,6 +174,7 @@ if(Input::exists()) {
 	<input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
 </form>
 </article>
+<!--Fixed (type of footer, not overcoming of a problem) footer. Wrote CSS in-line because writing it in external file did not work-->
 <div style="color:white;
 		    position:fixed;
 		    bottom:0;
