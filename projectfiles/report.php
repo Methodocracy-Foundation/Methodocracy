@@ -41,10 +41,10 @@ require 'core/init.php';
 <?php
 $user = new User;
 $db = DB::getInstance();
-if(isset($_GET['id']) && !empty($_GET['id']) && $user->_currentUser > 0){
+if(isset($_GET['id']) && !empty($_GET['id']) && $user->currentUser > 0){
 	$db->insert('reports', array(
 				'argument_id' => $_GET['id'],
-				'reporter_id' => $user->_currentUser));
+				'reporter_id' => $user->currentUser));
 	echo 'You have submitted a report. Thank you.';
 }
 ?>

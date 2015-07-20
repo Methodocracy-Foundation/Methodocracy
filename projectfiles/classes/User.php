@@ -13,12 +13,12 @@
 
 <?php
 class User {
+	public	$currentUser = 0;
 	private $_db,
 			$_sessionName = null,
 			$_cookieName = null,
 			$_data = array(),
 			$_isLoggedIn = false;
-	public	$_currentUser = 0;
 
 	public function __construct($user = null) {
 		$this->_db = DB::getInstance();
@@ -31,7 +31,7 @@ class User {
 			$user = Session::get($this->_sessionName);
 
 			if($this->find($user)) {
-				$this->_currentUser = $user;
+				$this->currentUser = $user;
 				$this->_isLoggedIn = true;
 			} else {
 				$this->logout();

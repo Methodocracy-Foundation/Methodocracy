@@ -180,7 +180,7 @@ echo $contentUser[3];
 					'report_id', '=', $list));
 	$contentReport = explode("'", improved_var_export($db->results(), true));
 	while(improved_var_export($db->results(), true)!='array ()' && $loop){
-		if($contentReport[7] == $_GET['id'] && $contentReport[11] == $user->_currentUser){
+		if($contentReport[7] == $_GET['id'] && $contentReport[11] == $user->currentUser){
 			$loop = false;
 			$reported = true;
 		}

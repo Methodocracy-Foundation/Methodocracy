@@ -60,7 +60,7 @@ if(Input::exists())	{
 			'type' => Input::get('type'),
 			'title' => Input::get('title'),
 			'body' => Input::get('body'),
-			'user_id' => $user->_currentUser
+			'user_id' => $user->currentUser
 		));
 		
 		//If this argument is disproving or supporting another argument...
@@ -70,13 +70,13 @@ if(Input::exists())	{
 					'type' => 0,
 					'title' => 'Disproval',
 					'body' => 'Disproval',
-					'user_id' => $user->_currentUser));
+					'user_id' => $user->currentUser));
 			}else{
 				$db->insert('arguments', array(
 					'type' => 1,
 					'title' => 'Support',
 					'body' => 'Support',
-					'user_id' => $user->_currentUser));
+					'user_id' => $user->currentUser));
 			}
 			
 			$lastRowId = $db->lastInsert('arguments');
