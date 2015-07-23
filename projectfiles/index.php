@@ -71,66 +71,58 @@ if($user->isLoggedIn()) {
 	}
 	?>	
 		<a href="newargument.php?id=0">New Argument</a><br><br>
-		
-		<?php
-		$db = DB::getInstance();
-		$loop = true;
-		if(isset($_GET['page'])){
-			$page = $_GET['page'];
-		} else {
-			$page = 1;
-		}
-		$list = (($page-1)*100)+1;
-		$content = array();
-		$db->get('arguments', array(
-						'argument_id', '=', $list));
-		while(improved_var_export($db->results(), true)!='array ()'&&$loop){
-			$content = explode("'", improved_var_export($db->results(), true));
-			//Exclude Disprovals and Supports
-			if($content[3] < 2){
-				$list++;
-				$db->get('arguments', array(
-						'argument_id', '=', $list));
-			//Exclude hidden arguments
-			} else if($content[23] == 1){
-				$list++;
-				$db->get('arguments', array(
-						'argument_id', '=', $list));
-			} else {
-			?>
-			<a href="viewargument.php?id=<?php echo $content[15]; ?>"><?php echo $content[7]; ?></a><br>
-			<?php
-			$list++;
-			$db->get('arguments', array(
-						'argument_id', '=', $list));
-			}
-			if ($list == (($page*100)+1)){
-				$loop = false;
-			}
-		}
-		?>
-		<p style="text-align: center;">Page <?php echo $page ?><p>
-		
-		<div style="float:left;">
-			<?php 
-			if($page!=1){ echo
-				'<a href="index.php?page='; echo $page-1; echo'">Previous Page</a>';
-			}
-			?>
-		</div>
-		
-		<div style="float:right;">
-			<?php
-			if($list%101==0){ echo
-				'<a href="index.php?page='; echo $page+1; echo '">Next Page</a>';
-			}
-			?>
-		</div>
-	</article>
-	<?php
+<?php
 } else {
 	echo '<article>You need to <a href="login.php">log in</a> or <a href="register.php">register</a>!</article>';
-}?>
+}
+	$db = DB::getInstance();
+	$loop = true;
+	if(isset($_GET['page'])){
+		$page = $_GET['page'];
+	} else {
+		$page = 1;
+	}
+	$content = array();
+	$i = (($page-1)*100)+1;
+	$db->get('arguments', array(
+					'argument_id', '=', $i));
+	while(improved_var_export($db->results(), true) != 'array ()' && $loop){
+		$content = explode("'", improved_var_export($db->results(), true));
+		//Exclude Disprovals and Supports
+		if($content[3] > 1){
+			//Exclude hidden arguments
+			if($content[23] != 1){
+				?>
+				<a href="viewargument.php?id=<?php echo $content[15]; ?>"><?php echo $content[7]; ?></a><br>
+				<?php
+			}
+		}
+		if ($i == (($page*100)+1)){
+			$loop = false;
+		}
+		$i++;
+		$db->get('arguments', array(
+					'argument_id', '=', $i));
+	}
+	?>
+	<p style="text-align: center;">Page <?php echo $page ?><p>
+	
+	<div style="float:left;">
+		<?php 
+		if($page!=1){ echo
+			'<a href="index.php?page='; echo $page-1; echo'">Previous Page</a>';
+		}
+		?>
+	</div>
+	
+	<div style="float:right;">
+		<?php
+		if($i%101==0){ echo
+			'<a href="index.php?page='; echo $page+1; echo '">Next Page</a>';
+		}
+		?>
+	</div>
+</article>
 <!--Fixed (type of footer, not overcoming of a problem) footer. Wrote CSS in-line because writing it in external file did not work-->
 <div style="color:white;
 		    position:fixed;
