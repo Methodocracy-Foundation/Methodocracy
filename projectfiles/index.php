@@ -89,7 +89,7 @@ if($user->isLoggedIn()) {
 	while(improved_var_export($db->results(), true) != 'array ()' && $loop){
 		$content = explode("'", improved_var_export($db->results(), true));
 		//Exclude Disprovals and Supports
-		if($content[3] > 1){
+		if($content[3] > 2){
 			//Exclude hidden arguments
 			if($content[23] != 1){
 				?>

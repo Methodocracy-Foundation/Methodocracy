@@ -71,11 +71,17 @@ if(Input::exists())	{
 					'title' => 'Disproval',
 					'body' => 'Disproval',
 					'user_id' => $user->currentUser));
-			}else{
+			}else if ($_GET['type'] == 1){
 				$db->insert('arguments', array(
 					'type' => 1,
 					'title' => 'Support',
 					'body' => 'Support',
+					'user_id' => $user->currentUser));
+			} else {
+				$db->insert('arguments', array(
+					'type' => 2,
+					'title' => 'Neutral',
+					'body' => 'Neutral',
 					'user_id' => $user->currentUser));
 			}
 			
@@ -105,14 +111,16 @@ $db->get('arguments', array(
 	'argument_id', '=', $_GET['id']));
 $content = explode("'", improved_var_export($db->results(), true));
 
-if(isset($_GET['type'])){
+if(isset($_GET['type']) && !empty($_GET['type'])){
 ?>
 <h1>Attempting to <?php
 if($_GET['type'] == 0){ 
 	echo 'disprove "';
-}else{ 
+}else if ($_GET['type'] == 1){ 
 	echo 'support "';
-} echo $content[7]; ?>"</h1>
+} else{
+	echo 'connect neutrally to ';
+}echo $content[7]; ?>"</h1>
 <?php
 }
 ?>
@@ -126,8 +134,8 @@ if($_GET['type'] == 0){
 	<div class="field">
 		<label for="type">Type of Argument:</label>
 		<select name="type" id="type">
-			<option value="2">Opinion</option>
-			<option value="3">Question</option>
+			<option value="3">Opinion</option>
+			<option value="4">Question</option>
 		</select>
 	</div>
 

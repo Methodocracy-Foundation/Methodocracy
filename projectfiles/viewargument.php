@@ -40,13 +40,14 @@ require 'core/init.php';
 <article>
 <?php
 $db = DB::getInstance();
+$user = new User;
 $db->get('arguments', array(
 						'argument_id', '=', $_GET['id']));
 $content = array();
 $content = explode("'", improved_var_export($db->results(), true));
 //Only process the code on this page if argument is not hidden
 if ($content[23] == 0){
-$argTypeNames = array('','','Opinion','Question');
+$argTypeNames = array('','','','Opinion','Question');
 ?>
 
 <!--Display title-->
@@ -65,9 +66,22 @@ echo $contentUser[3];
 <!--Display body-->
 <p><?php echo $content[11]; ?></p>
 
-<div style="float:left">
+<?php if ($user->isLoggedIn()){
+echo '<div style="float:left">
 	<a href="newargument.php?id=<?php echo $content[15]; ?>&type=0">Disprove this argument</a><br><br>
-	
+</div>
+
+<div style="float:right">
+	<a href="newargument.php?id=<?php echo $content[15]; ?>&type=1">Support this argument</a><br><br>
+</div>
+
+<br><br>
+<div style="text-align: center">
+	<a href="newargument.php?id=<?php echo $content[15]; ?>$type=2">Create a new argument that connects neutrally to this one</a><br><br>
+</div>';
+}?>	
+
+<div style="float:left">	
 	<a href="connectionlist.php?id=<?php echo $content[15]; ?>&query=1">Arguments disproven by this one (<?php
 		$total = 0;
 		$list = 1;
@@ -117,9 +131,8 @@ echo $contentUser[3];
 	?>)</a>
 	
 </div>
-<div style="float:right">
-	<a href="newargument.php?id=<?php echo $content[15]; ?>&type=1">Support this argument</a><br><br>
-	
+
+<div style="float:right">	
 	<a href="connectionlist.php?id=<?php echo $content[15]; ?>&query=2">Arguments supported by this one (<?php
 		$total = 0;
 		$list = 1;
@@ -168,6 +181,59 @@ echo $contentUser[3];
 		echo $total;
 	?>)</a>
 </div>
+
+<br><br><br>
+<div style="text-align: center">
+	<a href="connectionlist.php?id=<?php echo $content[15]; ?>&query=5">Arguments this points to neutrally (<?php
+		$total = 0;
+		$list = 1;
+		$db = DB::getInstance();
+		$db->get('connections', array(
+						'connection_id', '=', $list));
+		$content2 = array();
+		$content3 = array();
+		while(improved_var_export($db->results(), true)!='array ()'){
+		$content2 = explode("'", improved_var_export($db->results(), true));
+		$db->get('arguments', array(
+						'argument_id', '=', $content2[7]));
+		$content3 = explode("'", improved_var_export($db->results(), true));
+		if ($content3[23] == 1){
+		} else if ($content2[3]==$content[15]&&$content3[3]==2){
+			$total += 1;
+		}
+		$list++;
+		$db->get('connections', array(
+						'connection_id', '=', $list));
+		}
+		echo $total;
+	?>)</a><br>
+	
+	<a href="connectionlist.php?id=<?php echo $content[15]; ?>&query=6">Arguments that point to this neutrally (<?php
+		$total = 0;
+		$list = 1;
+		$db = DB::getInstance();
+		$db->get('connections', array(
+						'connection_id', '=', $list));
+		$content2 = array();
+		$content3 = array();
+		while(improved_var_export($db->results(), true)!='array ()'){
+		$content2 = explode("'", improved_var_export($db->results(), true));
+		$db->get('arguments', array(
+						'argument_id', '=', $content2[3]));
+		$content3 = explode("'", improved_var_export($db->results(), true));
+		if ($content3[23] == 1){
+		} else if ($content2[7]==$content[15]&&$content3[3]==2){
+			$total += 1;
+		}
+		$list++;
+		$db->get('connections', array(
+						'connection_id', '=', $list));
+		}
+		echo $total;
+	?>)</a>
+</div>
+
+<?php if ( $user->isLoggedIn() ){ ?>
 <div style="float:right">
 	<?php
 	$user = new User;
@@ -198,7 +264,7 @@ echo $contentUser[3];
 		<li>Does the argument contain unnecessarily obscene content?</li>
 	</ul>
 	<a href="report.php?id=<?php echo $content[15]; ?>">Report</a>
-	<p>Warning: You will be temporarily banned from the report feature if you spam reports without reason.</p>
+	<p>Warning: You will be temporarily banned from the report feature <br>if you spam reports without reason.</p>
 	<?php
 	} else {
 		echo "You've already submitted a report for this argument.";
@@ -206,6 +272,7 @@ echo $contentUser[3];
 	}
 	?>
 </div>
+<?php } ?>
 </article>
 <!--Fixed (type of footer, not overcoming of a problem) footer. Wrote CSS in-line because writing it in external file did not work-->
 <div style="color:white;
