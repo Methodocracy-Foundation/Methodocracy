@@ -25,4 +25,4 @@ Anyone can propose arguments on any subject, and ideally, this site could be use
 
 There is something missing on the Internet, its true potential has yet to be unlocked.
 
-See about.html for more information
+See projectfiles/about.html for more information
