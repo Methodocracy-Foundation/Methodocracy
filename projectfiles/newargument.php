@@ -54,7 +54,7 @@ if(Input::exists())	{
 		'title' => array(
 			'required' => true,
 			'min' => 2,
-			'max' => 40),
+			'max' => 140),
 		'body' => array(
 			'required' => true,
 			'min' => 2)
