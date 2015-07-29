@@ -68,6 +68,8 @@ if(Input::exists())	{
 			'user_id' => $user->currentUser
 		));
 		
+		$redirect = $db->lastInsert('arguments');
+		
 		//If this argument is disproving, supporting, or has a neutral connection to another argument...
 		if (isset($_GET['type'])){
 			if($_GET['type'] == 0){
@@ -100,7 +102,6 @@ if(Input::exists())	{
 							'argument_to' => $_GET['id']));
 		}
 		
-		$redirect = $db->lastInsert('arguments');
 		Redirect::to('viewargument.php?id='.$redirect);
 		
 	} else {
