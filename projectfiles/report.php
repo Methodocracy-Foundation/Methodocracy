@@ -40,6 +40,11 @@ require 'core/init.php';
 <article>
 <?php
 $user = new User;
+
+if(!$user->isLoggedIn()) {
+	Redirect::to('index.php');
+}
+
 $db = DB::getInstance();
 if(isset($_GET['id']) && !empty($_GET['id']) && $user->currentUser > 0){
 	$db->insert('reports', array(

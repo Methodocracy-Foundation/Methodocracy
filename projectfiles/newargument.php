@@ -40,6 +40,11 @@ require 'core/init.php';
 <article>
 <?php
 $user = new User;
+
+if(!$user->isLoggedIn()) {
+	Redirect::to('index.php');
+}
+
 $db = DB::getInstance();
 
 if(Input::exists())	{
