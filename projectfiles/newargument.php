@@ -63,7 +63,7 @@ if(Input::exists())	{
 			'user_id' => $user->currentUser
 		));
 		
-		//If this argument is disproving or supporting another argument...
+		//If this argument is disproving, supporting, or has a neutral connection to another argument...
 		if (isset($_GET['type'])){
 			if($_GET['type'] == 0){
 				$db->insert('arguments', array(
@@ -111,7 +111,7 @@ $db->get('arguments', array(
 	'argument_id', '=', $_GET['id']));
 $content = explode("'", improved_var_export($db->results(), true));
 
-if(isset($_GET['type']) && !empty($_GET['type'])){
+if(isset($_GET['type'])){
 ?>
 <h1>Attempting to <?php
 if($_GET['type'] == 0){ 
@@ -119,7 +119,7 @@ if($_GET['type'] == 0){
 }else if ($_GET['type'] == 1){ 
 	echo 'support "';
 } else{
-	echo 'connect neutrally to ';
+	echo 'connect neutrally to "';
 }echo $content[7]; ?>"</h1>
 <?php
 }

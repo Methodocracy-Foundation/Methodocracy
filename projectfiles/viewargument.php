@@ -68,16 +68,16 @@ echo $contentUser[3];
 
 <?php if ($user->isLoggedIn()){
 echo '<div style="float:left">
-	<a href="newargument.php?id=<?php echo $content[15]; ?>&type=0">Disprove this argument</a><br><br>
+	<a href="newargument.php?id='; echo $content[15]; echo '&type=0">Disprove this argument</a><br><br>
 </div>
 
 <div style="float:right">
-	<a href="newargument.php?id=<?php echo $content[15]; ?>&type=1">Support this argument</a><br><br>
+	<a href="newargument.php?id='; echo $content[15]; echo '&type=1">Support this argument</a><br><br>
 </div>
 
 <br><br>
 <div style="text-align: center">
-	<a href="newargument.php?id=<?php echo $content[15]; ?>$type=2">Create a new argument that connects neutrally to this one</a><br><br>
+	<a href="newargument.php?id='; echo $content[15]; echo '&type=2">Create a new argument that connects neutrally to this one</a><br><br>
 </div>';
 }?>	
 
