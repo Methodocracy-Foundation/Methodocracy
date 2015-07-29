@@ -92,6 +92,9 @@ if(Input::exists()) {
 	<input type="submit" value="Log in">
 	<input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
 </form>
+
+<p>Need to register? Click <a href="register.php">here</a>.</p>
+
 </article>
 <!--Fixed (type of footer, not overcoming of a problem) footer. Wrote CSS in-line because writing it in external file did not work-->
 <div style="color:white;

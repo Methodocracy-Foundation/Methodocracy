@@ -72,8 +72,6 @@ if($user->isLoggedIn()) {
 	?>	
 		<a href="newargument.php?id=0">New Argument</a><br><br>
 <?php
-} else {
-	echo '<article>You need to <a href="login.php">log in</a> or <a href="register.php">register</a>!</article>';
 }
 	$db = DB::getInstance();
 	$loop = true;
