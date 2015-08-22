@@ -63,8 +63,8 @@ if(Input::exists())	{
 	if($validation->passed()) {
 		$db->insert('arguments', array(
 			'type' => Input::get('type'),
-			'title' => Input::get('title'),
-			'body' => Input::get('body'),
+			'title' => Input::removeCharacters(Input::get('title')),
+			'body' => Input::removeCharacters(Input::get('body')),
 			'user_id' => $user->currentUser
 		));
 		

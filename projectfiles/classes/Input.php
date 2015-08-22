@@ -36,4 +36,13 @@ class Input {
 		
 		return '';
 	}
+	
+	public static function removeCharacters($string){
+		for ($i = 0; $i < strlen($string); $i++){
+			if (substr($string,$i,1) == "'" || substr($string,$i,1) == '"' || substr($string,$i,1) == "<" || substr($string,$i,1) == ">"){
+				$string = substr($string,0,$i).substr($string,$i+1,(strlen($string)-$i));
+			}
+		}
+		return $string;
+	}
 }

@@ -70,9 +70,9 @@ if($user->isLoggedIn()) {
 	<?php
 	}
 	?>	
-		<a href="newargument.php?id=0">New Argument</a><br><br>
+		<a href="newargument.php?id=0">New Argument</a>
 <?php
-}
+}?><br><br><?php
 	$db = DB::getInstance();
 	$loop = true;
 	if(isset($_GET['page'])){
