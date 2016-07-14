@@ -17,16 +17,16 @@ Benefits
     Open, free, and free from special interests.
     Easy to cite.
     Can be used to solve problems that are economic, corporate, social, governmental, environmental, existential threats, etc.
-    Can be used to solve problems such as how to run methodocry and how it should be designed.
-    Can be used to determine the best recipie of apple pie.
+    Can be used to solve problems such as how to run methodocracy and how it should be designed.
+    Can be used to determine the best recipe of apple pie.
 
 
-Users can browse, search, and submit entries into the knowledge base. Entries can disprove, support, replicate, or peer-review other entires. The website will calculate and inform users the status of an entry's validity using this system. An entry is most meritable if it follows the scientific method correctly. An entry is least meritable if it is just an opinon, or comment, and is less visible when sorting. Lower merit entries should not be dismissed, however, because they often inspire more meritable entries to be submitted.
+Users browse, search, and submit entries into the knowledge base. Entries can disprove, support, replicate, or peer-review other entries. The website calculates and informs users the status of an entry's validity using this system. An entry is most meritable if it follows the scientific method correctly. An entry is least meritable if it is just an opinion, or comment, and is less visible when sorting. Lower merit entries should not be dismissed, however, because they often inspire more meritable entries to be submitted.
 
 
 Mission Statement
 
-To engage everyone in problem-solving, using the scientific method as the most meritable method. To ensure that, through Methodocracy, humanity will always have the ability to problem solve as much and as fast as possible.
+To engage everyone in problem-solving, using the scientific method as the most meritable method. To ensure that, through Methodocracy, humanity always has the ability to problem solve as much and as fast as possible.
 
 
 Vision Statement

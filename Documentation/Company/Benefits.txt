@@ -10,6 +10,11 @@
 	
 	Methodocracy TM is a trademark of Methodocracy.org (C)2014-2015, and all rights to that TM are reserved. Any modified versions are required to be marked as changed, so that their problems will not be attributed erroneously to authors of previous versions. And the name Methodocracy TM should be clearly labeled as the source of your work as long as any part of this work remains intact in part or in whole.
 
-Attempts to solve the world's biggest problems, as well as smaller problems
-Supports governmental and non-governmental decision making
-Applies metrics and program evaluation to complex social systems
+    Centralizes scientific publication.
+    Organizes knowledge robustly.
+    Takes advantage of lower merit knowledge in addition to higher merit knowledge.
+    Open, free, and free from special interests.
+    Easy to cite.
+    Can be used to solve problems that are economic, corporate, social, governmental, environmental, existential threats, etc.
+    Can be used to solve problems such as how to run methodocracy and how it should be designed.
+    Can be used to determine the best recipe of apple pie.
