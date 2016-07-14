@@ -3,24 +3,24 @@ Methodocracy
 "The Super-Power of Problem-Solving"
 
 
-We're setting up a free website that facilitates the act of problem-solving, where evidence-based arguments hold more weight than arguments like opinions.
+A free website that facilitates problem-solving. Kind of like Wikipedia, but instead of logging already known information, it focuses on accumulating new knowledge using established methods, especially the scientific method. Credentialed users and average Joe's can use the site alike.
 
+
+We need to work together to make unlikely connections, to think more creatively as a whole than we would have alone.
 
 
 Benefits
 
-    Attempts to solve the world's biggest problems, as well as smaller problems
-    Supports governmental and non-governmental decision making
-    Applies metrics and program evaluation to complex social systems
+    Centralizes scientific publication.
+    Organizes knowledge robustly.
+    Takes advantage of lower merit knowledge in addition to higher merit knowledge.
+    Open, free, and free from special interests.
+    Easy to cite.
+    Can be used to solve problems that are economic, corporate, social, governmental, environmental, existential threats, etc.
+    Can be used to determine the best recipie of apple pie.
 
 
-
-
-If you want to advocate for a certain position, such as addressing poverty, you would state your arguments on the site. If you back up your arguments with rigorous scientific research, then your arguments get weighted more heavily. If you just state an opinion with no research or any facts at all, then that gets weighted the least, and is put further down in a hierarchy of arguments for and against that particular topic.
-
-However, no one should entirely dismiss an opinion, as it may contain truths that have yet to be validated by research. After all, Einstein's theory of relativity started out as just a thought, with no research to back it up.
-
-Anyone can propose arguments on any subject, and ideally, this site could be useful when determining the best course of action in setting policy within governmental entities, political initiatives, scientific endeavors, nonprofit initiatives, corporate actions -- well, just about anything! Perhaps it could also centralize scientific publication.
+Users can browse, search, and submit entries into the knowled base. An entry is most meritable if it follows the scientific method correctly. An entry is least meritable if it is just an opinon, or comment, and is less visible when sorting. Lower merit entries should not be dismissed, however, because they often inspire more meritable entries to be submitted.
 
 
 There is something missing on the Internet, its true potential has yet to be unlocked.
