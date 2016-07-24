@@ -1,4 +1,4 @@
-Methodocracy (noun):
+Methodocracy:
 
 A cultural-political ideology which proposes that optimal decision-making, from the individual to national level, is necessarily based upon the quantity and quality of data, interpretation, and conclusions gathered through tested and reliable methodologies.
 
