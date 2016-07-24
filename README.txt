@@ -1,14 +1,17 @@
 Methodocracy (noun):
+
 A cultural-political ideology which proposes that optimal decision-making, from the individual to national level, is necessarily based upon the quantity and quality of data, interpretation, and conclusions gathered through tested and reliable methodologies.
 
 
 Hurdles: 
+
 1. It is prohibitively expensive and time-consuming for the average citizen to access information due to the high cost of scientic journals/articles and the lack of a centralized database.
 
 2. Even with free and convenient access to a centralized information archive, the vast majority of the population have little training nor ability to determine the quality of data, interpretations, conclusions, and methodologies. This results in confusion and distrust for information-based-decision-making, since bad information contradicts good information and the two are indistinguishable to the untrained mind.
 
 
 Proposal:
+
 To create and develop a free, user-friendly, crowdsourced website that archives and rates research projects in order to facilitate problem-solving and decision-making. A chimera of wikipedia, researchgate, and reddit, it would allow users to submit questions/problems, reply with hypotheses or entire researh projects, and rate others' submissions on scientific coherence and readability. It will focus on teaching and guiding its user on data collection, analysis, and interpretation, while acting as a database for all user-submitted queries and researches. Additionally, it would serve as a scientific-networking platform for both small and large scale collaborations. All users will be able to rate all submissions, however the impact of a user's rating will be based upon the quality/quantity of their contributions, their work/education background, and other relevant factors.
 
 
@@ -28,10 +31,12 @@ Users browse, search, and submit entries into the knowledge base. Entries can di
 
 
 Mission Statement:
+
 To teach and engage 7+ billion people in investigative science and critical thinking. To maximize collaboration and assist humanity in reaching its collective intellectual potential.
 
 
 Vision Statement:
+
 To be known as the first place where thinkers and problem-solvers go. To ensure the survival of humanity, life, and consciousness. To alleviate suffering and improve the quality of life for sentient beings now and in the future.
 
 
