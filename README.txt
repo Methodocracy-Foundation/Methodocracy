@@ -3,7 +3,7 @@ Methodocracy
 "The Super-Power of Problem-Solving"
 
 
-A free website that facilitates problem-solving. Kind of like Wikipedia, but instead of logging already known information, it focuses on accumulating new knowledge using established methods, especially the scientific method. Credentialed users and average Joe's can use the site alike.
+A gamified way to participate in a think tank. Its a free website that facilitates problem-solving. Kind of like Wikipedia, but instead of logging already known information, it focuses on generating new knowledge using established methods, especially the scientific method. Credentialed users and average Joe's can use the site alike. The kicker is that some of the problems to be solved can be how to make the world a better place.
 
 
 We need to work together to make unlikely connections, to think more creatively as a whole than we would have alone.
