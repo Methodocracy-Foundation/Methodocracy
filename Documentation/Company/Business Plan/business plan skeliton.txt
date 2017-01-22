@@ -1,0 +1,42 @@
+-Cover page
+-Table of contents
+-Executive summary
+
+Product:
+-Describe product
+-Benefits
+-Example of use
+-Mission, vision, values
+-Future development plans
+-Liscense and github information
+
+Marketing plan:
+-Define market and sub-sectors of market of target audience
+-Trends and importance of the market
+-Need of the product
+-Competitive forces
+-Competitive advantage
+-Distribution channels and promotional efforts
+-Projected number of clients
+-Costs and projected earned income
+
+Operational plan:
+-Stage of orgizational maturity
+-Location
+-Capital equipment
+-Objectives
+-Industry trends
+-Development approach
+-Maintenance and evaluation of program services approach
+-Expansion (of company) plans
+
+Management and Organizational Team:
+-Describe your management team 		<- MOST IMPORTANT
+-Board description 			<- MOST IMPORTANT
+-Organizational structure
+-Staffing needs
+
+Major Milestones:
+-Milestones
+-Detail how organization plans to accomplish its goals
+-Timeline and schedule of planned mojor events
