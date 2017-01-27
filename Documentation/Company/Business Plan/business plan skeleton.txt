@@ -1,0 +1,59 @@
+-Cover page
+-Table of contents
+-Executive summary
+
+Product:
+-Elevator Pitch
+-Business Overview (concise 1-2 line explanation of business)
+-Description
+-Benefits
+-Example of Use
+-Mission Statement
+-Vision Statement
+-Value Statement
+-Success Factors
+-Future Development Plans
+-Liscense and Git/GitHub Information
+
+Marketing plan:
+-Market and Sub-Sectors of the Market Definition
+-Trends, Market Size, and Importance of the Market
+-Target Audience
+-Need of the Product
+-Direct Competitors
+-Indirect Competitors
+-Competitive advange
+-Distribution Channels and Promotional Efforts
+-Projected Number of Clients
+
+Operational plan:
+-Industry Trends
+-Objectives
+-Development Approach
+-Maintenance and Evaluation of Development Approach
+-Stage of Orgizational Maturity
+-Location
+-Capital Equipment
+-Expansion Plans (of company) 
+
+Organizational Structure and Management Team:
+-Organizational Structure
+-Management Team Description 		<- MOST IMPORTANT
+-Board Description 			<- MOST IMPORTANT
+-Management Team Gaps
+-Staffing Needs
+
+Major Milestones:
+-Milestones (Detail how organization plans to accomplish its goals)
+-Timeline
+
+Capitalization:
+-Capital Structure Description
+
+Financial plan:
+-(Illustrate current and projected financial status. Include costs and projected income, annual financial summary, income statement, funding sources assessment, cash flow projection, financial ratio analysis (if possible), gap analysis, funding requirements/use-of-funds and three-year financial projections, as well as an explanation of projections)
+
+Considerations:
+-(Request or needs for financing, grant awards, major contributions, in-kind support and so on.)
+
+-Appendix (resumes of key management, board member list and pertinent charts, graphs and illustrations)
