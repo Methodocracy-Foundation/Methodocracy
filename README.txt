@@ -1,6 +1,6 @@
 Methodocracy
 
-"The Super-Power of Problem-Solving"
+What do we want? Evidence-based change! When do we want it? After peer review!
 
 
 A free website for problem-solving made into like a game. Kind of like Wikipedia, but instead of logging already known information, it focuses on generating new knowledge using established methods. Credentialed users and average Joe's can use it alike. The kicker is that some of the problems to be solved are how to make the world a better place.
@@ -9,8 +9,8 @@ Users browse, search, and submit entries into the knowledge base. Entries can di
 
 The core target audience is attendees of academic conferences. The current academic community is broken. Methodocracy will:
 1. Ensure that experiments are replicated before being taken seriously.
-2. Ensure that sample sizes are of a respectable amount.
-3. Ensure that peer review is double-blind and accountable.
+2. Remove confirmation bias that is caused by being motivated to make headlines.
+3. Ensure that sample sizes are of a respectable amount.
 
 Example:
 A research organization uses Methodocracy to upload their old experiments and create new entries for new experiments and the debate surrounding all of it. When a discovery is made that something is causing harm in society, the organization---in collaboration with other organizations and the general public---get to work. They must be skeptical, not sensationalize their findings, find the complexities that are relatively closer to the truth than the initial black and white, and evaluate several possible action plans to remedy the problem. When ready, the project is presented to those who write laws and those who set company policies.
@@ -18,7 +18,7 @@ A research organization uses Methodocracy to upload their old experiments and cr
 
 Mission Statement
 
-To engage everyone in problem-solving, using the scientific method with ethics as the most meritable method. To ensure that, through Methodocracy, humanity always has the ability to problem solve as much and as fast as possible.
+To engage everyone in problem-solving, using the scientific method, ethics, and practical philosophy as the most meritable methods. To ensure that, through Methodocracy, humanity always has the ability to problem solve as much and as fast as possible.
 
 
 Vision Statement
