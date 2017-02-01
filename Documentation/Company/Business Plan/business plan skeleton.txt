@@ -51,7 +51,7 @@ Capitalization:
 -Capital Structure Description
 
 Financial plan:
--(Illustrate current and projected financial status. Include costs and projected income, annual financial summary, income statement, funding sources assessment, cash flow projection, financial ratio analysis (if possible), gap analysis, funding requirements/use-of-funds and three-year financial projections, as well as an explanation of projections)
+-(Revenue model. Illustrate current and projected financial status. Include costs and projected income, annual financial summary, income statement, balance sheet, cash flow, funding sources assessment, cash flow projection, financial ratio analysis (if possible), gap analysis, funding requirements/use-of-funds and three-year financial projections, as well as an explanation of projections)
 
 Considerations:
 -(Request or needs for financing, grant awards, major contributions, in-kind support and so on.)

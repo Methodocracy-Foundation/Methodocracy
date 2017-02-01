@@ -1,4 +1,4 @@
-Methodocracy
+Methodocracy Foundation
 
 What do we want? Evidence-based change! When do we want it? After peer review!
 
