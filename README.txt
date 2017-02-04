@@ -3,7 +3,7 @@ Methodocracy Foundation
 What do we want? Evidence-based change! When do we want it? After peer review!
 
 
-A free website for problem-solving made into like a game. Kind of like Wikipedia, but instead of logging already known information, it focuses on generating new knowledge using established methods. Credentialed users and average Joe's can use it alike. The kicker is that some of the problems to be solved are how to make the world a better place.
+A free website for problem-solving made to be like a game. It’s similar to Wikipedia, but instead of logging already known information, it focuses on generating new knowledge using established methods. Credentialed users and average Joe's can use it alike. The kicker is that some of the problems to be solved are how to make the world a better place.
 
 Users browse, search, and submit entries into the knowledge base. Entries can disprove, support, replicate, peer-review, allude to, expand upon, break down, summarize, etc. other entries. The website calculates and informs users the status of an entry's strength using this system. An entry is most meritable if it follows rigorous scientific, philosophical, and ethical methods. An entry is least meritable if it is just an opinion or comment, and is less visible when sorting. Lower merit entries should not be dismissed, however, because they often inspire more meritable entries to be submitted.
 
