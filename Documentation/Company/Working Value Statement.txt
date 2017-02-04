@@ -38,12 +38,16 @@ Morals and ethics.
 Methodocracy Foundation will always:
 -Make every decision with wisdom.
 -Value and promote ethics, honesty, responsibility, prudence, selflessness, giving, kindness, compassion, love, peace, peacefulness, caring for everyone, encouragement, and improving the world around us.
--Increase the chances of survival and the quality of life for the most amount of individuals for the longest duration.
 
 
 Effectiveness.
 
 Methodocracy Foundation will always:
+-Remove confirmation bias that is caused by being motivated to make headlines.
+-Ensure that experiments are designed, analyzed, and reported rigorously.
+-Ensure that experiments are replicated before being taken seriously.
+-Incentivize careful and proper peer review.
+-Not tolerate sensationalism when reporting findings.
 -Be committed to improvement.
 -Value logic, truth, quality, organization, efficiency, reliability, cooperation, data, information, knowledge, metrics, play, creativity, and inspiration.
 -Quantify everything, and express everything in mathematical and logical models.
@@ -54,3 +58,4 @@ Methodocracy Foundation will always:
 -Make our product, volunteer opportunities, employment, investments, and partnerships fun and engaging.
 -Question everything and encourage everyone to do the same.
 -Think big and encourage everyone to do the same.
+
