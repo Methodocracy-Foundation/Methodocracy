@@ -8,7 +8,6 @@
     A copy of the license is included in the section entitled "GNU
     Free Documentation License".
 	
-	Methodocracy TM is a trademark of Methodocracy.org (C)2014-2015, and all rights to that TM are reserved. Any modified versions are required to be marked as changed, so that their problems will not be attributed erroneously to authors of previous versions. And the name Methodocracy TM should be clearly labeled as the source of your work as long as any part of this work remains intact in part or in whole.
+	Methodocracy TM is a trademark of Methodocracy.org (C)2014, and all rights to that TM are reserved. Any modified versions are required to be marked as changed, so that their problems will not be attributed erroneously to authors of previous versions. And the name Methodocracy TM should be clearly labeled as the source of your work as long as any part of this work remains intact in part or in whole.
 
-Methodocracy, the Super-Power of Problem-Solving
-The Super-Power of Problem-Solving
+What do we want? Evidence-based change! When do we want it? After peer review!
