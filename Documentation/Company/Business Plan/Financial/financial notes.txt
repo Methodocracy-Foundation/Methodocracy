@@ -1,0 +1,7 @@
+The cost of benefits for the grant writer is $21,892, the cost of benefits for the CEO is $24,996, and the cost of benefits for the web developer is $25,622, totaling $75,510.
+
+payroll taxes:
+50k 1 month: 534.37
+60k 1 month: 669.05
+x2: 16,057.2
++50k: 22,469.64
