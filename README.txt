@@ -24,7 +24,7 @@ A research organization uses Methodocracy to upload their old experiments and cr
 
 Mission Statement
 
-To engage everyone in problem-solving, using the scientific method, ethics, and practical philosophy as the most meritable methods. To ensure that, through Methodocracy, humanity always has the ability to problem solve as much and as fast as possible.
+To engage everyone in problem-solving, using the scientific method, ethics, and practical philosophy as the most meritable methods. To educate users on solutions by having the entire process transparent. To ensure that, through Methodocracy, humanity always has the ability to problem solve as much and as fast as possible.
 
 
 Vision Statement
