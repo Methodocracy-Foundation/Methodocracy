@@ -1,0 +1,323 @@
+/* Basic HTML elements styling
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	border: none;
+  margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}  
+body {
+  font-family: Arial, Helvetica, sans-serif;  
+  line-height: 150%; 
+}  
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  -ms-word-wrap: break-word;
+  word-wrap:     break-word;
+  line-height: 120%;
+  margin: 30px 0 7px;                   
+}
+h1 {
+  color: black;
+  font-size: 28px;  
+}
+h2 {
+  color: #222222;
+  font-size: 22px;  
+}
+h3 {
+  color: #333333;
+  font-size: 19px;  
+}
+h4 {
+  color: #444444;
+  font-size: 17px;  
+}
+h5 {
+  color: #555555;
+  font-size: 15px;  
+}
+h6 {
+  color: #666666;
+  font-size: 14px;  
+}
+p, ul, ol, li, dl, address {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  font-size: 14px;
+  text-align: left;
+}
+ul {
+  margin-left: 16px;   
+}
+ol {
+	list-style-type: decimal;
+  margin-left: 20px;
+}
+ol ol {
+	list-style: upper-alpha;
+}
+ol ol ol {
+	list-style: lower-roman;
+}
+ol ol ol ol {
+	list-style: lower-alpha;
+}
+dl {
+  margin-bottom: 20px;   
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin-bottom: 5px;
+}
+strong {
+	font-weight: bold;
+}
+cite, em, i {
+	font-style: italic;
+}
+blockquote cite {
+  display: block;
+  font-style: normal;
+	text-transform: uppercase;
+}
+a {
+  color: #437bd0;
+  text-decoration: underline;           
+}
+a:hover {
+  text-decoration: none;           
+}
+a img {
+  border: none;      
+}
+img {
+  height: auto; 
+  max-width: 100%;   
+}
+table {
+  font-size: 14px;
+  width: 100%;      
+}
+table, td, th {
+  border: 1px solid #e3e3e3;
+  border-collapse: collapse;
+  text-align: left;
+}
+td, th {
+  padding: 5px 8px;       
+}
+th {
+  background: #555555;
+  color: white;
+  font-weight: bold;   
+}
+blockquote, q { 
+  background: #f0f0f0;
+  border-left: 1px solid #e3e3e3;
+  clear: both;
+  color: #333333;
+  font-style: italic;
+  margin: 0 0 20px;
+  padding: 15px;
+}
+address {
+  font-style: italic;        
+}
+pre {
+  margin-bottom: 20px;
+  overflow: auto;   
+}
+sup {
+  vertical-align: super;    
+}
+sub {
+  vertical-align: sub;    
+}
+iframe,
+embed {
+  clear: both;
+  width: 100%;   
+}
+hr {
+  background: #e8e8e8;
+  border: none;
+  height: 1px; 
+  margin: 15px 0;  
+}
+input[type="text"],
+input[type="file"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="email"],
+input[type="url"],
+textarea,
+select {
+  background-color: #f2f2f2;
+  border: 1px solid #e6e6e6;
+  color: #333333;
+  line-height: normal;
+  padding: 5px;
+  width: 50%;
+}
+textarea {
+	overflow: auto;
+	vertical-align: top;
+  width: 98%;
+}
+input[type="submit"],
+input[type="reset"] {
+  background: #6596dd;
+  border: none;
+  border-radius: 0 !important;
+  box-shadow: none;
+  color: white !important;
+  cursor: pointer;
+  font-size: 15px;
+  height: auto;
+  margin-top: 5px;
+  padding: 7px 10px;
+  text-align: center;
+  text-decoration: none; 
+  text-shadow: none;  
+  -webkit-transition: background-color 1s ease;
+     -moz-transition: background-color 1s ease;
+       -o-transition: background-color 1s ease;
+      -ms-transition: background-color 1s ease;
+          transition: background-color 1s ease;                
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #437bd0;                     
+}
+
+
+/* WordPress Core
+-------------------------------------------------------------- */
+
+.alignnone {
+  clear: both;
+  margin: 5px 20px 20px 0;
+}
+.aligncenter,
+div.aligncenter {
+  clear: both;
+  display: block;
+  margin: 5px auto 20px auto;
+}
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+.aligncenter {
+  display: block;
+  margin: 5px auto 20px auto;
+}
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+.wp-caption,
+.gallery-caption {
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  padding: 5px 3px;
+  text-align: center;
+}
+#wrapper .gallery-caption {
+  border: none;                          
+}
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+#wrapper .wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px;
+}
+.wp-audio-shortcode {
+  margin-bottom: 20px;                   
+}
+
+#tinymce {
+  padding: 20px !important;
+  background: white;
+}
+#tinymce {
+  border-top: none;         
+}
+#tinymce p,
+#tinymce ul,
+#tinymce ol {
+  margin-bottom: 15px;           
+}
+#tinymce ul ul,
+#tinymce ol ol,
+#tinymce ol ul,
+#tinymce ul ol,
+#tinymce blockquote p {
+  margin-bottom: 0;           
+} 
+
+
+/* RTL support
+-------------------------------------------------------------- */
+
+.rtl p,
+.rtl ul,
+.rtl ol,
+.rtl li,
+.rtl dl,
+.rtl address,
+.rtl table,
+.rtl td,
+.rtl th {
+  text-align: right;
+}
+.rtl ul {
+  margin: 0 16px 0 0;   
+}
+.rtl ol {
+  margin: 0 20px 0 0;   
+}
+.rtl blockquote,
+.rtl q { 
+  border-left: none;
+  border-right: 1px solid #e3e3e3;
+  padding: 0 10px 0 0;
+}

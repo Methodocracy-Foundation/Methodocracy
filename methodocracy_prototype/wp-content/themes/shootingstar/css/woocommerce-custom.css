@@ -1,0 +1,144 @@
+/* Custom WooCommerce styles for ShootingStar theme.
+----------------------------------------------- */
+.orderby {
+  width: 100%;         
+}
+.page-numbers li {
+  text-align: center;                
+}
+.single-product .content-headline {
+  margin-bottom: 22px;                  
+}
+.amount {
+  font-weight: bold;        
+}
+.single-product .product_meta,
+.woocommerce-review-link {
+  font-size: 13px;              
+}
+#wrapper #content .product .images {
+  width: 40%;                              
+}
+#wrapper #content .product .summary {
+  width: 57%;                                     
+}
+.woocommerce .products .product a img,
+.woocommerce-page .products .product a img,
+.woocommerce #content .product .images img,
+.woocommerce-page #content .product .images img {
+  max-width: 100%;
+  width: auto !important;                                           
+}
+.woocommerce #content .product .woocommerce-tabs .tabs {
+  border-bottom: none !important;
+  margin-bottom: 0 !important;                                                       
+}
+.woocommerce #content .product .woocommerce-tabs .panel {
+  -webkit-box-shadow: none;
+  -moz-box-shadow:    none;
+  box-shadow:         none;
+  margin-bottom: 20px !important;                                                        
+}
+#content .product .entry-content {
+  border: none;                
+}
+.woocommerce #comments h2,
+#tab-description h2 {
+  margin-top: 20px;                    
+}
+.woocommerce #comments {
+  margin-top: 0; 
+  width: 100%;                          
+}
+#wrapper #content #review_form #respond {
+  clear: both;                                   
+}
+.woocommerce .comment-reply-title {
+  margin-bottom: 5px !important;                                            
+}
+.woocommerce .related,
+.woocommerce .upsells {
+  clear: both;                      
+}
+.woocommerce .related h2,
+.woocommerce .upsells h2 {
+  margin: 0 0 12px;                         
+}
+.woocommerce .upsells ul {
+  margin-bottom: 0 !important;                         
+}
+.woocommerce-page #content .product .thumbnails a {
+  margin-bottom: 3.8% !important;                                                        
+}
+html .woocommerce ul.products li.product .onsale,
+html .woocommerce-page ul.products li.product .onsale {
+  left: 0px;
+  right: auto;
+  margin-left: -6px;
+  margin-right: 0;                                                 
+}
+#wrapper .header-logo {
+  max-width: 950px;          
+}
+
+@media screen and (max-width: 1170px) {
+  #wrapper .header-content .header-logo {
+    max-width: 770px;              
+}
+}
+
+@media screen and (max-width: 1012px) {
+  html #wrapper #content .product .images {
+    width: 100% !important;                              
+}
+  html #wrapper #content .product .summary {
+    width: 100% !important;                                     
+} 
+}
+
+/* Cart and Checkout */
+.woocommerce-cart table,
+.woocommerce-checkout table,
+.woocommerce-account table {
+  border-collapse: collapse !important;           
+}
+.woocommerce-cart table td,
+.woocommerce-cart table th {
+  padding: 5px 8px !important;
+  vertical-align: middle !important;       
+}
+
+/* Widgets */
+#sidebar .widget_shopping_cart ul,
+#sidebar .widget_products ul,
+#sidebar .widget_recently_viewed_products ul,
+#sidebar .widget_recent_reviews ul,
+#sidebar .widget_top_rated_products ul,
+#sidebar .widget_layered_nav_filters ul {
+  background-image: none;                         
+}
+#sidebar .widget_shopping_cart ul li,
+#sidebar .widget_products ul li,
+#sidebar .widget_recently_viewed_products ul li,
+#sidebar .widget_recent_reviews ul li,
+#sidebar .widget_top_rated_products ul li,
+#sidebar .widget_layered_nav_filters ul li {
+  background-image: none;
+  line-height: 150%;
+  min-height: auto;                         
+}
+#sidebar .widget_shopping_cart .empty {
+  margin-top: 10px;       
+}
+.widget_price_filter .price_slider_wrapper,
+#sidebar .widget_layered_nav_filters ul {
+  margin-top: 15px;                      
+}
+.widget_product_search .screen-reader-text,
+.widget_product_search #searchsubmit {
+  display: none !important;                                           
+}
+.widget_product_search #s {
+  padding: 5px 2%;
+  width: 96%;                          
+}

@@ -1,0 +1,197 @@
+/*
+Theme Name: ShootingStar
+Description: Adds support for languages written in a Right To Left (RTL) direction.
+*/
+
+p, ul, ol, li, dl, address {
+  text-align: right;
+}
+ul {
+  margin-left: 0;
+  margin-right: 16px;   
+}
+ol {
+	margin-left: 0;
+  margin-right: 20px;
+}
+table, td, th {
+  text-align: right;
+}
+blockquote, q { 
+  border-left: none;
+  border-right: 1px solid #e3e3e3;
+}
+
+
+/* basic structure
+-------------------------------------------------------------- */
+
+#content {
+  float: right;         
+}
+#sidebar {
+  float: left;
+  margin-left: 0;
+  margin-right: 30px;         
+}
+.scroll-top {
+  left: 10px;
+  right: auto;           
+}
+
+
+/* menus
+-------------------------------------------------------------- */
+
+.menu-box .link-home {
+  border-right: 1px solid #535353 !important;
+  float: right;                 
+}
+.menu-box ul {
+  text-align: right;
+}
+.menu-box ul li {
+  float: right;
+}
+.menu-box a {
+  border-left: 1px solid #535353;
+  border-right: none;
+}
+#header .menu-box ul ul a,
+#header .menu-box ul ul a:visited {
+  border-left: none;
+  padding: 0 19px 0 0;
+  text-align: right;
+}
+.menu-box ul ul {
+  left: auto;
+  right: 0;
+}
+.menu-box ul ul ul {
+  left: auto;
+  right: 212px;
+}
+
+
+/* main content
+-------------------------------------------------------------- */
+
+#main-content .post-info .post-category,
+#main-content .post-info .post-tags {
+  float: right;                      
+}
+#main-content .post-info .post-tags {
+  padding-left: 0;
+  padding-right: 2%;
+  text-align: left;                           
+}
+#main-content .nav-previous {
+  float: right;                            
+}
+#main-content .nav-next {
+  float: left;
+  text-align: left;                            
+}
+#main-content .author-info .author-avatar {
+  float: right;
+  margin: 0 0 15px 15px;                                          
+}
+
+/* default post entry */
+.attachment-post-thumbnail { 
+  float: right;
+  margin-left: 15px;
+  margin-right: 0;
+}
+#infscr-loading p,
+#infscr-loading img {
+  margin: 0 25px 0 0;
+}
+
+
+/* sidebar
+-------------------------------------------------------------- */
+
+.sidebar-widget ul {
+  margin: 4px 16px -4px 0;                      
+}
+
+
+/* footer
+-------------------------------------------------------------- */  
+
+.footer-widget-area {
+  float: right;
+  margin-left: 30px;
+  margin-right: 0;               
+}
+#footer .footer-widget-area-3 {
+  margin-left: 0;                              
+} 
+
+
+/* default widgets
+-------------------------------------------------------------- */
+
+#wp-calendar #prev {
+  text-align: right;                   
+}
+#wp-calendar #next {
+  text-align: left;                   
+}
+
+
+/* form fields
+-------------------------------------------------------------- */
+
+#searchform .searchform-wrapper #s {
+  padding: 5px 3% 5px 0;
+  left: auto;
+  right: 0;              
+}
+#searchform .searchform-wrapper .send {
+  left: 0;
+  right: auto;
+}
+.header-content #searchform .searchform-wrapper {
+  left: 0;
+  right: auto;      
+}
+
+
+/* comments area
+-------------------------------------------------------------- */
+
+#comments ol {
+  margin-left: auto;
+  margin-right: 0;             
+}
+#comments .avatar,
+#comments .fn {
+  float: right;
+  margin: 0 0 0 6px
+}
+#comments time,
+#comments .edit-link {
+  float: left;             
+}
+
+
+/* media queries
+-------------------------------------------------------------- */
+
+@media screen and (max-width: 1170px) {
+  body #sidebar {
+    margin: 0 28px 0 0;         
+}
+  body .footer-widget-area {
+    margin-left: 21px;
+    margin-right: 0;                 
+}
+}
+
+@media screen and (max-width: 1012px) {
+  .js .selectnav {
+    float: left;  
+}
+}
