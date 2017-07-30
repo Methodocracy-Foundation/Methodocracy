@@ -1,0 +1,38 @@
+/* Color scheme Turquoise
+----------------------------------------------- */
+body .post-entry .read-more-button,
+body input[type="submit"],
+body input[type="reset"],
+body #searchform .searchform-wrapper .send {
+  background-color: #40c2b8;
+}
+body .sidebar-widget a {
+  color: #40c2b8;
+}
+body .menu-box-wrapper,
+body .menu-box ul ul {
+  border-color: #20b6ad;
+}
+body #header .menu-box .current-menu-item > a,
+body #header .menu-box .current-menu-ancestor > a,
+body #header .menu-box .current_page_item > a,
+body #header .menu-box .current-page-ancestor > a,
+.home #container #header .menu-box .link-home,
+body .post-entry .read-more-button:hover,
+body input[type="submit"]:hover,
+body input[type="reset"]:hover,
+body #searchform .send:hover {
+  background-color: #20b6ad;
+}
+body a,
+body .site-title a,
+body .post-entry .post-entry-headline a {
+  color: #20b6ad;
+}
+body #footer a,
+body .footer-signature .footer-signature-content a {
+  color: #9bebe5;
+}
+body #main-content .sticky {
+  background-color: #dbfffc;
+}

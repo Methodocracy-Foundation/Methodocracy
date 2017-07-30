@@ -1,0 +1,859 @@
+# Translation of the WordPress theme ShootingStar 1.0 by Tomas Toman.
+# This file is distributed under the same license as the ShootingStar package.
+# Tomas Toman <webdesign@tomastoman.cz>, 2015.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ShootingStar 1.0\n"
+"POT-Creation-Date: 2015-01-06 08:41+0100\n"
+"PO-Revision-Date: 2015-04-19 16:12+0100\n"
+"Last-Translator: \n"
+"Language-Team: Tomas Toman <webdesign@tomastoman.cz>\n"
+"Language: Español\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n == 1 ? 0 : 1;\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: 404.php:10 search.php:52
+msgid "Nothing Found"
+msgstr "No se encuentra nada"
+
+#: 404.php:16
+msgid ""
+"Apologies, but no results were found for your request. Perhaps searching "
+"will help you to find a related content."
+msgstr ""
+"Lo sentimos, pero no se encontraron resultados para su petición. Tal vez le "
+"ayude a encontrar algo buscando un contenido relacionado."
+
+#: archive.php:13
+#, php-format
+msgid "Daily Archive: %s"
+msgstr "Archivo Diario: %s"
+
+#: archive.php:15
+#, php-format
+msgid "Monthly Archive: %s"
+msgstr "Archivo Mensual: %s"
+
+#: archive.php:17
+#, php-format
+msgid "Yearly Archive: %s"
+msgstr "Archivo Anual: %s"
+
+#: archive.php:19
+msgid "Archive"
+msgstr "Archivo"
+
+#: author.php:13
+#, php-format
+msgid "Author Archive: %s"
+msgstr "Archivo Autor: %s"
+
+#: class-tgm-plugin-activation.php:156
+msgid "Install Required Plugins"
+msgstr "Requiere instalar plugins"
+
+#: class-tgm-plugin-activation.php:157 functions.php:369
+msgid "Install Plugins"
+msgstr "Instalar Plugins"
+
+#: class-tgm-plugin-activation.php:158 functions.php:373
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Instalar Plugin: %s"
+
+#: class-tgm-plugin-activation.php:159
+msgid "Something went wrong."
+msgstr "Algo salió mal."
+
+#: class-tgm-plugin-activation.php:170
+msgid "Return to Required Plugins Installer"
+msgstr "Volver al instalador de Plugins"
+
+#: class-tgm-plugin-activation.php:171
+msgid "Return to the dashboard"
+msgstr "Volver al Escritorio"
+
+#: class-tgm-plugin-activation.php:172 class-tgm-plugin-activation.php:1838
+msgid "Plugin activated successfully."
+msgstr "Plugin activado correctamente."
+
+#: class-tgm-plugin-activation.php:173 class-tgm-plugin-activation.php:1536
+msgid "The following plugin was activated successfully:"
+msgstr "El siguiente plugin se ha activado correctamente:"
+
+#: class-tgm-plugin-activation.php:174
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Todos los plugin instalados y activados correctamente. %1$s"
+
+#: class-tgm-plugin-activation.php:175
+msgid "Dismiss this notice"
+msgstr "Ignorar ese aviso"
+
+#: class-tgm-plugin-activation.php:1084
+msgid "External Link"
+msgstr "Enlace externo"
+
+#: class-tgm-plugin-activation.php:1089
+msgid "Private Repository"
+msgstr "Repositorio Privado"
+
+#: class-tgm-plugin-activation.php:1092
+msgid "Pre-Packaged"
+msgstr "Pre-empaquetado"
+
+#: class-tgm-plugin-activation.php:1096
+msgid "WordPress Repository"
+msgstr "Repositorio WordPress"
+
+#: class-tgm-plugin-activation.php:1099
+msgid "Required"
+msgstr "Necesario"
+
+#: class-tgm-plugin-activation.php:1099
+msgid "Recommended"
+msgstr "Recomendado"
+
+#: class-tgm-plugin-activation.php:1102
+msgid "Not Installed"
+msgstr "No se ha Instalado"
+
+#: class-tgm-plugin-activation.php:1104
+msgid "Installed But Not Activated"
+msgstr "Instalado pero no activado"
+
+#: class-tgm-plugin-activation.php:1274
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+"No hay plugins para instalar o activar. <a href=\"%1$s\" title=\"Return to "
+"the Dashboard\">Volver al Escritorio</a>"
+
+#: class-tgm-plugin-activation.php:1290
+msgid "Plugin"
+msgstr "Plugin"
+
+#: class-tgm-plugin-activation.php:1291
+msgid "Source"
+msgstr "Fuente"
+
+#: class-tgm-plugin-activation.php:1292
+msgid "Type"
+msgstr "Tipo"
+
+#: class-tgm-plugin-activation.php:1293
+msgid "Status"
+msgstr "Estado"
+
+#: class-tgm-plugin-activation.php:1311
+msgid "Install"
+msgstr "Instalar"
+
+#: class-tgm-plugin-activation.php:1312
+msgid "Activate"
+msgstr "Activar"
+
+#: class-tgm-plugin-activation.php:1821
+msgid "Install package not available."
+msgstr "El paquete de instalación no está disponible."
+
+#: class-tgm-plugin-activation.php:1822
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+"Descargar paquete instalación desde <span class=\"code\">%s</span>&#8230;"
+
+#: class-tgm-plugin-activation.php:1823
+msgid "Unpacking the package&#8230;"
+msgstr "Abrir el paquete&#8230;"
+
+#: class-tgm-plugin-activation.php:1824
+msgid "Installing the plugin&#8230;"
+msgstr "Instalar el plugin&#8230;"
+
+#: class-tgm-plugin-activation.php:1825
+msgid "Plugin install failed."
+msgstr "Instalación Plugin fallida."
+
+#: class-tgm-plugin-activation.php:1826
+msgid "Plugin installed successfully."
+msgstr "Plugin instalado correctamente."
+
+#: class-tgm-plugin-activation.php:1837
+msgid "Plugin activation failed."
+msgstr "Fallo en la activación de Plugin."
+
+#: class-tgm-plugin-activation.php:1947
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"Comienza el proceso de instalación y activación. Este proceso puede tardar "
+"un poco en algunos alojamientos, por favor sea paciente."
+
+#: class-tgm-plugin-activation.php:1948
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s Instalado y activado correctamente."
+
+#: class-tgm-plugin-activation.php:1948 class-tgm-plugin-activation.php:1957
+msgid "Show Details"
+msgstr "Mostrar detalles"
+
+#: class-tgm-plugin-activation.php:1948 class-tgm-plugin-activation.php:1957
+msgid "Hide Details"
+msgstr "Ocultar detalles"
+
+#: class-tgm-plugin-activation.php:1949
+msgid "All installations and activations have been completed."
+msgstr "Todas las instalaciones y activaciones se han completado."
+
+#: class-tgm-plugin-activation.php:1950
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Instalación y Activación Plugin %1$s (%2$d/%3$d)"
+
+#: class-tgm-plugin-activation.php:1954
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"El proceso de instalación ha comenzado. Este proceso puede tardar un poco "
+"según el alojamiento, por favor sea paciente."
+
+#: class-tgm-plugin-activation.php:1955
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+"A ocurrido un error durante la instalación %1$s: <strong>%2$s</strong>."
+
+#: class-tgm-plugin-activation.php:1956
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "La instalación de %1$s fallida."
+
+#: class-tgm-plugin-activation.php:1957
+#, php-format
+msgid "%1$s installed successfully."
+msgstr "%1$s instalado correctamente."
+
+#: class-tgm-plugin-activation.php:1958
+msgid "All installations have been completed."
+msgstr "Todas las instalaciones completadas."
+
+#: class-tgm-plugin-activation.php:1959
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Instalar Plugin %1$s (%2$d/%3$d)"
+
+#: class-tgm-plugin-activation.php:2050
+msgid "Return to the Dashboard"
+msgstr "Volver al Escritorio"
+
+#: comments.php:17 content-archives.php:19 single.php:23
+msgid "1 Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] "1 Comentario"
+msgstr[1] "%1$s Comentarios"
+
+#: comments.php:26
+msgid "&larr; Older Comments"
+msgstr "&larr; Comentarios Antiguos"
+
+#: comments.php:27
+msgid "Newer Comments &rarr;"
+msgstr "Nuevos Comentarios &rarr;"
+
+#: comments.php:33
+msgid "Comments are closed."
+msgstr "Comentarios cerrados"
+
+#: comments.php:38
+msgid "Your name"
+msgstr "Su nombre"
+
+#: comments.php:39
+msgid "Website"
+msgstr "Sitio Web"
+
+#: comments.php:40
+msgid "Comment..."
+msgstr "Comentario..."
+
+#: comments.php:44
+msgid "Leave a Comment"
+msgstr "Dejar un comentario"
+
+#: functions.php:75
+msgid "<p>Loading...</p>"
+msgstr "<p>Cargando...</p>"
+
+#: functions.php:76
+msgid "<p>No further posts.</p>"
+msgstr "<p>No hay más publicaciones.</p>"
+
+#: functions.php:117
+msgid "Main Header Menu"
+msgstr "Menú Principal Cabecera"
+
+#: functions.php:127
+msgid "Right Sidebar"
+msgstr "Barra lateral principal"
+
+#: functions.php:129
+msgid "Right sidebar which appears on all posts and pages."
+msgstr "Barra lateral derecha que aparece en entradas y páginas."
+
+#: functions.php:136
+msgid "Footer left widget area"
+msgstr "Widget pie página  izquierda"
+
+#: functions.php:138
+msgid "Left column with widgets in footer."
+msgstr "Widgets columna izquierda pie de pagina."
+
+#: functions.php:145
+msgid "Footer middle widget area"
+msgstr "Widget centro pie de página"
+
+#: functions.php:147
+msgid "Middle column with widgets in footer."
+msgstr "Widget columna central pie de página."
+
+#: functions.php:154
+msgid "Footer right widget area"
+msgstr "Widget  pie de página derecha"
+
+#: functions.php:156
+msgid "Right column with widgets in footer."
+msgstr "Widgets columna derecha pie de página."
+
+#: functions.php:163
+msgid "Footer notices"
+msgstr "Avisos Pie de página"
+
+#: functions.php:165
+msgid ""
+"The line for copyright and other notices below the footer widget areas. "
+"Insert here one Text widget. The \"Title\" field at this widget should stay "
+"empty."
+msgstr ""
+"Línea para copyright u otros avisos debajo de los widgets de pie de página. "
+"Inserte aquí un widget de texto. El campo \"Título\"  en este widget debe "
+"permanecer vacío."
+
+#: functions.php:186
+msgid "Read more"
+msgstr "Leer más"
+
+#: functions.php:200
+msgid "Post navigation"
+msgstr "Navegador Publicaciones"
+
+#: functions.php:208 search.php:36
+msgid "&larr; Previous"
+msgstr "&larr; Anterior"
+
+#: functions.php:209 search.php:37
+msgid "Next &rarr;"
+msgstr "Siguiente &rarr;"
+
+#: functions.php:232
+msgid "&larr; Previous post"
+msgstr "&larr; Publicación anterior"
+
+#: functions.php:234
+msgid "Next post &rarr;"
+msgstr "Siguiente publicación &rarr;"
+
+#: functions.php:252
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: functions.php:252
+msgid "(Edit)"
+msgstr "(Editar)"
+
+#: functions.php:265
+msgid "(Post author)"
+msgstr "(Publicaciones Autor)"
+
+#: functions.php:271
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s a las %2$s"
+
+#: functions.php:277
+msgid "Your comment is awaiting moderation."
+msgstr "Su comentario está esperando ser moderado."
+
+#: functions.php:283
+msgid "Reply"
+msgstr "Responder"
+
+#: functions.php:285 page.php:19 single.php:33 template-full-width.php:20
+#: template-landing-page.php:20 template-without-title.php:21
+msgid "Edit"
+msgstr "Editar"
+
+#: functions.php:368
+msgid "Install Recommended Plugins"
+msgstr "Recomendado instalar plugins"
+
+#: functions.php:370
+#, php-format
+msgid ""
+"The %1$s plugin is required for this theme. Click on the big blue button "
+"below to install and activate %1$s."
+msgstr ""
+"Este tema requiere el plugin %1$s.  Pulse el botón azul para instalar y "
+"activar %1$s."
+
+#: functions.php:371
+#, php-format
+msgid ""
+"The %1$s is installed but currently inactive. Please go to the <a href=\"%2$s"
+"\">plugin administration page</a> page to activate it."
+msgstr ""
+"El %1$s está instalado pero actualmente inactivo. Por favor vaya a la página "
+"<a href=\"%2$s\"> administración de plugins </a> para activarlo."
+
+#: functions.php:372
+#, php-format
+msgid "Install %s Now"
+msgstr "Instalar %s Ahora"
+
+#: functions.php:374
+msgid "Something went wrong with the plugin API."
+msgstr "Algo salió mal con API del plugin."
+
+#: functions.php:375
+#, php-format
+msgid ""
+"This theme requires the %1$s plugin. <a href=\"%2$s\"><strong>Click here to "
+"begin the installation process</strong></a>. You may be asked for FTP "
+"credentials based on your server setup."
+msgstr ""
+"Este tema requiere el plugin de %1$s. <a href=\"%2$s\"><strong>haga clic "
+"para comenzar el proceso de instalación</strong></a>. Se le pedirá "
+"credenciales FTP basado en la configuración de su servidor."
+
+#: functions.php:376
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgstr ""
+"Lo sentimos, pero no tiene permisos para instalar el plugin %s. Póngase en "
+"contacto con el administrador del sitio para obtener ayuda en la instalación "
+"del plugin."
+
+#: functions.php:377
+#, php-format
+msgid ""
+"This theme requires the %1$s plugin. That plugin is currently inactive, so "
+"please go to the <a href=\"%2$s\">plugin administration page</a> to activate "
+"it."
+msgstr ""
+"Este tema requiere el plugin %1$s. Dicho plugin está actualmente inactivo,"
+"por favor vaya a <a href=\"%2$s\">página administración de plugins</a> y "
+"actívelo."
+
+#: functions.php:378
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgstr ""
+"Lo sentimos, pero no tiene permisos para activar el plugin %s. Póngase en "
+"contacto con el administrador del sitio para obtener ayuda en la activación "
+"del plugin."
+
+#: functions.php:379
+msgid "Return to Recommended Plugins Installer"
+msgstr "Volver al instalador de Plugins"
+
+#: search.php:12
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Resultados de la búsqueda para: %s"
+
+#: search.php:18
+msgid "Number of Results: "
+msgstr "Nº de resultados: "
+
+#: search.php:28
+msgid "Search results navigation"
+msgstr "Navegador resultados búsquedas"
+
+#: search.php:58
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr ""
+"Lo sentimos, pero no se ha encontrado nada con su criterio de búsqueda. Por "
+"favor, inténtelo de nuebo utilizando diferentes palabras."
+
+#: searchform.php:9
+msgid "Search here..."
+msgstr "Búsqueda..."
+
+#: single.php:32
+msgid "Pages:"
+msgstr "Páginas:"
+
+#: single.php:44
+msgid "About Author"
+msgstr "Sobre el Autor"
+
+#: tag.php:12
+#, php-format
+msgid "Tag Archive: %s"
+msgstr "Archivo Etiqueta: %s"
+
+#: functions/customizer.php:234
+#, fuzzy
+msgid "ShootingStar General Settings"
+msgstr "Restablecer todos los ajustes"
+
+#: functions/customizer.php:239
+#, fuzzy
+msgid "ShootingStar Header Settings"
+msgstr "ShootingStar"
+
+#: functions/customizer.php:244
+#, fuzzy
+msgid "ShootingStar Posts Settings"
+msgstr "ShootingStar"
+
+#: functions/customizer.php:249
+#, fuzzy
+msgid "ShootingStar Post Entries Settings"
+msgstr "ShootingStar"
+
+#: functions/customizer.php:254
+#, fuzzy
+msgid "ShootingStar Font Settings"
+msgstr "ShootingStar"
+
+#: functions/customizer.php:270
+msgid "Color Scheme"
+msgstr ""
+
+#: functions/customizer.php:275
+msgid "Blue (default)"
+msgstr ""
+
+#: functions/customizer.php:276
+msgid "Orange"
+msgstr ""
+
+#: functions/customizer.php:277
+msgid "Turquoise"
+msgstr ""
+
+#: functions/customizer.php:292
+msgid "Background Pattern"
+msgstr ""
+
+#: functions/customizer.php:297 functions/customizer.php:348
+#: functions/customizer.php:369 functions/customizer.php:443
+#: functions/customizer.php:464 functions/customizer.php:506
+#: functions/customizer.php:591 functions/customizer.php:612
+#: functions/customizer.php:633 functions/customizer.php:654
+#: functions/customizer.php:696
+msgid "Display"
+msgstr ""
+
+#: functions/customizer.php:298 functions/customizer.php:349
+#: functions/customizer.php:370 functions/customizer.php:444
+#: functions/customizer.php:465 functions/customizer.php:507
+#: functions/customizer.php:592 functions/customizer.php:613
+#: functions/customizer.php:634 functions/customizer.php:655
+#: functions/customizer.php:697
+msgid "Hide"
+msgstr ""
+
+#: functions/customizer.php:313
+msgid "Background Pattern Opacity"
+msgstr ""
+
+#: functions/customizer.php:318
+msgid "Default"
+msgstr ""
+
+#: functions/customizer.php:343
+#, fuzzy
+msgid "Display Right Sidebar"
+msgstr "Barra lateral principal"
+
+#: functions/customizer.php:364
+msgid "Display Scroll-top Button"
+msgstr ""
+
+#: functions/customizer.php:385
+msgid "Favicon"
+msgstr ""
+
+#: functions/customizer.php:401
+#, fuzzy
+msgid "Display Header Image"
+msgstr "Subir imagen"
+
+#: functions/customizer.php:406
+msgid "Everywhere"
+msgstr ""
+
+#: functions/customizer.php:407
+msgid "Only on Homepage"
+msgstr ""
+
+#: functions/customizer.php:422
+#, fuzzy
+msgid "Header Logo"
+msgstr "Slideshow Cabecera"
+
+#: functions/customizer.php:438
+msgid "Display Site Description"
+msgstr ""
+
+#: functions/customizer.php:459
+msgid "Display Search Form"
+msgstr ""
+
+#: functions/customizer.php:480
+#, fuzzy
+msgid "Fixed Main Header Menu"
+msgstr "Menú Principal Cabecera"
+
+#: functions/customizer.php:485 functions/customizer.php:675
+msgid "Enable"
+msgstr ""
+
+#: functions/customizer.php:486 functions/customizer.php:676
+msgid "Disable"
+msgstr ""
+
+#: functions/customizer.php:501
+#, fuzzy
+msgid "Display Home Icon in Main Header Menu"
+msgstr "Menú Principal Cabecera"
+
+#: functions/customizer.php:522
+msgid "Postal Address"
+msgstr ""
+
+#: functions/customizer.php:538
+msgid "Email Address"
+msgstr ""
+
+#: functions/customizer.php:554
+msgid "Phone Number"
+msgstr ""
+
+#: functions/customizer.php:570
+msgid "Skype Name"
+msgstr ""
+
+#: functions/customizer.php:586
+msgid "Display Featured Image on single posts"
+msgstr ""
+
+#: functions/customizer.php:607
+msgid "Display Meta Box on single posts"
+msgstr ""
+
+#: functions/customizer.php:628
+#, fuzzy
+msgid "Next/Previous Post Navigation"
+msgstr "Navegador Publicaciones"
+
+#: functions/customizer.php:649
+msgid "Display About Author box on single posts"
+msgstr ""
+
+#: functions/customizer.php:670
+msgid "Infinite Scroll"
+msgstr ""
+
+#: functions/customizer.php:691
+msgid "Display Meta Box on Post Entries"
+msgstr ""
+
+#: functions/customizer.php:712
+msgid "Featured Images Size"
+msgstr ""
+
+#: functions/customizer.php:717
+msgid "Large"
+msgstr ""
+
+#: functions/customizer.php:718
+msgid "Small"
+msgstr ""
+
+#: functions/customizer.php:733
+msgid "Content/Excerpt Displaying"
+msgstr ""
+
+#: functions/customizer.php:738
+msgid "Excerpt"
+msgstr ""
+
+#: functions/customizer.php:739
+msgid "Content"
+msgstr ""
+
+#: functions/customizer.php:754
+#, fuzzy
+msgid "Excerpt Length"
+msgstr "Longitud del extracto (palabras):"
+
+#: functions/customizer.php:771
+msgid "Body font"
+msgstr ""
+
+#: functions/customizer.php:789
+msgid "Site Title font"
+msgstr ""
+
+#: functions/customizer.php:807
+msgid "Site Description font"
+msgstr ""
+
+#: functions/customizer.php:825
+msgid "Page/Post Headlines font"
+msgstr ""
+
+#: functions/customizer.php:843
+msgid "Post Entry Headline font"
+msgstr ""
+
+#: functions/customizer.php:861
+msgid "Sidebar/Footer Widget Headlines font"
+msgstr ""
+
+#: functions/customizer.php:879
+#, fuzzy
+msgid "Main Header Menu font"
+msgstr "Menú Principal Cabecera"
+
+#: functions/about/about.php:10
+#, fuzzy
+msgid "ShootingStar"
+msgstr "ShootingStar"
+
+#: functions/about/about.php:21
+msgid "<i class=\"icon_house\" aria-hidden=\"true\"></i>Welcome"
+msgstr ""
+
+#: functions/about/about.php:28
+msgid "<i class=\"icon_cart\" aria-hidden=\"true\"></i>GET PREMIUM"
+msgstr ""
+
+#: functions/about/about.php:48
+#, fuzzy
+msgid "Welcome to ShootingStar!"
+msgstr "ShootingStar"
+
+#: functions/about/about.php:52
+msgid ""
+"First of all, I would like to thank you for choosing the ShootingStar theme! "
+"I firmly believe that you will be satisfied with this template."
+msgstr ""
+
+#: functions/about/about.php:55 functions/about/about.php:143
+#, fuzzy
+msgid "About ShootingStar"
+msgstr "ShootingStar"
+
+#: functions/about/about.php:59
+msgid ""
+"ShootingStar is an easily customizable theme which can be used for your "
+"Blog, Magazine, Business or eCommerce website. It is a fully responsive and "
+"Retina ready theme that allows for easy viewing on any device."
+msgstr ""
+
+#: functions/about/about.php:73
+msgid "Get ShootingStar Premium Version"
+msgstr ""
+
+#: functions/about/about.php:78
+msgid ""
+"If you would like to purchase the ShootingStar Premium Version, you can do "
+"so on <a href=\"http://www.tomastoman.cz/downloads/shootingstar/\" target="
+"\"_blank\">Developers Official Website</a>."
+msgstr ""
+
+#: functions/about/about.php:81
+msgid ""
+"<strong>What the ShootingStar Premium Version offers in addition?</"
+"strong><br />\n"
+"    - Support for Drag-and-drop Page Builder with 36 in-built widgets for "
+"creating custom page layouts<br />\n"
+"    - 7 pre-defined color schemes (Blue, Green, Orange, Pink, Purple, Red "
+"and Turquoise)<br />\n"
+"    - Unlimited ability to create custom Color scheme (unlimited color "
+"settings)<br />\n"
+"    - Ability to set different Header Images for the individual pages/posts/"
+"categories<br />\n"
+"    - Ability to set different Header Slideshows for the individual pages/"
+"posts<br />\n"
+"    - Ability to set different Sidebars/Footers for the individual pages/"
+"posts<br />\n"
+"    - Image Slideshow with 3 different templates<br />\n"
+"    - Font size settings<br />\n"
+"    - Post Formats support (Aside, Audio, Image, Standard, Status, Video)"
+"<br />\n"
+"    - Related Posts box on the single posts<br />\n"
+"    - 4 dynamic Hover effects for the Post Thumbnails (Fade, Focus, Shadow "
+"and Tilt)<br />\n"
+"    - 6 Custom widgets for displaying the latest posts from the specific "
+"categories (as a Column, Grid, List, Slider, Thumbnails and by Default - One "
+"Column)<br />\n"
+"    - Custom Tab widget (displays popular posts, recent posts, comments and "
+"tags in tabbed format)<br />\n"
+"    - Info-Box Custom widget (displays a text box with an icon)<br />\n"
+"    - Header Carousel box (slider with your Latest Posts or a Custom Menu)"
+"<br />\n"
+"    - Social Network Profile links in header (69 pre-defined icons)<br />\n"
+"    - Facebook Like Box Custom widget<br />\n"
+"    - Twitter Following Custom widget<br />\n"
+"    - Integrated Facebook/Twitter/Google+1 share buttons on posts/pages<br /"
+">\n"
+"    - Integrated automatic Sitemap generator with advanced options<br />\n"
+"    - Custom Shortcodes for adding buttons, images, slideshows, tables and "
+"highlighted texts anywhere you like<br />\n"
+"    - Custom Shortcode for displaying Google maps<br />\n"
+"    - Custom Shortcode for displaying specific listing of posts anywhere you "
+"like<br />\n"
+"    - 8 Custom Page templates<br />\n"
+"    - Ability to add custom JavaScript code"
+msgstr ""
+
+#: functions/about/about.php:155
+#, fuzzy
+msgid "ShootingStar Theme"
+msgstr "ShootingStar"
+
+#: functions/about/about.php:160
+msgid "Documentation"
+msgstr "Documentación"
+
+#: functions/about/about.php:160
+msgid "Support"
+msgstr "Apoyo"
+
+#: functions/about/about.php:160
+msgid "Get Premium Version"
+msgstr ""
