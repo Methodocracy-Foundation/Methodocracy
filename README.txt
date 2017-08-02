@@ -74,6 +74,3 @@ To be known as the first place where thinkers and problem-solvers go. To ensure 
 
 
 GitHub is chosen for the website's code. It is a site that manages files, keep all overwritten versions of them and allowing multiple branches of the work to be held. GitHub is chosen to allow the world to have access the the files. The world can even contribute code if I accept it.
-
-
-See projectfiles/about.html for more information
